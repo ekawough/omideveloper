@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omi vs Bee AI: Full Comparison for 2026 (Developer's Take)</title>
+<meta name="description" content="Honest developer comparison of Omi and Bee AI wearables. Battery life, ecosystem, subscription costs, and real use case breakdowns.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is Omi or Bee AI better in 2026?","acceptedAnswer":{"@type":"Answer","text":"For developer access, battery life, ecosystem, and long-term value, Omi is stronger. For a simple out-of-box AI companion experience, Bee is an option but the subscription model adds ongoing cost."}},
+    {"@type":"Question","name":"Does Bee AI have an API?","acceptedAnswer":{"@type":"Answer","text":"No. Bee AI is a closed consumer platform with no public developer API as of 2026."}},
+    {"@type":"Question","name":"Which has better battery life, Omi or Bee?","acceptedAnswer":{"@type":"Answer","text":"Omi. 16 to 18 hours of active recording versus Bee's 8 to 12 hours. Omi lasts a full waking day without recharging."}},
+    {"@type":"Question","name":"Is Bee AI subscription required?","acceptedAnswer":{"@type":"Answer","text":"Bee has a free tier with limited features. Full functionality requires a $14.99 per month subscription."}}
+  ]
+}
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --bg: #080c14; --bg2: #0e1420; --bg3: #141c2e; --accent: #00e5a0; --accent2: #00b8ff; --text: #e8edf5; --muted: #7a8499; --border: rgba(255,255,255,0.07); --card: rgba(255,255,255,0.04); }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.7; }
+  nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 64px; background: rgba(8,12,20,0.9); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+  .logo { font-size: 17px; font-weight: 700; } .logo span { color: var(--accent); } .logo a { text-decoration: none; color: inherit; }
+  .nav-cta { background: var(--accent); color: #080c14; padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; }
+  .article-wrap { max-width: 760px; margin: 0 auto; padding: 60px 40px 80px; }
+  .article-meta { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
+  .tag { background: rgba(0,184,255,0.12); color: var(--accent2); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 3px 10px; border-radius: 6px; }
+  .meta-text { font-size: 13px; color: var(--muted); }
+  h1 { font-size: 42px; font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; }
+  .article-body h2 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; margin: 40px 0 16px; }
+  .article-body p { margin-bottom: 18px; font-size: 16px; line-height: 1.8; }
+  .article-body a { color: var(--accent); text-decoration: none; }
+  .article-body strong { font-weight: 700; }
+  .article-body hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+  th { background: var(--bg2); padding: 10px 14px; text-align: left; font-weight: 700; border: 1px solid var(--border); }
+  td { padding: 10px 14px; border: 1px solid var(--border); color: var(--muted); }
+  tr:hover td { background: var(--card); color: var(--text); }
+  .cta-box { background: linear-gradient(135deg, rgba(0,229,160,0.08), rgba(0,184,255,0.08)); border: 1px solid rgba(0,229,160,0.25); border-radius: 16px; padding: 28px 32px; margin: 36px 0; }
+  .cta-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .cta-box p { font-size: 14px; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+  .cta-btn { display: inline-block; background: var(--accent); color: #080c14; padding: 11px 22px; border-radius: 9px; font-size: 14px; font-weight: 700; text-decoration: none; margin-right: 10px; margin-bottom: 8px; }
+  .cta-btn.ghost { background: var(--card); border: 1px solid var(--border); color: var(--text); }
+  .faq-section { margin-top: 48px; }
+  .faq-section h2 { font-size: 28px; font-weight: 800; margin-bottom: 24px; }
+  .faq-item { border-top: 1px solid var(--border); padding: 20px 0; }
+  .faq-q { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+  .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+  .breadcrumb a { color: var(--muted); text-decoration: none; }
+  footer { border-top: 1px solid var(--border); padding: 32px 40px; display: flex; justify-content: space-between; max-width: 760px; margin: 0 auto; color: var(--muted); font-size: 13px; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--muted); text-decoration: none; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo"><a href="/">omi<span>developer</span>.com</a></div>
+  <a class="nav-cta" href="https://www.omi.me/?ref=ETHANJOHNKAWOUG" target="_blank" rel="noopener">Get Omi (10% off)</a>
+</nav>
+<div class="article-wrap">
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; Omi vs Bee AI 2026</div>
+  <div class="article-meta">
+    <span class="tag">Comparison</span>
+    <span class="meta-text">April 25, 2026 &middot; 7 min read</span>
+    <span class="meta-text">By Ethan Kawough</span>
+  </div>
+  <h1>Omi vs Bee AI: Full Comparison for 2026 (Developer's Take)</h1>
+  <div class="article-body">
+    <p>Omi and Bee AI both want to be the AI wearable around your neck. They approach the problem from completely different directions. One is a platform you can build on. The other is a polished consumer device that does what it does and nothing more.</p>
+    <p>I build on Omi. I have tested Bee. Here is the honest breakdown.</p>
+    <div class="cta-box">
+      <h3>Ready to buy Omi?</h3>
+      <p>Use code ETHANJOHNKAWOUG for a discount. I earn a commission at no extra cost to you.</p>
+      <a class="cta-btn" href="https://www.omi.me/?ref=ETHANJOHNKAWOUG" target="_blank" rel="noopener">Shop Omi at omi.me</a>
+    </div>
+    <hr>
+    <h2>What Each Device Is Actually Trying to Be</h2>
+    <p><strong>Omi</strong> is a developer-first AI wearable platform. The hardware ($79) is the key to an ecosystem of apps, APIs, and custom integrations. The company's bet is that the next great AI interfaces will be ambient wearables, and that the best way to win is to let developers build vertical applications on top of the hardware layer.</p>
+    <p><strong>Bee AI</strong> is a consumer-first AI companion device. It captures your conversations, learns about you over time, and gives you a personal AI that knows your life context. The pitch is "your own AI that actually knows you," not "a developer platform." The price is $49 and the experience is self-contained.</p>
+    <hr>
+    <h2>Side-by-Side Comparison</h2>
+    <table>
+      <tr><th>Feature</th><th>Omi</th><th>Bee AI</th></tr>
+      <tr><td>Price</td><td>$79</td><td>$49</td></tr>
+      <tr><td>Developer API</td><td>Yes (REST, webhook, MCP)</td><td>No public API</td></tr>
+      <tr><td>Third-party apps</td><td>Yes (Omi marketplace)</td><td>No</td></tr>
+      <tr><td>Battery life</td><td>16 to 24 hrs</td><td>8 to 12 hrs</td></tr>
+      <tr><td>Custom webhook support</td><td>Yes</td><td>No</td></tr>
+      <tr><td>Community size</td><td>Large, active Discord</td><td>Smaller</td></tr>
+      <tr><td>Subscription fee</td><td>No required subscription</td><td>$14.99/mo for full features</td></tr>
+    </table>
+    <hr>
+    <h2>Where Bee AI Wins</h2>
+    <p>Bee's core proposition is a personalized AI that gets smarter about you over time. The Bee AI learns your habits, your relationships, your preferences, and your patterns from the ambient audio it captures. If what you want is "an AI that actually knows me," Bee has built specifically for that feeling. The onboarding is smooth. The $49 price is also genuinely lower.</p>
+    <hr>
+    <h2>Where Omi Wins</h2>
+    <p><strong>Battery life.</strong> Not close. Bee gets 8 to 12 hours, which means it does not survive a full waking day without a charge. Omi hits 16 to 18 hours of active recording. For a device you are supposed to wear all day, the battery life gap matters.</p>
+    <p><strong>Open ecosystem.</strong> Bee has no public API. No webhooks. No developer program. No marketplace. Omi has all of those. If you want to do anything beyond what Bee ships, you cannot.</p>
+    <p><strong>Subscription cost.</strong> Bee's $14.99 per month subscription to access the full feature set adds up. At that rate you have spent $79 in under 6 months just on the subscription. Omi has no required subscription.</p>
+    <hr>
+    <h2>The Subscription Problem with Bee</h2>
+    <p>At $14.99 per month for full Bee AI access, you are spending $180 per year on a $49 device. By month 6, you have spent more on the subscription than on the hardware. And you have built nothing you own. With Omi, the $79 hardware gives you API access, marketplace access, and a developer community. The apps I built for it are mine. The data in my Supabase tables is mine.</p>
+    <div class="cta-box">
+      <h3>Three CTAs before you go</h3>
+      <p>Get the device, browse my apps, or book a call for a custom integration.</p>
+      <a class="cta-btn" href="https://www.omi.me/?ref=ETHANJOHNKAWOUG" target="_blank" rel="noopener">Get Omi (code ETHANJOHNKAWOUG)</a>
+      <a class="cta-btn ghost" href="/#apps">Browse My Apps</a>
+      <a class="cta-btn ghost" href="https://northlaneai.com#contact" target="_blank" rel="noopener">Book a Call at North Lane AI</a>
+    </div>
+    <div class="faq-section">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Is Omi or Bee AI better in 2026?</div><div class="faq-a">For developer access, battery life, ecosystem, and long-term value, Omi is stronger. For a simple out-of-box AI companion experience at the lowest entry cost, Bee is viable but the subscription model adds ongoing cost.</div></div>
+      <div class="faq-item"><div class="faq-q">Does Bee AI have an API?</div><div class="faq-a">No. Bee AI is a closed consumer platform with no public developer API as of 2026.</div></div>
+      <div class="faq-item"><div class="faq-q">Which has better battery life, Omi or Bee?</div><div class="faq-a">Omi. 16 to 18 hours of active recording versus Bee's 8 to 12 hours. Omi lasts a full waking day without recharging.</div></div>
+      <div class="faq-item"><div class="faq-q">Is Bee AI subscription required?</div><div class="faq-a">Bee has a free tier with limited features. Full functionality requires a $14.99 per month subscription.</div></div>
+      <div class="faq-item"><div class="faq-q">Where can I buy the Omi AI necklace?</div><div class="faq-a">At omi.me. Use code ETHANJOHNKAWOUG at checkout for a discount.</div></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div>2026 omideveloper.com</div>
+  <div style="display:flex;gap:20px;flex-wrap:wrap">
+    <a href="/">Home</a><a href="/blog">Blog</a>
+    <a href="https://northlaneai.com" target="_blank" rel="noopener">North Lane AI</a>
+    <a href="https://www.omi.me/?ref=ETHANJOHNKAWOUG" target="_blank" rel="noopener">Get Omi</a>
+  </div>
+</footer>
+</body>
+</html>
