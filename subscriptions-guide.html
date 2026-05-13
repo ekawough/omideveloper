@@ -5,57 +5,86 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subscriptions to Reconsider When You Get an Omi, by omideveloper</title>
 <meta name="description" content="Honest math on which AI subscriptions the Omi can actually replace. Numbers verified May 5 2026.">
+<meta name="theme-color" content="#050714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #ffffff;
-    --fg: #0a0a0a;
-    --muted: #555;
-    --accent: #00b378;
-    --accent-2: #b88a00;
-    --accent-soft: #e6f9f1;
-    --accent-soft-2: #fef5d7;
-    --border: #e5e5e5;
-    --card: #fafafa;
+    --bg: #050714; --bg-2: #0a0d1f; --bg-3: #11152b;
+    --border: rgba(120,140,200,0.12); --border-strong: rgba(120,140,200,0.25);
+    --fg: #f5f6fa; --muted: #8b93a8; --muted-2: #6b7290;
+    --accent: #00e5a0; --accent-2: #fbbf24;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.65; font-size: 16px; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 28px; }
-  .brand { font-weight: 700; font-size: 14px; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 32px; }
-  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.02em; font-weight: 800; }
-  h2 { font-size: 22px; margin: 36px 0 8px; font-weight: 700; }
-  h3 { font-size: 17px; margin: 24px 0 6px; font-weight: 700; color: var(--accent); }
-  p { margin: 12px 0; }
-  p.lead { font-size: 19px; color: var(--muted); margin-top: 0; }
-  .card { background: var(--card); border-left: 3px solid var(--accent); border-radius: 4px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
-  .scenario { background: var(--accent-soft); padding: 16px 20px; border-radius: 6px; margin: 16px 0; }
-  .cta { display: inline-block; margin: 16px 0; padding: 14px 28px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; border-radius: 6px; font-size: 16px; }
-  ul, ol { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  .footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0,229,160,0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251,191,36,0.07), transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  nav { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5,7,20,0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  nav .logo { font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; text-decoration: none; }
+  nav a.nav-cta { font-size: 13px; font-weight: 600; color: #050714; background: var(--accent); padding: 7px 16px; border-radius: 6px; text-decoration: none; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; position: relative; z-index: 1; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.25); border-radius: 20px; padding: 4px 12px; margin-bottom: 20px; }
+  h1 { font-size: 40px; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 800; }
+  h1 span { color: var(--accent); }
+  p.lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 22px; margin: 48px 0 10px; font-weight: 700; border-top: 1px solid var(--border); padding-top: 32px; }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 13px; font-weight: 700; color: var(--accent-2); margin: 20px 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+  p { margin: 10px 0; }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 7px; }
+  .card { background: rgba(0,229,160,0.05); border: 1px solid rgba(0,229,160,0.2); border-radius: 10px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
+  .card strong { color: var(--accent); }
+  .scenario { background: var(--bg-3); border: 1px solid var(--border-strong); border-radius: 10px; padding: 18px 20px; margin: 14px 0; }
+  .scenario strong { color: var(--accent-2); display: block; margin-bottom: 8px; }
+  .cta { display: inline-block; margin: 20px 0 8px; padding: 14px 28px; background: var(--accent); color: #050714; text-decoration: none; font-weight: 700; border-radius: 8px; font-size: 16px; transition: opacity 0.15s; }
+  .cta:hover { opacity: 0.88; }
+  .sig { margin-top: 40px; font-weight: 600; font-size: 16px; }
+  .sig span { color: var(--muted); font-weight: 400; }
+  .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; line-height: 1.6; }
 
   @media print {
-    body { font-size: 11pt; }
+    body { background: #fff; color: #0a0a0a; font-size: 11pt; }
+    body::before { display: none; }
+    nav { display: none; }
     .wrap { padding: 0; max-width: 100%; }
-    h1 { font-size: 24pt; }
-    h2 { font-size: 14pt; page-break-after: avoid; }
-    h3 { font-size: 12pt; page-break-after: avoid; }
-    .cta { background: none !important; color: var(--accent) !important; padding: 0; font-weight: 700; text-decoration: underline; }
-    .card, .scenario { background: none; border-left: 2px solid var(--accent); }
-    a { color: var(--accent); text-decoration: none; }
+    h1 { font-size: 24pt; color: #0a0a0a; }
+    h1 span { color: #00b378; }
+    h2 { font-size: 14pt; color: #0a0a0a; border-top: 1px solid #e5e5e5; page-break-after: avoid; }
+    h3 { color: #b88a00; }
+    .badge { background: none; border: 1px solid #00b378; color: #00b378; }
+    .card { background: none; border-left: 2px solid #00b378; border-top: none; border-right: none; border-bottom: none; border-radius: 0; }
+    .card strong { color: #00b378; }
+    .scenario { background: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 4px; page-break-inside: avoid; }
+    .scenario strong { color: #b88a00; }
+    .cta { background: none; color: #00b378; padding: 0; font-weight: 700; text-decoration: underline; }
+    p, li { color: #0a0a0a; }
+    p.lead, .sig span { color: #555; }
+    .footer { color: #777; }
     @page { margin: 0.6in; }
   }
 </style>
 </head>
 <body>
+<nav>
+  <a class="logo" href="https://omideveloper.com">omideveloper.com</a>
+  <a class="nav-cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-3&utm_content=nav">Get the Omi — $129</a>
+</nav>
 <div class="wrap">
 
-  <div class="brand">omideveloper.com / by Ethan</div>
-
-  <h1>Subscriptions to Reconsider When You Get an Omi</h1>
+  <div class="badge">Free guide / by Ethan</div>
+  <h1>Subscriptions to Reconsider<br><span>When You Get an Omi</span></h1>
   <p class="lead">The honest version of the math. Numbers verified May 5 2026 against vendor pricing pages.</p>
 
   <p>Some of the AI subscriptions you pay for every month are doing things the Omi can do for free. Not all of them. Three of them are worth a hard look.</p>
-
   <p>I am Ethan. I build apps for the Omi necklace. New ones ship every two to four weeks from a pool of 250 plus vetted ideas. Tesla Connect is in the App Store. I am also an affiliate, so this guide ends with a link.</p>
 
   <h2>Subscription 1: Otter Pro</h2>
@@ -67,10 +96,8 @@
     <li>Monthly plan: more, do not buy monthly</li>
   </ul>
   <h3>What the Omi replaces</h3>
-  <p>The basic transcription use case.</p>
-  <p>Omi Free plan gives you 1,200 cloud transcription minutes per month plus unlimited on phone transcription. That is roughly 20 hours of cloud transcription per month, free, no subscription.</p>
-  <p>If 20 hours covers your usage, Otter Pro is replaced by the Omi Free plan plus the device. The device is $129 right now with the $50 off limited time promo, $179 sticker if the promo ends. <strong>Year one math at the $129 promo price: $129 device, $0 in subscriptions, net savings of about $30 vs paying for Otter Pro and not having a wearable.</strong></p>
-  <p>If you go past 20 hours per month, Omi Unlimited at $19 per month or $199 per year covers unlimited cloud transcription. Year one math at the promo price plus Unlimited: $129 device plus $199 subscription, $328 total. Still less than three years of Otter Pro.</p>
+  <p>The basic transcription use case. Omi Free plan gives you 1,200 cloud transcription minutes per month plus unlimited on phone transcription. That is roughly 20 hours of cloud transcription per month, free, no subscription.</p>
+  <p>If 20 hours covers your usage, Otter Pro is replaced by the Omi Free plan plus the device. The device is $129 right now with the $50 off limited time promo. <strong>Year one math at the $129 promo price: $129 device, $0 in subscriptions, net savings of about $30 vs paying for Otter Pro and not having a wearable.</strong></p>
   <div class="card"><strong>Honest version:</strong> if you do less than 20 hours of cloud transcription per month, you save $99.96 per year. If you go past 20 hours, you break even and gain a wearable.</div>
 
   <h2>Subscription 2: Fireflies Pro</h2>
@@ -82,8 +109,7 @@
     <li>Monthly plan: $18 per user per month</li>
   </ul>
   <h3>What the Omi replaces</h3>
-  <p>The meeting recap use case for live in person and laptop based meetings (you wear the Omi, it captures the room).</p>
-  <p>If you do mostly Zoom or Google Meet from a laptop, Fireflies still has cleaner platform integration. If you do mostly in person meetings, the Omi covers that better than Fireflies because you wear it. If you do both, you decide.</p>
+  <p>The meeting recap use case for live in person and laptop based meetings. If you do mostly Zoom or Google Meet from a laptop, Fireflies still has cleaner platform integration. If you do mostly in person meetings, the Omi covers that better because you wear it.</p>
   <div class="card"><strong>Honest version:</strong> partial replacement, not a full one. Lean Omi if you are mostly in person. Lean Fireflies if you are mostly on Zoom and want speaker tags from inside the call.</div>
 
   <h2>Subscription 3: Plaud Pro</h2>
@@ -94,8 +120,7 @@
     <li>$8.33 per month or $99.96 per year</li>
   </ul>
   <h3>What the Omi replaces</h3>
-  <p>This one is more nuanced. If you already have a Plaud, the Omi mobile app is free. Connect your Plaud to it via the xor connection, run my apps on your Plaud audio, and you may not need Plaud Pro any more.</p>
-  <p>If you do not have a Plaud, the Omi necklace at $129 right now ($50 off the $179 sticker, limited time) is a more permanent replacement (no subscription needed for most use cases).</p>
+  <p>If you already have a Plaud, the Omi mobile app is free. Connect your Plaud to it via the xor connection, run my apps on your Plaud audio, and you may not need Plaud Pro anymore.</p>
   <div class="card"><strong>Honest version:</strong> try the Omi mobile app for free, connect Plaud, see if it covers what Plaud Pro was doing for you. Cancellation is optional, not automatic.</div>
 
   <h2>What the math looks like in year one</h2>
@@ -106,7 +131,7 @@
       <li>Otter Pro saved: $99.96 per year</li>
       <li>Omi device at promo: $129 one time</li>
       <li>Net first year: <strong>plus $30.96 in savings</strong> AND you own a wearable</li>
-      <li>Year two onward: $99.96 saved every year, no ongoing cost if you stay under 1,200 cloud minutes per month</li>
+      <li>Year two onward: $99.96 saved every year</li>
     </ul>
   </div>
 
@@ -141,8 +166,8 @@
   <p>The Omi replaces the voice capture, transcription, and meeting recap layer. Nothing more.</p>
 
   <h2>Get the Omi I use</h2>
-  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-3&utm_content=cta-end">Get the Omi necklace, $129 (limited time)</a>
-  <p>$129 right now with the $50 off promo at omi.me checkout, $179 sticker once it ends. 30 day money back. One time payment.</p>
+  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-3&utm_content=cta-end">Get the Omi necklace — $129 (limited time)</a>
+  <p style="color: var(--muted); font-size: 14px;">$129 right now with the $50 off promo at omi.me checkout, $179 sticker once it ends. 30 day money back. One time payment.</p>
 
   <h2>What to do this week</h2>
   <ol>
@@ -152,7 +177,7 @@
     <li>Reply to the email this guide came from with your scenario. I will tell you which app to install first.</li>
   </ol>
 
-  <p style="margin-top: 32px; font-weight: 600;">Ethan<br><span style="color: var(--muted); font-weight: 400;">omideveloper.com</span></p>
+  <div class="sig">Ethan<br><span>omideveloper.com</span></div>
 
   <div class="footer">
     <p>Affiliate disclosure: this guide links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.</p>
