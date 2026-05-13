@@ -5,63 +5,92 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>5 Omi App Use Cases You Do Not Know About, by omideveloper</title>
 <meta name="description" content="The Omi necklace replaces a $99 per year transcription habit and unlocks 6 apps you can install today. Free guide from the developer.">
+<meta name="theme-color" content="#050714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #ffffff;
-    --fg: #0a0a0a;
-    --muted: #555;
-    --accent: #00b378;
-    --accent-2: #b88a00;
-    --accent-soft: #e6f9f1;
-    --accent-soft-2: #fef5d7;
-    --border: #e5e5e5;
-    --card: #fafafa;
+    --bg: #050714; --bg-2: #0a0d1f; --bg-3: #11152b;
+    --surface: rgba(20,25,50,0.5); --border: rgba(120,140,200,0.12); --border-strong: rgba(120,140,200,0.25);
+    --fg: #f5f6fa; --muted: #8b93a8; --muted-2: #6b7290;
+    --accent: #00e5a0; --accent-2: #fbbf24;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Georgia, serif; background: var(--bg); color: var(--fg); line-height: 1.65; font-size: 16px; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 28px; }
-  .brand { font-weight: 700; font-size: 14px; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 32px; }
-  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.02em; font-weight: 800; }
-  h2 { font-size: 22px; margin: 36px 0 8px; font-weight: 700; }
-  h3 { font-size: 17px; margin: 24px 0 6px; font-weight: 700; color: var(--accent); }
-  p { margin: 12px 0; }
-  p.lead { font-size: 19px; color: var(--muted); margin-top: 0; }
-  .card { background: var(--card); border-left: 3px solid var(--accent); border-radius: 4px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
-  .price { background: var(--accent-soft); padding: 12px 16px; border-radius: 6px; font-size: 14px; }
-  .cta { display: inline-block; margin: 16px 0; padding: 14px 28px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; border-radius: 6px; font-size: 16px; }
-  ul, ol { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  .footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0,229,160,0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251,191,36,0.07), transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  nav { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5,7,20,0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  nav .logo { font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; text-decoration: none; }
+  nav a.nav-cta { font-size: 13px; font-weight: 600; color: var(--bg); background: var(--accent); padding: 7px 16px; border-radius: 6px; text-decoration: none; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; position: relative; z-index: 1; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.25); border-radius: 20px; padding: 4px 12px; margin-bottom: 20px; }
+  h1 { font-size: 40px; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 800; }
+  h1 span { color: var(--accent); }
+  p.lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 22px; margin: 48px 0 10px; font-weight: 700; border-top: 1px solid var(--border); padding-top: 32px; }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 15px; font-weight: 700; color: var(--accent); margin: 20px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  p { margin: 10px 0; color: var(--fg); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 7px; color: var(--fg); }
+  .card { background: rgba(0,229,160,0.05); border: 1px solid rgba(0,229,160,0.2); border-radius: 10px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
+  .card strong { color: var(--accent); }
+  .price-box { background: var(--bg-3); border: 1px solid var(--border-strong); border-radius: 10px; padding: 18px 20px; margin: 20px 0; font-size: 14px; line-height: 1.8; }
+  .price-box strong { color: var(--accent-2); }
+  .cta { display: inline-block; margin: 20px 0 8px; padding: 14px 28px; background: var(--accent); color: #050714; text-decoration: none; font-weight: 700; border-radius: 8px; font-size: 16px; transition: opacity 0.15s; }
+  .cta:hover { opacity: 0.88; }
+  .sig { margin-top: 40px; font-weight: 600; font-size: 16px; }
+  .sig span { color: var(--muted); font-weight: 400; }
+  .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; line-height: 1.6; }
   .footer a { color: var(--muted); }
-  .pageno { display: none; }
 
   @media print {
-    body { font-size: 11pt; }
+    body { background: #fff; color: #0a0a0a; font-size: 11pt; }
+    body::before { display: none; }
+    nav { display: none; }
     .wrap { padding: 0; max-width: 100%; }
-    h1 { font-size: 24pt; }
-    h2 { font-size: 14pt; page-break-after: avoid; }
-    h3 { font-size: 12pt; page-break-after: avoid; }
-    .cta { background: none !important; color: var(--accent) !important; padding: 0; font-weight: 700; text-decoration: underline; }
-    .card { background: none; border-left: 2px solid var(--accent); }
-    .footer { page-break-before: avoid; }
-    a { color: var(--accent); text-decoration: none; }
+    h1 { font-size: 24pt; color: #0a0a0a; }
+    h1 span { color: #00b378; }
+    h2 { font-size: 14pt; color: #0a0a0a; border-top: 1px solid #e5e5e5; page-break-after: avoid; }
+    h3 { color: #00b378; }
+    .badge { background: none; border: 1px solid #00b378; color: #00b378; }
+    .card { background: none; border-left: 2px solid #00b378; border-top: none; border-right: none; border-bottom: none; border-radius: 0; }
+    .card strong { color: #00b378; }
+    .price-box { background: #f5f5f5; border: 1px solid #e5e5e5; }
+    .price-box strong { color: #b88a00; }
+    .cta { background: none; color: #00b378; padding: 0; font-weight: 700; text-decoration: underline; }
+    p, li { color: #0a0a0a; }
+    .muted, p.lead { color: #555; }
+    .sig span { color: #555; }
+    .footer { color: #777; }
     @page { margin: 0.6in; }
   }
 </style>
 </head>
 <body>
+<nav>
+  <a class="logo" href="https://omideveloper.com">omideveloper.com</a>
+  <a class="nav-cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-1&utm_content=nav">Get the Omi — $129</a>
+</nav>
 <div class="wrap">
 
-  <div class="brand">omideveloper.com / by Ethan</div>
-
-  <h1>5 Omi App Use Cases You Do Not Know About</h1>
+  <div class="badge">Free guide / by Ethan</div>
+  <h1>5 Omi App Use Cases<br><span>You Do Not Know About</span></h1>
   <p class="lead">You bought a $129 AI necklace. Now what?</p>
 
   <p>I am Ethan. I build apps for the Omi necklace. New ones ship every two to four weeks from a pool of 250 plus vetted ideas across real estate, sales, field service, legal, healthcare, coaching, and more. Tesla Connect was the first one in the App Store.</p>
 
   <p>This guide covers 5 use cases for the Omi that almost nobody is talking about. They go past "transcribe my meetings." They are the ones that pay the device back in week one.</p>
 
-  <div class="price">
+  <div class="price-box">
     <strong>Cost reference, since this matters:</strong><br>
     Omi device sticker: $179<br>
     Omi device LIMITED TIME sale: $129 ($50 off, currently active at omi.me checkout)<br>
@@ -78,10 +107,10 @@
   <h2>Use case 1: Tell your car what to do (Tesla Connect)</h2>
   <p>If you drive a Tesla, the Omi turns it into a voice command device.</p>
   <ul>
-    <li>"Hey Omi, unlock my Tesla."</li>
-    <li>"Hey Omi, set climate to 70."</li>
-    <li>"Hey Omi, open the frunk."</li>
-    <li>"Hey Omi, where am I parked?"</li>
+    <li>"Hey Tesla, unlock my car."</li>
+    <li>"Hey Tesla, set climate to 70."</li>
+    <li>"Hey Tesla, open the frunk."</li>
+    <li>"Hey Tesla, where am I parked?"</li>
   </ul>
   <p>The app is in the App Store, free to install. I built it. It is the one I use every day.</p>
   <p><strong>Why this matters:</strong> You stop touching your phone in the car. Hands stay on the wheel.</p>
@@ -126,13 +155,13 @@
   </ul>
 
   <h2>Get the Omi I use</h2>
-  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-1&utm_content=cta-end">Get the Omi necklace, $129 (limited time)</a>
-  <p>$129 device with the $50 off promo currently active, $179 sticker once it ends. 30 day money back. Free plan covers most people. The Unlimited tier is $19 per month or $199 per year if you want every minute on cloud.</p>
+  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-1&utm_content=cta-end">Get the Omi necklace — $129 (limited time)</a>
+  <p style="color: var(--muted); font-size: 14px;">$129 with the $50 off promo currently active. $179 sticker once it ends. 30 day money back. Free plan covers most people.</p>
 
   <h2>Reply with your job title</h2>
   <p>If you reply to the email this came from with your job title, I will tell you which app to install first based on what you do for a living.</p>
 
-  <p style="margin-top: 32px; font-weight: 600;">Ethan<br><span style="color: var(--muted); font-weight: 400;">omideveloper.com</span></p>
+  <div class="sig">Ethan<br><span>omideveloper.com</span></div>
 
   <div class="footer">
     <p>Affiliate disclosure: this guide links to omi.me with my affiliate code. I earn a commission on devices purchased through that link, this is how the free guides and apps stay funded.</p>
