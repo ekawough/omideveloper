@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plaud + Omi Compatibility Guide, by omideveloper</title>
+<meta name="description" content="Run Omi marketplace apps on your existing Plaud Note via the xor connection. 90 second setup, free. Lead magnet from the developer.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0a0a0a;
+    --muted: #555;
+    --accent: #00b378;
+    --accent-2: #b88a00;
+    --accent-soft: #e6f9f1;
+    --accent-soft-2: #fef5d7;
+    --border: #e5e5e5;
+    --card: #fafafa;
+    --yes: #00b378;
+    --no: #dc2626;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.65; font-size: 16px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 28px; }
+  .brand { font-weight: 700; font-size: 14px; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 32px; }
+  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.02em; font-weight: 800; }
+  h2 { font-size: 22px; margin: 36px 0 8px; font-weight: 700; }
+  p { margin: 12px 0; }
+  p.lead { font-size: 19px; color: var(--muted); margin-top: 0; }
+  .card { background: var(--card); border-left: 3px solid var(--accent); border-radius: 4px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
+  .cta { display: inline-block; margin: 16px 0; padding: 14px 28px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; border-radius: 6px; font-size: 16px; }
+  ul, ol { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; background: var(--card); }
+  .yes { color: var(--yes); font-weight: 700; }
+  .no { color: var(--no); font-weight: 700; }
+  .footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+
+  @media print {
+    body { font-size: 11pt; }
+    .wrap { padding: 0; max-width: 100%; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 14pt; page-break-after: avoid; }
+    .cta { background: none !important; color: var(--accent) !important; padding: 0; font-weight: 700; text-decoration: underline; }
+    .card { background: none; border-left: 2px solid var(--accent); }
+    table { page-break-inside: avoid; }
+    a { color: var(--accent); text-decoration: none; }
+    @page { margin: 0.6in; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">omideveloper.com / by Ethan</div>
+
+  <h1>Plaud + Omi Compatibility Guide</h1>
+  <p class="lead">Your Plaud already runs Omi marketplace apps. The setup is 90 seconds. Free.</p>
+
+  <p>Hi, I am Ethan. I build apps for the Omi necklace. New ones ship every two to four weeks from a pool of 250 plus vetted ideas. Most of them run on a Plaud you may already own.</p>
+  <p>Most Plaud users do not know this. It is the most useful and least talked about feature of the 2026 AI wearable space.</p>
+
+  <h2>What is the xor connection?</h2>
+  <p>It is a feature in the Omi mobile app that treats a Plaud recording as the input to an Omi app.</p>
+  <p>In plain English: if you have a Plaud Note, you can run my apps on your Plaud audio.</p>
+  <div class="card">Reference: PR #3287 in the BasedHardware/omi GitHub. Released in version 1.0.75 plus 450 mobile cm. The official Omi integrations page lists Plaud as a supported third party wearable.</div>
+
+  <h2>What works on Plaud through the xor bridge</h2>
+  <p>Memory Trigger pattern apps (post conversation summary). These work:</p>
+  <table>
+    <tr><th>App</th><th>Works on Plaud?</th><th>Pricing</th></tr>
+    <tr><td>Showing Notes (Realtor)</td><td class="yes">Yes</td><td>$29 per month</td></tr>
+    <tr><td>SalesSignal (CRM auto)</td><td class="yes">Yes</td><td>$49 per seat ($29 annual)</td></tr>
+    <tr><td>Field Report (techs)</td><td class="yes">Yes</td><td>$29 per seat, $99 company</td></tr>
+    <tr><td>Deposition Digest</td><td class="yes">Yes</td><td>$39 per month</td></tr>
+    <tr><td>Daily Wrapped Pro</td><td class="yes">Yes</td><td>Free, optional $4.99 Pro</td></tr>
+    <tr><td>Coffee Close (light CRM)</td><td class="yes">Yes</td><td>$19 per month</td></tr>
+    <tr><td>SignalDesk for Coaches</td><td class="yes">Yes</td><td>$29 per month</td></tr>
+    <tr><td>Open House Magnet</td><td class="yes">Yes</td><td>$39 per month</td></tr>
+    <tr><td>Roof Walk (solar D2D)</td><td class="yes">Yes</td><td>$29 per seat or fleet plan</td></tr>
+    <tr><td>Tesla Connect (real time)</td><td class="no">No</td><td>Free, requires Omi necklace</td></tr>
+  </table>
+  <p style="font-size: 14px; color: var(--muted);">More apps ship every 2 to 4 weeks. Most use the Memory Trigger pattern, so they are Plaud Compatible by default.</p>
+
+  <h2>How to set it up (90 seconds)</h2>
+  <ol>
+    <li>Install the Omi mobile app on your phone (free).</li>
+    <li>Open Settings, then Devices.</li>
+    <li>Tap "Connect a third party wearable."</li>
+    <li>Select Plaud.</li>
+    <li>Authorize Omi to read your Plaud recordings.</li>
+    <li>Open the Omi App Marketplace.</li>
+    <li>Install one of my apps.</li>
+  </ol>
+  <p>That is it. Your Plaud now runs Omi marketplace apps.</p>
+
+  <h2>Cost comparison</h2>
+  <ul>
+    <li>Plaud Note device: $159 (you may already have one)</li>
+    <li>Plaud Pro subscription: $8.33 per month or $99.96 per year</li>
+    <li>Omi mobile app: free</li>
+    <li>My Omi marketplace apps: free trials available, paid tiers $19 to $49 per month</li>
+  </ul>
+  <p>You can run my apps on your existing Plaud, no Omi device required.</p>
+
+  <h2>Should you also buy an Omi?</h2>
+  <p>If you want real time apps (Tesla Connect, live coaching, command and control), yes.</p>
+  <p>If you only want post conversation summaries, your Plaud handles all of it through the xor bridge.</p>
+  <p>If you want both: the Omi necklace is $129 right now ($50 off the $179 sticker, limited time at omi.me checkout).</p>
+  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-2&utm_content=cta-end">Get the Omi necklace, $129 (limited time)</a>
+
+  <h2>Why I am writing this</h2>
+  <p>I borrowed a Plaud to test compatibility before publishing this. It works. Almost no one is making this content because almost no one builds for both ecosystems.</p>
+  <p>If you are a Plaud user, install the Omi mobile app, run one of my apps on your Plaud, and tell me what worked and what did not. Reply to the email this came from.</p>
+
+  <p style="margin-top: 32px; font-weight: 600;">Ethan<br><span style="color: var(--muted); font-weight: 400;">omideveloper.com</span></p>
+
+  <div class="footer">
+    <p>Affiliate disclosure: this guide links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.</p>
+    <p>Numbers verified May 5 2026 against omi.me, help.omi.me, and the Omi affiliate portal.</p>
+  </div>
+
+</div>
+</body>
+</html>
