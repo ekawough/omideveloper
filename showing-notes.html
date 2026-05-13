@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showing Notes / for Realtors / by omideveloper</title>
+<meta name="description" content="Realtors dictate while walking a property. Buyer ready showing report lands in the buyer email before the agent reaches the car. $29 per month, 7 day free trial. Built for the Omi necklace, also runs on Plaud Note.">
+<meta property="og:title" content="Showing Notes for Realtors / Omi necklace + Plaud Compatible">
+<meta property="og:description" content="Walk the house. Dictate as you go. Buyer ready PDF lands in their email before you get to the car.">
+<meta name="theme-color" content="#050714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #050714; --bg-2: #0a0d1f; --bg-3: #11152b;
+    --surface: rgba(20, 25, 50, 0.5); --surface-2: rgba(30, 36, 65, 0.4);
+    --border: rgba(120, 140, 200, 0.12); --border-strong: rgba(120, 140, 200, 0.25);
+    --fg: #f5f6fa; --muted: #8b93a8; --muted-2: #6b7290;
+    --accent: #00e5a0; --accent-2: #fbbf24; --accent-3: #00e5a0;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0, 229, 160, 0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251, 191, 36, 0.07), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 50% 100%, rgba(0, 229, 160, 0.05), transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  nav.top { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5, 7, 20, 0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 0; }
+  nav.top .row { display: flex; align-items: center; justify-content: space-between; }
+  nav.top .brand { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--fg); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+  nav.top .brand .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px var(--accent); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  nav.top .links a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color 0.15s; }
+  nav.top .links a:hover { color: var(--fg); }
+  nav.top .cta-mini { display: inline-block; padding: 8px 16px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px; margin-left: 24px; transition: transform 0.15s, box-shadow 0.15s; }
+  nav.top .cta-mini:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0, 229, 160, 0.3); }
+  @media (max-width: 720px) { nav.top .links a:not(.cta-mini) { display: none; } }
+
+  .promo-strip { background: linear-gradient(90deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.15)); border-bottom: 1px solid var(--border); padding: 10px 0; text-align: center; font-family: var(--mono); font-size: 13px; color: var(--fg); }
+  .promo-strip .label { color: var(--accent); font-weight: 600; margin-right: 8px; }
+  .promo-strip a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--border-strong); }
+
+  .hero { padding: 72px 0 40px; }
+  .hero .meta { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-bottom: 24px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .hero .meta .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; font-size: 12px; }
+  .hero .meta .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .hero h1 { font-size: clamp(40px, 6.5vw, 64px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 24px; font-weight: 700; }
+  .hero h1 .gradient { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p.lead { font-size: 19px; color: var(--muted); max-width: 620px; margin: 0 0 36px; line-height: 1.5; }
+  .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; text-decoration: none; font-weight: 600; border-radius: 10px; font-size: 15px; transition: all 0.15s; border: none; cursor: pointer; font-family: var(--sans); }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--bg); box-shadow: 0 8px 32px rgba(0, 229, 160, 0.3); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0, 229, 160, 0.4); }
+  .btn-ghost { background: var(--surface); color: var(--fg); border: 1px solid var(--border-strong); }
+  .btn-ghost:hover { background: var(--surface-2); border-color: var(--accent); }
+  .price-badge { display: inline-flex; align-items: center; gap: 6px; padding: 12px 18px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 10px; font-family: var(--mono); font-size: 14px; }
+  .price-badge .label { color: var(--accent); font-weight: 700; font-size: 18px; }
+  .price-badge .per { color: var(--muted); }
+
+  .demo-block { margin-top: 48px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px; overflow: hidden; position: relative; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; text-align: center; backdrop-filter: blur(8px); }
+  .demo-block::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(0, 229, 160, 0.1), transparent 70%); pointer-events: none; }
+  .demo-block .play-icon { width: 72px; height: 72px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 0 48px rgba(0, 229, 160, 0.4); }
+  .demo-block .play-icon::after { content: ''; width: 0; height: 0; border-left: 22px solid var(--bg); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px; }
+  .demo-block .label-tag { font-family: var(--mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; }
+  .demo-block .title-text { font-size: 20px; font-weight: 600; color: var(--fg); margin-top: 8px; }
+  .demo-block .sub-text { color: var(--muted); margin-top: 4px; font-size: 14px; }
+
+  section { padding: 72px 0; position: relative; z-index: 1; }
+  section .section-meta { font-family: var(--mono); font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+  section h2 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 16px; font-weight: 700; }
+  section p.section-lead { font-size: 17px; color: var(--muted); max-width: 640px; margin: 0 0 40px; }
+
+  .pain-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
+  @media (min-width: 720px) { .pain-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .pain-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; backdrop-filter: blur(8px); }
+  .pain-card .stat { font-family: var(--mono); font-size: 44px; font-weight: 700; color: var(--accent); margin-bottom: 8px; line-height: 1; letter-spacing: -0.02em; }
+  .pain-card .stat .unit { font-size: 22px; color: var(--muted); margin-left: 4px; }
+  .pain-card h3 { font-size: 17px; margin: 0 0 8px; font-weight: 600; }
+  .pain-card p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+  .steps { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 40px; }
+  @media (min-width: 720px) { .steps { grid-template-columns: 1fr 1fr 1fr; gap: 20px; } }
+  .step-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; backdrop-filter: blur(8px); }
+  .step-card .num { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 12px; font-weight: 600; }
+  .step-card h3 { font-size: 19px; margin: 0 0 8px; font-weight: 600; }
+  .step-card p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.5; }
+  .step-card .icon { width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.1)); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 22px; }
+
+  .pricing-block { padding: 72px 0; }
+  .pricing-card { max-width: 540px; margin: 0 auto; background: var(--surface); border: 2px solid var(--accent); border-radius: 24px; padding: 48px 40px; backdrop-filter: blur(8px); text-align: center; position: relative; overflow: hidden; }
+  .pricing-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at top, rgba(0, 229, 160, 0.15), transparent 70%); pointer-events: none; }
+  .pricing-card .tag { display: inline-block; padding: 6px 14px; background: rgba(0, 229, 160, 0.15); color: var(--accent); border: 1px solid rgba(0, 229, 160, 0.3); border-radius: 999px; font-family: var(--mono); font-size: 12px; font-weight: 600; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.1em; position: relative; }
+  .pricing-card .price-row { display: flex; align-items: baseline; justify-content: center; gap: 8px; margin-bottom: 8px; position: relative; }
+  .pricing-card .price { font-family: var(--mono); font-size: 64px; font-weight: 700; color: var(--fg); letter-spacing: -0.02em; }
+  .pricing-card .per { color: var(--muted); font-size: 18px; }
+  .pricing-card .trial { color: var(--accent); font-family: var(--mono); font-size: 14px; margin-bottom: 32px; position: relative; }
+  .pricing-card ul { list-style: none; padding: 0; margin: 0 0 32px; text-align: left; position: relative; }
+  .pricing-card ul li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--fg); display: flex; align-items: flex-start; gap: 10px; }
+  .pricing-card ul li::before { content: '\2713'; color: var(--accent); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+  .pricing-card .btn { width: 100%; justify-content: center; padding: 16px; position: relative; }
+
+  .device-cta { background: linear-gradient(135deg, rgba(0, 229, 160, 0.12), rgba(251, 191, 36, 0.1)); border: 1px solid var(--accent); border-radius: 24px; padding: 48px 40px; margin: 56px 0; text-align: center; position: relative; overflow: hidden; }
+  .device-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(0, 229, 160, 0.12), transparent 70%); pointer-events: none; }
+  .device-cta .label { font-family: var(--mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 12px; position: relative; }
+  .device-cta h3 { font-size: clamp(28px, 4vw, 36px); margin: 0 0 12px; position: relative; }
+  .device-cta p { color: var(--muted); margin: 0 auto 24px; max-width: 540px; position: relative; }
+  .device-cta .pricing-row { display: inline-flex; align-items: baseline; gap: 12px; margin-bottom: 24px; font-family: var(--mono); position: relative; }
+  .device-cta .pricing-row .now { font-size: 36px; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+  .device-cta .pricing-row .strike { color: var(--muted-2); text-decoration: line-through; font-size: 20px; }
+  .device-cta .pricing-row .save { color: var(--orange); font-size: 13px; padding: 4px 10px; background: rgba(251, 191, 36, 0.12); border-radius: 999px; border: 1px solid rgba(251, 191, 36, 0.3); }
+  .device-cta a.btn { position: relative; }
+
+  .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+  .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .faq-item summary { padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; color: var(--accent); font-size: 24px; font-weight: 400; transition: transform 0.2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .answer { padding: 0 24px 20px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+  .plaud-strip { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; backdrop-filter: blur(8px); }
+  .plaud-strip .left { flex: 1; min-width: 280px; }
+  .plaud-strip .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; font-family: var(--mono); background: rgba(251, 191, 36, 0.1); color: var(--accent-2); border: 1px solid rgba(251, 191, 36, 0.25); margin-bottom: 12px; }
+  .plaud-strip h3 { margin: 0 0 8px; font-size: 22px; }
+  .plaud-strip p { margin: 0; color: var(--muted); font-size: 14px; }
+  .plaud-strip a { color: var(--accent-2); text-decoration: none; font-weight: 600; font-size: 14px; }
+
+  .founder-mini { display: flex; align-items: center; gap: 20px; padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; backdrop-filter: blur(8px); margin: 56px 0; }
+  .founder-mini .photo { width: 80px; height: 80px; border-radius: 16px; background: linear-gradient(135deg, var(--surface-2), var(--bg-3)); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-family: var(--mono); color: var(--muted-2); font-size: 11px; flex-shrink: 0; }
+  .founder-mini .text { flex: 1; }
+  .founder-mini h4 { margin: 0 0 4px; font-size: 17px; }
+  .founder-mini p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+  footer { border-top: 1px solid var(--border); padding: 48px 0 32px; margin-top: 64px; color: var(--muted); font-size: 13px; position: relative; z-index: 1; }
+  footer .row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; }
+  footer .col h4 { color: var(--fg); font-size: 13px; margin: 0 0 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; }
+  footer .col a { display: block; color: var(--muted); text-decoration: none; padding: 4px 0; transition: color 0.15s; }
+  footer .col a:hover { color: var(--fg); }
+  footer .disclosure { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-2); line-height: 1.6; }
+
+  section[id] { scroll-margin-top: 70px; }
+</style>
+</head>
+<body>
+
+<div class="promo-strip">
+  <span class="label">LIMITED TIME</span> Omi necklace is $50 off, $129 right now.
+  <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=showing-notes&utm_campaign=promo-strip&utm_content=top-bar">Grab it.</a>
+</div>
+
+<nav class="top">
+  <div class="container">
+    <div class="row">
+      <a class="brand" href="/"><span class="dot"></span>omideveloper</a>
+      <div class="links">
+        <a href="/apps">All apps</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a class="cta-mini" href="#pricing">Start free trial</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container-narrow">
+    <div class="meta">
+      <span class="pill"><span class="dot"></span>Built for Realtors</span>
+      <span class="pill">7 day free trial</span>
+      <span class="pill" style="background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.25); color: var(--accent-2);">Plaud Compatible</span>
+    </div>
+    <h1>Stop writing showing notes <span class="gradient">at midnight</span>.</h1>
+    <p class="lead">Walk the property. Mumble what you see. The buyer ready showing report lands in their email before you reach the car. Built for the Omi necklace, also runs on Plaud Note via the xor connection.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#pricing">Start 7 day free trial</a>
+      <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+      <span class="price-badge">
+        <span class="label">$29</span>
+        <span class="per">/ month</span>
+      </span>
+    </div>
+
+    <div class="demo-block">
+      <div>
+        <div class="play-icon"></div>
+        <div class="label-tag">// 90 second demo</div>
+        <div class="title-text">Walking a Showing</div>
+        <div class="sub-text">Real conversation. Real PDF. No edit cuts.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-meta">// the actual problem</div>
+    <h2>You became a Realtor to be in front of buyers, not behind a laptop.</h2>
+    <p class="section-lead">Three numbers Realtors do not want to admit, and a fix that takes 90 seconds to set up.</p>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="stat">2<span class="unit">hrs</span></div>
+        <h3>Per day on showing notes</h3>
+        <p>The average buyer agent spends two hours a day after showings typing notes, follow ups, and reactions. Almost always at night.</p>
+      </div>
+      <div class="pain-card">
+        <div class="stat">37<span class="unit">%</span></div>
+        <h3>Of buyers feel ignored</h3>
+        <p>Most buyers say their agent forgets details from showings within 24 hours. The detail loss kills conversions on properties that needed a second look.</p>
+      </div>
+      <div class="pain-card">
+        <div class="stat">11<span class="unit">pm</span></div>
+        <h3>Median time you finish</h3>
+        <p>Day starts at 9am open houses, ends at 11pm transcribing what you saw. The hours back per day is the actual product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-meta">// how it works</div>
+    <h2>Three steps. No typing.</h2>
+    <p class="section-lead">Wear the Omi necklace at the showing, talk like you would talk to your buyer or to yourself, and the buyer ready report writes itself.</p>
+
+    <div class="steps">
+      <div class="step-card">
+        <div class="icon">&#127968;</div>
+        <div class="num">// step 01</div>
+        <h3>Walk the property</h3>
+        <p>Wear your Omi necklace at the showing. Mention the granite. Note the closet space. Point out the freeway noise. Talk like you talk.</p>
+      </div>
+      <div class="step-card">
+        <div class="icon">&#127908;</div>
+        <div class="num">// step 02</div>
+        <h3>Drive to the next one</h3>
+        <p>The Showing Notes engine processes the audio in the background. Captures address, comps, buyer reactions, deal breakers, what they loved.</p>
+      </div>
+      <div class="step-card">
+        <div class="icon">&#128231;</div>
+        <div class="num">// step 03</div>
+        <h3>Buyer gets the PDF</h3>
+        <p>Branded showing recap PDF lands in your buyer email before you reach the car. They read it on the drive home. Conversation continues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing-block">
+  <div class="container-narrow">
+    <div class="section-meta" style="text-align: center;">// pricing</div>
+    <h2 style="text-align: center;">Simple. Cancel anytime.</h2>
+    <p class="section-lead" style="margin-left: auto; margin-right: auto; text-align: center;">No setup fee. No per showing fee. No annual contract. Real 7 day free trial, real cancel button.</p>
+
+    <div class="pricing-card">
+      <div class="tag">Most Popular</div>
+      <div class="price-row">
+        <span class="price">$29</span>
+        <span class="per">/ month</span>
+      </div>
+      <div class="trial">7 day free trial / no card required</div>
+      <ul>
+        <li>Unlimited showings per month</li>
+        <li>Branded buyer recap PDFs in your color and logo</li>
+        <li>Auto send to buyer email after each showing</li>
+        <li>Saved buyer profile that updates as you tour properties</li>
+        <li>Comps and price history surfaced automatically</li>
+        <li>Plaud Note compatible via the xor connection</li>
+        <li>Works with the Omi free plan, no Unlimited subscription needed</li>
+        <li>Cancel any time from the dashboard, no email gymnastics</li>
+      </ul>
+      <a class="btn btn-primary" href="https://app.omi.me/apps/showing-notes?utm_source=omideveloper&utm_medium=showing-notes&utm_campaign=pricing&utm_content=trial">Start 7 day free trial</a>
+    </div>
+
+    <p style="text-align: center; color: var(--muted); font-size: 14px; margin-top: 24px;">First Realtor to sign up gets a free 30 minute onboarding with me on Zoom. Just reply to your trial email.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="device-cta">
+      <div class="label">// you need the device first</div>
+      <h3>The Omi necklace.</h3>
+      <p>Showing Notes runs on the Omi necklace and on Plaud Note via the xor connection. If you do not have either, the Omi at $50 off right now is the move.</p>
+      <div class="pricing-row">
+        <span class="strike">$179</span>
+        <span class="now">$129</span>
+        <span class="save">$50 OFF, LIMITED TIME</span>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=showing-notes&utm_campaign=device-cta&utm_content=cross-sell">Get the Omi at $129</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plaud">
+  <div class="container">
+    <div class="plaud-strip">
+      <div class="left">
+        <span class="badge"><span style="width: 6px; height: 6px; border-radius: 50%; background: currentColor;"></span>Plaud Compatible</span>
+        <h3>Already own a Plaud Note? It works.</h3>
+        <p>Showing Notes runs on Plaud through the xor connection introduced in Omi mobile v1.0.75+450. Setup is 90 seconds. Install the free Omi mobile app, connect your Plaud, run Showing Notes on top.</p>
+      </div>
+      <a href="/plaud-guide">Read the Plaud setup guide &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container-narrow">
+    <div class="section-meta">// faq</div>
+    <h2>Frequently asked.</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Do I need to wear the Omi the whole day, or only at showings?</summary>
+        <div class="answer">Only at showings. The Omi battery lasts 16 to 18 hours so you can wear it all day if you want, but Showing Notes only processes audio when you tag a showing in the app or when the property address is detected. No background processing of your private day.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will my buyer know I am recording?</summary>
+        <div class="answer">California is a two party consent state. The recommended workflow is the same as taking notes on a tablet: mention casually that you take voice notes during showings so you can send them a recap. Buyers expect a recap. Most buyers prefer a recap to a text the next day. The Omi has a one tap delete button on the device for any conversation you do not want stored.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if the showing has a noisy AC or kids running around?</summary>
+        <div class="answer">The Omi mic is optimized for conversational distance. It handles normal showing audio well: walking, talking, narrating to yourself or a buyer. Loud kitchens and outdoor crowds drop accuracy somewhat but the post processing fills in context. Worst case the PDF is 90 percent right and you edit one paragraph.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How does it know my buyer email and name?</summary>
+        <div class="answer">First showing with a buyer, you tag them once in the app. After that the Showing Notes engine recognizes the property and auto routes the recap to the right buyer profile. You can also CC yourself or your TC, or push to Follow Up Boss / Compass / kvCORE if you have those connected.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Does it work with Plaud Note?</summary>
+        <div class="answer">Yes, four of the six Omi apps I built run on Plaud through the xor connection. Showing Notes is one of them. Setup is 90 seconds via the Omi mobile app. The Plaud guide on this site walks you through it.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if I cancel during the free trial?</summary>
+        <div class="answer">No card required to start the trial. If you cancel, nothing was charged. If you keep going past day 7, the card you eventually add gets charged $29 per month. Cancel from the dashboard, no email loop.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will this replace my CRM?</summary>
+        <div class="answer">No. Showing Notes pushes recap PDFs and buyer profile updates into whatever CRM you already use. The CRM is your system of record. Showing Notes is the input layer.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="founder-mini">
+      <div class="photo"><span style="font-family: var(--mono); color: var(--accent); font-size: 28px; font-weight: 600;">E.</span></div>
+      <div class="text">
+        <h4>Built by Ethan, in public.</h4>
+        <p>Building Omi apps continuously from a pool of 250 plus vetted ideas across every vertical. Realtor pain was the first vertical I went after because the buyer agent grind is real. If something breaks, reply to your trial email and I fix it that day.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding: 48px 0;">
+      <div class="section-meta" style="text-align: center;">// stop reading, start your trial</div>
+      <h2 style="margin-top: 12px; margin-bottom: 16px;">Get the showings PDF before the buyer asks.</h2>
+      <p style="color: var(--muted); margin: 0 auto 32px; max-width: 480px;">7 day free trial. No card. Cancel from the dashboard. First Realtor gets a 30 min onboarding on Zoom with me.</p>
+      <a class="btn btn-primary" href="https://app.omi.me/apps/showing-notes?utm_source=omideveloper&utm_medium=showing-notes&utm_campaign=final-cta&utm_content=bottom">Start 7 day free trial</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>// Showing Notes</h4>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/plaud-guide">Plaud setup</a>
+      </div>
+      <div class="col">
+        <h4>// other apps</h4>
+        <a href="/apps">All apps</a>
+        <a href="https://app.omi.me/apps/tesla-connect">Tesla Connect</a>
+        <a href="/plaud">Plaud bridge</a>
+      </div>
+      <div class="col">
+        <h4>// social</h4>
+        <a href="https://www.tiktok.com/@omi.developer" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@omi.developer" target="_blank">YouTube</a>
+        <a href="https://x.com/omideveloper" target="_blank">X</a>
+      </div>
+      <div class="col">
+        <h4>// device</h4>
+        <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=showing-notes&utm_campaign=footer&utm_content=device">Get Omi $129</a>
+      </div>
+    </div>
+    <div class="disclosure">
+      omideveloper.com. Showing Notes is built and maintained by Ethan, sole developer of the omideveloper Omi app catalog. Affiliate disclosure: this page links to omi.me with my affiliate code. I earn a commission on devices purchased through that link. Showing Notes app subscription is a separate product I built and own.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
