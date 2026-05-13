@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>omideveloper / 6 apps for the Omi necklace</title>
+<meta name="description" content="6 apps shipping on the Omi marketplace. Tesla Connect is live. Showing Notes, SalesSignal, Field Report, Deposition Digest in submission. Four also work on Plaud Note via xor connection.">
+<meta property="og:title" content="omideveloper / 6 apps for the Omi necklace">
+<meta property="og:description" content="One developer. Six vertical apps. Built in public from Fontana CA.">
+<meta name="theme-color" content="#050714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #050714;
+    --bg-2: #0a0d1f;
+    --bg-3: #11152b;
+    --surface: rgba(20, 25, 50, 0.5);
+    --surface-2: rgba(30, 36, 65, 0.4);
+    --border: rgba(120, 140, 200, 0.12);
+    --border-strong: rgba(120, 140, 200, 0.25);
+    --fg: #f5f6fa;
+    --muted: #8b93a8;
+    --muted-2: #6b7290;
+    --accent: #00e5a0;
+    --accent-2: #fbbf24;
+    --accent-3: #00e5a0;
+    --green: #34d399;
+    --orange: #fbbf24;
+    --red: #f87171;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0, 229, 160, 0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251, 191, 36, 0.07), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 50% 100%, rgba(0, 229, 160, 0.05), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* nav */
+  nav.top {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(16px);
+    background: rgba(5, 7, 20, 0.7);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 14px 0;
+  }
+  nav.top .row { display: flex; align-items: center; justify-content: space-between; }
+  nav.top .brand {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--fg);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  nav.top .brand .dot { width: 8px; height: 8px; background: var(--accent-2); border-radius: 50%; box-shadow: 0 0 12px var(--accent-2); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  nav.top .links a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color 0.15s; }
+  nav.top .links a:hover { color: var(--fg); }
+  nav.top .cta-mini {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-left: 24px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  nav.top .cta-mini:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0, 229, 160, 0.3); }
+  @media (max-width: 720px) {
+    nav.top .links a:not(.cta-mini) { display: none; }
+  }
+
+  /* promo strip */
+  .promo-strip {
+    background: linear-gradient(90deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.15), rgba(0, 229, 160, 0.15));
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--fg);
+  }
+  .promo-strip .label { color: var(--accent-2); font-weight: 600; margin-right: 8px; }
+  .promo-strip a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--border-strong); }
+
+  /* hero */
+  .hero { padding: 80px 0 64px; }
+  .hero .meta {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .hero .meta .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 12px;
+  }
+  .hero .meta .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 0 0 24px;
+    font-weight: 700;
+  }
+  .hero h1 .gradient {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p.lead {
+    font-size: 20px;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 0 40px;
+    line-height: 1.5;
+  }
+  .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.15s;
+    border: none;
+    cursor: pointer;
+    font-family: var(--sans);
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-3));
+    color: var(--bg);
+    box-shadow: 0 8px 32px rgba(0, 229, 160, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0, 229, 160, 0.4); }
+  .btn-ghost {
+    background: var(--surface);
+    color: var(--fg);
+    border: 1px solid var(--border-strong);
+  }
+  .btn-ghost:hover { background: var(--surface-2); border-color: var(--accent); }
+  .price-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    font-family: var(--mono);
+    font-size: 14px;
+  }
+  .price-badge .strike { color: var(--muted-2); text-decoration: line-through; }
+  .price-badge .now { color: var(--green); font-weight: 700; font-size: 18px; }
+  .price-badge .save { color: var(--orange); font-size: 12px; }
+
+  /* terminal hero card */
+  .terminal-card {
+    margin-top: 56px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+  }
+  .terminal-card .term-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .terminal-card .term-header .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .terminal-card .term-header .red { background: #ff5f57; }
+  .terminal-card .term-header .yellow { background: #febc2e; }
+  .terminal-card .term-header .green { background: #28c840; }
+  .terminal-card .term-header .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: 12px; }
+  .terminal-card .term-body { padding: 28px 24px; font-family: var(--mono); font-size: 14px; line-height: 1.8; }
+  .terminal-card .prompt { color: var(--accent-2); }
+  .terminal-card .cmd { color: var(--fg); }
+  .terminal-card .out { color: var(--muted); }
+  .terminal-card .out .key { color: var(--accent); }
+  .terminal-card .cursor { display: inline-block; width: 8px; height: 16px; background: var(--accent-2); margin-left: 4px; vertical-align: middle; animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* sections */
+  section { padding: 80px 0; position: relative; z-index: 1; }
+  section .section-meta {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  section h2 {
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    font-weight: 700;
+  }
+  section p.section-lead {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 0 48px;
+  }
+
+  /* app grid */
+  .app-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) { .app-grid { grid-template-columns: 1fr 1fr; } }
+  .app-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.2s;
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .app-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .app-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+  .app-card:hover::before { opacity: 0.6; }
+  .app-card .vertical {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .app-card h3 { font-size: 22px; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.01em; }
+  .app-card .price { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  .app-card p.desc { font-size: 14px; color: var(--fg); margin: 0 0 20px; flex: 1; }
+  .app-card .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: var(--mono);
+  }
+  .badge.live { background: rgba(52, 211, 153, 0.15); color: var(--green); border: 1px solid rgba(52, 211, 153, 0.25); }
+  .badge.submitted { background: rgba(251, 191, 36, 0.12); color: var(--orange); border: 1px solid rgba(251, 191, 36, 0.25); }
+  .badge.in-dev { background: rgba(0, 229, 160, 0.12); color: var(--accent); border: 1px solid rgba(0, 229, 160, 0.25); }
+  .badge.shelved { background: rgba(248, 113, 113, 0.1); color: var(--red); border: 1px solid rgba(248, 113, 113, 0.2); }
+  .badge.plaud { background: rgba(251, 191, 36, 0.1); color: var(--accent-2); border: 1px solid rgba(251, 191, 36, 0.2); }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  .app-card a.card-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: var(--surface-2);
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid var(--border-strong);
+    transition: all 0.15s;
+  }
+  .app-card a.card-cta:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .app-card a.card-cta.live { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .app-card a.card-cta.live:hover { background: var(--accent-3); border-color: var(--accent-3); }
+  .app-card a.card-cta.disabled { opacity: 0.5; pointer-events: none; }
+
+  /* device CTA */
+  .device-cta {
+    background: linear-gradient(135deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.1), rgba(0, 229, 160, 0.1));
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+    padding: 56px 40px;
+    margin: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .device-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 229, 160, 0.15), transparent 70%);
+    pointer-events: none;
+  }
+  .device-cta .label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+  }
+  .device-cta h2 { font-size: clamp(32px, 5vw, 48px); margin: 0 0 16px; }
+  .device-cta p { color: var(--muted); margin: 0 auto 32px; max-width: 560px; font-size: 17px; }
+  .device-cta .pricing-row {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 32px;
+    font-family: var(--mono);
+  }
+  .device-cta .pricing-row .now { font-size: 48px; font-weight: 700; color: var(--green); letter-spacing: -0.02em; }
+  .device-cta .pricing-row .strike { color: var(--muted-2); text-decoration: line-through; font-size: 24px; }
+  .device-cta .pricing-row .save { color: var(--orange); font-size: 14px; padding: 6px 12px; background: rgba(251, 191, 36, 0.12); border-radius: 999px; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+  /* plaud bridge */
+  .plaud-bridge {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 48px 40px;
+    margin: 64px 0;
+    backdrop-filter: blur(8px);
+  }
+  .plaud-bridge .meta-row { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .plaud-bridge .meta-row .badge { font-size: 12px; padding: 6px 12px; }
+  .plaud-bridge h2 { font-size: 32px; margin: 0 0 12px; }
+  .plaud-bridge p { color: var(--muted); margin: 0 0 24px; font-size: 16px; }
+  .plaud-bridge .compatible-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .plaud-bridge .compatible-list .chip {
+    padding: 8px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: var(--mono);
+    color: var(--fg);
+  }
+  .plaud-bridge a.read-more { color: var(--accent-2); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .plaud-bridge a.read-more:hover { text-decoration: underline; }
+
+  /* founder */
+  .founder {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  @media (min-width: 760px) { .founder { grid-template-columns: 240px 1fr; gap: 48px; } }
+  .founder .photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--surface-2), var(--bg-3));
+    border: 1px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    color: var(--muted-2);
+    font-size: 13px;
+  }
+  .founder h2 { font-size: 36px; margin: 0 0 12px; }
+  .founder p { color: var(--muted); font-size: 16px; margin: 0 0 16px; }
+  .founder .pin { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 13px; color: var(--accent-2); margin-bottom: 16px; }
+  .founder ul { list-style: none; padding: 0; margin: 16px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .founder ul li { font-family: var(--mono); font-size: 13px; color: var(--muted); padding: 8px 0; border-top: 1px solid var(--border); }
+  .founder ul li strong { color: var(--fg); font-weight: 600; }
+  .founder .socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+  .founder .socials a { color: var(--muted); text-decoration: none; font-size: 13px; padding: 8px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.15s; font-family: var(--mono); }
+  .founder .socials a:hover { color: var(--fg); border-color: var(--accent); }
+
+  /* roadmap */
+  .roadmap-list { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
+  @media (min-width: 720px) { .roadmap-list { grid-template-columns: 1fr 1fr; } }
+  .roadmap-item {
+    padding: 20px 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .roadmap-item .num { font-family: var(--mono); font-size: 13px; color: var(--accent-2); font-weight: 600; flex-shrink: 0; }
+  .roadmap-item h4 { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+  .roadmap-item p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 0 32px;
+    margin-top: 80px;
+    color: var(--muted);
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+  }
+  footer .row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; }
+  footer .col h4 { color: var(--fg); font-size: 13px; margin: 0 0 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; }
+  footer .col a { display: block; color: var(--muted); text-decoration: none; padding: 4px 0; transition: color 0.15s; }
+  footer .col a:hover { color: var(--fg); }
+  footer .disclosure { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-2); line-height: 1.6; }
+
+  /* scroll anchor offset for sticky nav */
+  section[id] { scroll-margin-top: 70px; }
+</style>
+</head>
+<body>
+
+<div class="promo-strip">
+  <span class="label">LIMITED TIME</span> Omi necklace is $50 off, $129 right now.
+  <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=promo-strip&utm_content=top-bar">Grab it.</a>
+</div>
+
+<nav class="top">
+  <div class="container">
+    <div class="row">
+      <a class="brand" href="/"><span class="dot"></span>omideveloper</a>
+      <div class="links">
+        <a href="#apps">Apps</a>
+        <a href="#plaud">Plaud</a>
+        <a href="#founder">Builder</a>
+        <a class="cta-mini" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=nav&utm_content=cta">Get Omi $129</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container-narrow">
+    <div class="meta">
+      <span class="pill"><span class="dot"></span>Tesla Connect live in App Store</span>
+      <span class="pill">Always shipping</span>
+      <span class="pill">Plaud Compatible</span>
+    </div>
+    <h1>An expanding catalog of apps for the <span class="gradient">Omi necklace</span>. Always shipping.</h1>
+    <p class="lead">Tesla Connect is live. Showing Notes, SalesSignal, Field Report, Deposition Digest in submission. New apps ship continuously from a pool of 250 plus vetted ideas across real estate, sales, field service, legal, healthcare, coaching, and more. Most run on Omi. Many also run on Plaud Note via the xor connection.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=hero&utm_content=primary">Get the Omi necklace</a>
+      <a class="btn btn-ghost" href="#apps">See the apps</a>
+      <span class="price-badge">
+        <span class="strike">$179</span>
+        <span class="now">$129</span>
+        <span class="save">$50 OFF</span>
+      </span>
+    </div>
+
+    <div class="terminal-card">
+      <div class="term-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="label">~/omideveloper / status</span>
+      </div>
+      <div class="term-body">
+        <div><span class="prompt">$</span> <span class="cmd">omi list --apps --owner ethan</span></div>
+        <div class="out">  <span class="key">tesla-connect</span>     LIVE      App Store      $0 (free)</div>
+        <div class="out">  <span class="key">showing-notes</span>     SUBMITTED Real Estate    $29/mo</div>
+        <div class="out">  <span class="key">salessignal</span>       SUBMITTED Sales         $49/seat</div>
+        <div class="out">  <span class="key">field-report</span>      SUBMITTED Field Service $29/seat</div>
+        <div class="out">  <span class="key">deposition-digest</span> SUBMITTED Legal         $39/mo</div>
+        <div><span class="prompt">$</span> <span class="cmd">omi count --idea-pool</span></div>
+        <div class="out">  250+ vetted ideas across 14 verticals, more added weekly<span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="apps">
+  <div class="container">
+    <div class="section-meta">// shipping right now</div>
+    <h2>What is live and what is next.</h2>
+    <p class="section-lead">Tesla Connect is live. Four are in submission. New apps ship every two to four weeks from a pool of 250 plus vetted ideas. If your vertical is not on this page yet, it is probably in the pipeline.</p>
+
+    <div class="app-grid">
+
+      <div class="app-card">
+        <div class="vertical">// Tesla and EV</div>
+        <h3>Tesla Connect</h3>
+        <div class="price">Free, optional Pro tier</div>
+        <p class="desc">Voice unlock, climate, frunk, and other Tesla commands routed through the Omi necklace. Tap, talk, the car responds in under a second. The fastest 1.5 second hook in the entire Omi ecosystem.</p>
+        <div class="badges">
+          <span class="badge live"><span class="dot"></span>Live in App Store</span>
+          <span class="badge in-dev">Real time only</span>
+        </div>
+        <a class="card-cta live" href="https://app.omi.me/apps/tesla-connect?utm_source=omideveloper&utm_medium=apps-page&utm_campaign=tesla-connect">Install &rarr;</a>
+      </div>
+
+      <div class="app-card">
+        <div class="vertical">// Real Estate</div>
+        <h3>Showing Notes</h3>
+        <div class="price">$29 per month, 7 day free trial</div>
+        <p class="desc">Realtors dictate while walking a property. Buyer ready showing report lands in the buyer's email before the agent gets back to the car. The flagship. Built for the 1.5 million licensed Realtors in the US.</p>
+        <div class="badges">
+          <span class="badge submitted"><span class="dot"></span>In submission</span>
+          <span class="badge plaud"><span class="dot"></span>Plaud Compatible</span>
+        </div>
+        <a class="card-cta" href="/showing-notes">Learn more &rarr;</a>
+      </div>
+
+      <div class="app-card">
+        <div class="vertical">// Sales</div>
+        <h3>SalesSignal</h3>
+        <div class="price">$49 per seat, $29 if billed annually</div>
+        <p class="desc">Walk out of a sales meeting, your CRM is already updated. Bring your own CRM. Works with HubSpot, Salesforce, GoHighLevel, Pipedrive, Close, Follow Up Boss, Compass, kvCORE, and anything with a public API.</p>
+        <div class="badges">
+          <span class="badge submitted"><span class="dot"></span>In submission</span>
+          <span class="badge plaud"><span class="dot"></span>Plaud Compatible</span>
+        </div>
+        <a class="card-cta disabled" href="#">Coming soon</a>
+      </div>
+
+      <div class="app-card">
+        <div class="vertical">// Field Service</div>
+        <h3>Field Report</h3>
+        <div class="price">$29 per seat, $99 company plan for 5 seats</div>
+        <p class="desc">HVAC, plumbing, roofing, solar techs dictate the job, app produces a structured site report and pushes it into the dispatch system. Reposition variant: Roof Walk for solar D2D coming next month.</p>
+        <div class="badges">
+          <span class="badge submitted"><span class="dot"></span>In submission</span>
+          <span class="badge plaud"><span class="dot"></span>Plaud Compatible</span>
+        </div>
+        <a class="card-cta disabled" href="#">Coming soon</a>
+      </div>
+
+      <div class="app-card">
+        <div class="vertical">// Legal</div>
+        <h3>Deposition Digest</h3>
+        <div class="price">$39 per month</div>
+        <p class="desc">Court reporters and paralegals. Long transcripts, summarized. Commitments and admissions surfaced. Built for confidentiality first. No competing app at this price point in the Omi marketplace.</p>
+        <div class="badges">
+          <span class="badge submitted"><span class="dot"></span>Awaiting App Store approval</span>
+          <span class="badge plaud"><span class="dot"></span>Plaud Compatible</span>
+        </div>
+        <a class="card-cta disabled" href="#">Pending review</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="device-cta">
+      <div class="label">// the device they all run on</div>
+      <h2>The Omi necklace.</h2>
+      <p>1,200 cloud transcription minutes per month on the free plan. Unlimited on phone transcription. Apps from the entire marketplace, including the six on this page.</p>
+      <div class="pricing-row">
+        <span class="strike">$179</span>
+        <span class="now">$129</span>
+        <span class="save">$50 OFF, LIMITED TIME</span>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=device-cta&utm_content=primary">Get the Omi at $129</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plaud">
+  <div class="container">
+    <div class="plaud-bridge">
+      <div class="meta-row">
+        <span class="badge plaud"><span class="dot"></span>Plaud Compatible</span>
+        <span style="font-family: var(--mono); font-size: 13px; color: var(--muted-2);">// xor connection / PR #3287</span>
+      </div>
+      <h2>Plaud users: 4 of these run on your Plaud Note.</h2>
+      <p>Showing Notes, SalesSignal, Field Report, and Daily Wrapped Pro work on Plaud through the xor connection introduced in Omi mobile v1.0.75+450. Setup is 90 seconds. You install the free Omi mobile app, connect your Plaud, and run any of these apps on top.</p>
+      <div class="compatible-list">
+        <span class="chip">Showing Notes</span>
+        <span class="chip">SalesSignal</span>
+        <span class="chip">Field Report</span>
+        <span class="chip">Daily Wrapped Pro</span>
+      </div>
+      <a class="read-more" href="/plaud">Read the Plaud + Omi compatibility guide &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="founder">
+  <div class="container-narrow">
+    <div class="section-meta">// the builder</div>
+    <h2 style="margin-bottom: 32px;">Built by Ethan, in public.</h2>
+    <div class="founder">
+      <div class="photo"><span style="font-family: var(--mono); color: var(--accent); font-size: 32px; font-weight: 600;">E.</span></div>
+      <div>
+        <span class="pin">&#9678; Always shipping</span>
+        <p>Continuously shipping apps for the Omi wearable from a pool of 250 plus vetted ideas. Former chef, former truck driver, current operator. Building these in front of an audience on TikTok, Instagram, X, YouTube, and LinkedIn. The flywheel is simple: more apps shipped, more device sales, more apps installed, more revenue, more apps shipped.</p>
+        <ul>
+          <li><strong>Live</strong> in the App Store</li>
+          <li><strong>Shipping</strong> every 2 to 4 weeks</li>
+          <li><strong>250+</strong> ideas in the pool</li>
+          <li><strong>30%</strong> affiliate commission</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@omi.developer" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/omi.developer" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@omi.developer" target="_blank">YouTube</a>
+          <a href="https://x.com/omideveloper" target="_blank">X</a>
+          <a href="https://www.linkedin.com/in/ethankawough" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-meta">// next batch</div>
+    <h2>Currently in build.</h2>
+    <p class="section-lead">A snapshot of what is in active build. The full pool is 250 plus vetted ideas across every vertical. New ones get pulled into the build queue every couple weeks based on what TikTok comments and email replies are asking for.</p>
+    <div class="roadmap-list">
+      <div class="roadmap-item">
+        <span class="num">07</span>
+        <div>
+          <h4>Open House Magnet</h4>
+          <p>Premium real estate tier on top of Showing Notes. Open house mode plus lead capture plus Sunday recap. $39/mo.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <span class="num">08</span>
+        <div>
+          <h4>Coffee Close</h4>
+          <p>Plaud bridge wedge for solo sellers. Lightweight version of SalesSignal. No admin setup. $19/mo.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <span class="num">09</span>
+        <div>
+          <h4>Roof Walk</h4>
+          <p>Solar D2D variant of Field Report. Sold to company owner not tech. $29/seat or $99 fleet plan.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <span class="num">10</span>
+        <div>
+          <h4>Daily Wrapped Pro</h4>
+          <p>Free Spotify Wrapped style daily recap. Optional Pro at $4.99/mo. Pure viral funnel.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <span class="num">11</span>
+        <div>
+          <h4>SignalDesk for Coaches</h4>
+          <p>Auto recap email to client after every coaching call. $29/mo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="device-cta" style="margin: 40px 0;">
+      <div class="label">// stop reading, start using</div>
+      <h2>Get the device. Try the apps.</h2>
+      <p>Built by a developer who actually ships on the platform. The free plan covers most people, even before any of my apps. The 7 day Showing Notes trial is real, no card required.</p>
+      <div class="pricing-row">
+        <span class="strike">$179</span>
+        <span class="now">$129</span>
+        <span class="save">$50 OFF</span>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=final-cta&utm_content=bottom">Get the Omi necklace</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>// site</h4>
+        <a href="/">Home</a>
+        <a href="#apps">Apps</a>
+        <a href="#plaud">Plaud bridge</a>
+        <a href="#founder">Builder</a>
+      </div>
+      <div class="col">
+        <h4>// apps</h4>
+        <a href="/showing-notes">Showing Notes</a>
+        <a href="https://app.omi.me/apps/tesla-connect">Tesla Connect</a>
+        <a href="/guide">Free guide</a>
+        <a href="/plaud-guide">Plaud guide</a>
+      </div>
+      <div class="col">
+        <h4>// social</h4>
+        <a href="https://www.tiktok.com/@omi.developer" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@omi.developer" target="_blank">YouTube</a>
+        <a href="https://x.com/omideveloper" target="_blank">X</a>
+      </div>
+      <div class="col">
+        <h4>// device</h4>
+        <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=apps-page&utm_campaign=footer&utm_content=device">Get Omi $129</a>
+      </div>
+    </div>
+    <div class="disclosure">
+      omideveloper.com. Continuously shipping apps for the Omi necklace from a 250 plus idea pool, writing about it in public on TikTok, Instagram, X, YouTube, and LinkedIn. Affiliate disclosure: this page links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
