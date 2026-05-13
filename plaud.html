@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plaud + Omi / use your Plaud Note with the Omi app catalog / by omideveloper</title>
+<meta name="description" content="Already own a Plaud Note? Connect it to the Omi mobile app via the xor connection and run the entire Omi app catalog on top, including Showing Notes, SalesSignal, Field Report, and more. Setup is 90 seconds.">
+<meta property="og:title" content="Plaud + Omi: run the Omi app catalog on your Plaud Note">
+<meta property="og:description" content="The xor connection lets your existing Plaud feed into Omi apps. Free Omi mobile app, 90 second setup, your apps on Plaud's hardware.">
+<meta name="theme-color" content="#050714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #050714; --bg-2: #0a0d1f; --bg-3: #11152b;
+    --surface: rgba(20, 25, 50, 0.5); --surface-2: rgba(30, 36, 65, 0.4);
+    --border: rgba(120, 140, 200, 0.12); --border-strong: rgba(120, 140, 200, 0.25);
+    --fg: #f5f6fa; --muted: #8b93a8; --muted-2: #6b7290;
+    --accent: #00e5a0; --accent-2: #fbbf24; --accent-3: #00e5a0;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0, 229, 160, 0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251, 191, 36, 0.07), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 50% 100%, rgba(0, 229, 160, 0.05), transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  nav.top { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5, 7, 20, 0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 0; }
+  nav.top .row { display: flex; align-items: center; justify-content: space-between; }
+  nav.top .brand { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--fg); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+  nav.top .brand .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px var(--accent); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  nav.top .links a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color 0.15s; }
+  nav.top .links a:hover { color: var(--fg); }
+  nav.top .cta-mini { display: inline-block; padding: 8px 16px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px; margin-left: 24px; transition: transform 0.15s, box-shadow 0.15s; }
+  nav.top .cta-mini:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0, 229, 160, 0.3); }
+  @media (max-width: 720px) { nav.top .links a:not(.cta-mini) { display: none; } }
+
+  .promo-strip { background: linear-gradient(90deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.15)); border-bottom: 1px solid var(--border); padding: 10px 0; text-align: center; font-family: var(--mono); font-size: 13px; color: var(--fg); }
+  .promo-strip .label { color: var(--accent); font-weight: 600; margin-right: 8px; }
+  .promo-strip a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--border-strong); }
+
+  .hero { padding: 80px 0 48px; }
+  .hero .meta { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-bottom: 24px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .hero .meta .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; font-size: 12px; }
+  .hero .meta .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .hero .meta .pill.gold { background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.25); color: var(--accent-2); }
+  .hero h1 { font-size: clamp(40px, 6.5vw, 64px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 24px; font-weight: 700; }
+  .hero h1 .gradient { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p.lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 0 36px; line-height: 1.5; }
+  .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; text-decoration: none; font-weight: 600; border-radius: 10px; font-size: 15px; transition: all 0.15s; border: none; cursor: pointer; font-family: var(--sans); }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--bg); box-shadow: 0 8px 32px rgba(0, 229, 160, 0.3); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0, 229, 160, 0.4); }
+  .btn-ghost { background: var(--surface); color: var(--fg); border: 1px solid var(--border-strong); }
+  .btn-ghost:hover { background: var(--surface-2); border-color: var(--accent); }
+  .price-badge { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 10px; font-family: var(--mono); font-size: 14px; }
+  .price-badge .label { color: var(--muted); font-size: 12px; }
+  .price-badge .val { color: var(--accent); font-weight: 700; font-size: 18px; }
+
+  .terminal-card { margin-top: 56px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px; overflow: hidden; backdrop-filter: blur(8px); }
+  .terminal-card .term-header { background: rgba(0, 0, 0, 0.3); padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); }
+  .terminal-card .term-header .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .terminal-card .term-header .red { background: #ff5f57; }
+  .terminal-card .term-header .yellow { background: #febc2e; }
+  .terminal-card .term-header .green { background: #28c840; }
+  .terminal-card .term-header .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: 12px; }
+  .terminal-card .term-body { padding: 28px 24px; font-family: var(--mono); font-size: 14px; line-height: 1.8; }
+  .terminal-card .prompt { color: var(--accent-2); }
+  .terminal-card .cmd { color: var(--fg); }
+  .terminal-card .out { color: var(--muted); }
+  .terminal-card .out .key { color: var(--accent); }
+  .terminal-card .cursor { display: inline-block; width: 8px; height: 16px; background: var(--accent-2); margin-left: 4px; vertical-align: middle; animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  section { padding: 80px 0; position: relative; z-index: 1; }
+  section .section-meta { font-family: var(--mono); font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+  section .section-meta.gold { color: var(--accent-2); }
+  section h2 { font-size: clamp(32px, 5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 16px; font-weight: 700; }
+  section p.section-lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 48px; }
+
+  /* setup steps */
+  .setup-steps { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 48px; }
+  @media (min-width: 720px) { .setup-steps { grid-template-columns: 1fr 1fr 1fr; gap: 20px; } }
+  .setup-step { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; backdrop-filter: blur(8px); }
+  .setup-step .num { font-family: var(--mono); font-size: 13px; color: var(--accent-2); margin-bottom: 12px; font-weight: 600; }
+  .setup-step h3 { font-size: 18px; margin: 0 0 8px; font-weight: 600; }
+  .setup-step p { font-size: 14px; color: var(--muted); margin: 0 0 16px; line-height: 1.6; }
+  .setup-step .code { font-family: var(--mono); font-size: 12px; color: var(--accent); background: rgba(0, 229, 160, 0.08); padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(0, 229, 160, 0.2); display: inline-block; }
+
+  /* compat grid */
+  .compat-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 40px; }
+  @media (min-width: 720px) { .compat-grid { grid-template-columns: 1fr 1fr; } }
+  .compat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .compat-card .left h4 { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+  .compat-card .left p { margin: 0; color: var(--muted); font-size: 13px; }
+  .compat-card .badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; font-family: var(--mono); flex-shrink: 0; }
+  .compat-card.works .badge { background: rgba(52, 211, 153, 0.15); color: var(--green); border: 1px solid rgba(52, 211, 153, 0.25); }
+  .compat-card.no .badge { background: rgba(248, 113, 113, 0.1); color: var(--red); border: 1px solid rgba(248, 113, 113, 0.2); }
+  .compat-card .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  /* device CTA */
+  .device-cta { background: linear-gradient(135deg, rgba(0, 229, 160, 0.12), rgba(251, 191, 36, 0.1)); border: 1px solid var(--accent); border-radius: 24px; padding: 48px 40px; margin: 64px 0; text-align: center; position: relative; overflow: hidden; }
+  .device-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(0, 229, 160, 0.12), transparent 70%); pointer-events: none; }
+  .device-cta .label { font-family: var(--mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 12px; }
+  .device-cta h3 { font-size: clamp(28px, 4vw, 36px); margin: 0 0 12px; }
+  .device-cta p { color: var(--muted); margin: 0 auto 24px; max-width: 540px; }
+  .device-cta .pricing-row { display: inline-flex; align-items: baseline; gap: 12px; margin-bottom: 24px; font-family: var(--mono); }
+  .device-cta .pricing-row .now { font-size: 36px; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+  .device-cta .pricing-row .strike { color: var(--muted-2); text-decoration: line-through; font-size: 20px; }
+  .device-cta .pricing-row .save { color: var(--accent-2); font-size: 13px; padding: 4px 10px; background: rgba(251, 191, 36, 0.12); border-radius: 999px; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+  /* faq */
+  .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
+  .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .faq-item summary { padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; color: var(--accent); font-size: 24px; font-weight: 400; transition: transform 0.2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .answer { padding: 0 24px 20px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+  /* founder */
+  .founder-mini { display: flex; align-items: center; gap: 20px; padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; backdrop-filter: blur(8px); margin: 64px 0; }
+  .founder-mini .photo { width: 80px; height: 80px; border-radius: 16px; background: linear-gradient(135deg, var(--surface-2), var(--bg-3)); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .founder-mini .text h4 { margin: 0 0 4px; font-size: 17px; }
+  .founder-mini .text p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+  /* footer */
+  footer { border-top: 1px solid var(--border); padding: 48px 0 32px; margin-top: 80px; color: var(--muted); font-size: 13px; position: relative; z-index: 1; }
+  footer .row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; }
+  footer .col h4 { color: var(--fg); font-size: 13px; margin: 0 0 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; }
+  footer .col a { display: block; color: var(--muted); text-decoration: none; padding: 4px 0; transition: color 0.15s; }
+  footer .col a:hover { color: var(--fg); }
+  footer .disclosure { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-2); line-height: 1.6; }
+
+  section[id] { scroll-margin-top: 70px; }
+</style>
+</head>
+<body>
+
+<div class="promo-strip">
+  <span class="label">FOR PLAUD USERS</span> Run the Omi app catalog on your Plaud Note via xor connection. Setup is 90 seconds.
+</div>
+
+<nav class="top">
+  <div class="container">
+    <div class="row">
+      <a class="brand" href="/"><span class="dot"></span>omideveloper</a>
+      <div class="links">
+        <a href="/apps">All apps</a>
+        <a href="#setup">Setup</a>
+        <a href="#compat">Compatibility</a>
+        <a class="cta-mini" href="#setup">Setup in 90 sec</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container-narrow">
+    <div class="meta">
+      <span class="pill gold">For Plaud Note owners</span>
+      <span class="pill"><span class="dot"></span>xor connection / PR #3287</span>
+      <span class="pill">90 second setup</span>
+    </div>
+    <h1>Already own a Plaud? <span class="gradient">Run the Omi app catalog on it.</span></h1>
+    <p class="lead">The xor connection introduced in Omi mobile v1.0.75+450 lets your existing Plaud Note feed audio into Omi apps. Free Omi mobile app, 90 second setup, your apps on Plaud's hardware. Most of the omideveloper catalog runs on it including Showing Notes for Realtors, SalesSignal for sales reps, Field Report for field service, and Daily Wrapped Pro.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#setup">Walk me through setup</a>
+      <a class="btn btn-ghost" href="#compat">Which apps work</a>
+      <span class="price-badge">
+        <span class="label">Omi mobile app</span>
+        <span class="val">FREE</span>
+      </span>
+    </div>
+
+    <div class="terminal-card">
+      <div class="term-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="label">~/omideveloper / plaud-bridge</span>
+      </div>
+      <div class="term-body">
+        <div><span class="prompt">$</span> <span class="cmd">omi connect --device plaud-note</span></div>
+        <div class="out">  Detected Plaud Note via xor connection (PR #3287)</div>
+        <div class="out">  Audio feed routed to Omi processing layer</div>
+        <div><span class="prompt">$</span> <span class="cmd">omi apps --plaud-compatible</span></div>
+        <div class="out">  <span class="key">showing-notes</span>     Realtors      $29/mo, 7 day trial</div>
+        <div class="out">  <span class="key">salessignal</span>       Sales reps    $49/seat</div>
+        <div class="out">  <span class="key">field-report</span>      Field service $29/seat</div>
+        <div class="out">  <span class="key">daily-wrapped-pro</span> Anyone        free</div>
+        <div class="out">  <span class="key">deposition-digest</span> Legal         $39/mo</div>
+        <div class="out">  + more shipping every 2 to 4 weeks</div>
+        <div class="out">  Tesla Connect requires real time, not Plaud compatible<span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="setup">
+  <div class="container">
+    <div class="section-meta">// 90 second setup</div>
+    <h2>Three taps. No reset. No reflash.</h2>
+    <p class="section-lead">Nothing on your Plaud changes. The Omi mobile app sits as a parallel listener, processes the audio your Plaud captures, and runs whatever apps you install. Your Plaud Pro subscription keeps working as is. This is additive.</p>
+
+    <div class="setup-steps">
+      <div class="setup-step">
+        <div class="num">// step 01</div>
+        <h3>Install Omi mobile app</h3>
+        <p>Free. iOS and Android. The free plan covers 1,200 cloud transcription minutes a month plus unlimited on phone transcription. Most Plaud users never hit the cap.</p>
+        <span class="code">omi.me/app</span>
+      </div>
+      <div class="setup-step">
+        <div class="num">// step 02</div>
+        <h3>Pair Plaud through xor</h3>
+        <p>Inside the Omi app, go to Settings, Devices, Add Device. Pick Plaud Note. The xor connection introduced in v1.0.75+450 handles the handoff. About 30 seconds.</p>
+        <span class="code">Settings &rarr; Devices &rarr; Add</span>
+      </div>
+      <div class="setup-step">
+        <div class="num">// step 03</div>
+        <h3>Install any Omi app</h3>
+        <p>Open the Omi app store inside the mobile app. Pick Showing Notes, SalesSignal, Field Report, or any other Plaud Compatible app. Each one starts processing your Plaud recordings immediately.</p>
+        <span class="code">Apps &rarr; Install</span>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--muted); margin-top: 40px; font-size: 14px;">If something is off, reply to a confirmation email, I will get on Zoom and walk you through it.</p>
+  </div>
+</section>
+
+<section id="compat">
+  <div class="container">
+    <div class="section-meta">// compatibility</div>
+    <h2>What runs on Plaud, what does not.</h2>
+    <p class="section-lead">Most of the catalog runs through the Memory Trigger pattern, which Plaud's deferred sync architecture supports. Real time apps, like Tesla Connect, do not work because Plaud transfers audio after the fact, not as it happens.</p>
+
+    <div class="compat-grid">
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Showing Notes</h4>
+          <p>Realtors, walk a property and get the buyer recap. $29/mo.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>SalesSignal</h4>
+          <p>Sales reps, auto update your CRM after meetings. Bring your own. $49/seat.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Field Report</h4>
+          <p>HVAC, plumbing, roofing, solar techs dictate site reports. $29/seat.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Daily Wrapped Pro</h4>
+          <p>Spotify Wrapped style daily recap. Free.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Deposition Digest</h4>
+          <p>Court reporters and paralegals, summarized transcripts. $39/mo.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Coffee Close</h4>
+          <p>Solo seller wedge of SalesSignal, no admin setup. $19/mo.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Open House Magnet</h4>
+          <p>Open house mode, lead capture, Sunday recap. $39/mo.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>Roof Walk</h4>
+          <p>Solar D2D variant of Field Report. $29/seat or fleet plan.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card works">
+        <div class="left">
+          <h4>SignalDesk for Coaches</h4>
+          <p>Auto recap email after every coaching call. $29/mo.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Works on Plaud</span>
+      </div>
+
+      <div class="compat-card no">
+        <div class="left">
+          <h4>Tesla Connect</h4>
+          <p>Voice unlock and Tesla commands. Real time only. Plaud is deferred sync.</p>
+        </div>
+        <span class="badge"><span class="dot"></span>Omi necklace only</span>
+      </div>
+
+    </div>
+
+    <p style="text-align: center; color: var(--muted); margin-top: 32px; font-size: 14px;">More apps ship every 2 to 4 weeks from a pool of 250 plus vetted ideas. Most use the Memory Trigger pattern, so they are Plaud Compatible by default.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="device-cta">
+      <div class="label">// considering an Omi too?</div>
+      <h3>Get the Omi necklace.</h3>
+      <p>Plaud is great for deferred sync workflows. Omi at $50 off right now adds real time capability so apps like Tesla Connect work too. Your apps follow you across both devices.</p>
+      <div class="pricing-row">
+        <span class="strike">$179</span>
+        <span class="now">$129</span>
+        <span class="save">$50 OFF, LIMITED TIME</span>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud&utm_campaign=device-cta&utm_content=cross-sell">Get the Omi at $129</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container-narrow">
+    <div class="section-meta">// faq</div>
+    <h2>Plaud user questions, answered.</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Does this break my Plaud Pro subscription?</summary>
+        <div class="answer">No. Plaud Pro keeps working exactly as is. Your Plaud transcripts still appear in Plaud's app. The Omi connection is parallel, not a replacement. You can run both at the same time. Most users do.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to buy an Omi too?</summary>
+        <div class="answer">No. The Omi mobile app is free and sufficient to run any Plaud Compatible app on this page. The Omi necklace adds real time capability (unlocks apps like Tesla Connect), but it is optional. The free Omi mobile app plus your existing Plaud is enough.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How does my Plaud audio reach the Omi app?</summary>
+        <div class="answer">Plaud transfers recordings to its own cloud after capture. The xor connection (PR #3287 in BasedHardware/omi GitHub) tells the Omi mobile app to read those Plaud recordings as input audio, then run them through whatever Omi apps you have installed. No reset, no reflash, no firmware change on your Plaud.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is the actual cost to run apps on Plaud?</summary>
+        <div class="answer">Free for the Omi mobile app and connection. Each app on top has its own pricing. Daily Wrapped Pro is free. Coffee Close is $19/mo. Showing Notes is $29/mo with 7 day free trial. SalesSignal is $49/seat or $29 annual. No app charges anything extra for being routed through Plaud.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will all future Omi apps work on Plaud?</summary>
+        <div class="answer">Most will. New apps default to the Memory Trigger pattern, which is Plaud Compatible. The exceptions are real time apps that need live audio streaming (like Tesla Connect). Each app on this site is labeled with a Plaud Compatible badge or a "Omi necklace only" badge so you know up front.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if I want to switch fully to Omi later?</summary>
+        <div class="answer">Same apps, same accounts, same data. Buy the Omi necklace ($129 right now), pair it in the same Omi mobile app, and your installed apps switch to using the necklace's audio feed instead of Plaud's. Or run both at once. Whichever device is talking gets processed.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Where is the xor connection feature documented?</summary>
+        <div class="answer">PR #3287 in github.com/BasedHardware/omi, merged into mobile release v1.0.75+450. Open the Omi mobile app, Settings, About, and confirm version 1.0.75+450 or later. If you are below that, update from the App Store or Play Store.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="founder-mini">
+      <div class="photo"><span style="font-family: var(--mono); color: var(--accent); font-size: 28px; font-weight: 600;">E.</span></div>
+      <div class="text">
+        <h4>Built by Ethan, in public.</h4>
+        <p>The Plaud bridge is the most underused leverage in this ecosystem. Most Plaud users do not know their device works with the Omi app catalog. If you are reading this, you are early. If something on your Plaud setup does not work, reply to me and I fix it.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; padding: 48px 0;">
+      <div class="section-meta" style="text-align: center;">// pick where to go next</div>
+      <h2 style="margin-top: 12px; margin-bottom: 16px;">Browse the Plaud Compatible apps.</h2>
+      <p style="color: var(--muted); margin: 0 auto 32px; max-width: 480px;">Each app has its own page with pricing, free trial details, and demo. Setup on Plaud is 90 seconds for any of them.</p>
+      <a class="btn btn-primary" href="/apps">See all apps</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>// Plaud bridge</h4>
+        <a href="#setup">90 sec setup</a>
+        <a href="#compat">Compatibility</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="col">
+        <h4>// apps</h4>
+        <a href="/apps">All apps</a>
+        <a href="/showing-notes">Showing Notes</a>
+        <a href="/plaud-guide">Plaud + Omi guide</a>
+      </div>
+      <div class="col">
+        <h4>// social</h4>
+        <a href="https://www.tiktok.com/@omi.developer" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@omi.developer" target="_blank">YouTube</a>
+        <a href="https://x.com/omideveloper" target="_blank">X</a>
+      </div>
+      <div class="col">
+        <h4>// device</h4>
+        <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud&utm_campaign=footer&utm_content=device">Get Omi $129</a>
+      </div>
+    </div>
+    <div class="disclosure">
+      omideveloper.com. The Plaud bridge content is independent. omideveloper is not affiliated with Plaud. Affiliate disclosure: this page links to omi.me with my affiliate code. I earn a commission on Omi devices purchased through that link.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
