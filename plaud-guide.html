@@ -8,61 +8,97 @@
 <meta name="theme-color" content="#050714">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #050714; --bg-2: #0a0d1f; --bg-3: #11152b;
-    --surface: rgba(20,25,50,0.5); --border: rgba(120,140,200,0.12); --border-strong: rgba(120,140,200,0.25);
+    --surface: rgba(20, 25, 50, 0.5); --surface-2: rgba(30, 36, 65, 0.4);
+    --border: rgba(120, 140, 200, 0.12); --border-strong: rgba(120, 140, 200, 0.25);
     --fg: #f5f6fa; --muted: #8b93a8; --muted-2: #6b7290;
-    --accent: #00e5a0; --accent-2: #fbbf24;
+    --accent: #00e5a0; --accent-2: #fbbf24; --accent-3: #00e5a0;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171;
     --yes: #00e5a0; --no: #f87171;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
     --sans: 'Inter', system-ui, -apple-system, sans-serif;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--fg); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   body::before {
     content: ''; position: fixed; inset: 0;
     background:
-      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0,229,160,0.08), transparent 60%),
-      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251,191,36,0.07), transparent 60%);
+      radial-gradient(ellipse 800px 500px at 20% 0%, rgba(0, 229, 160, 0.08), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 80% 30%, rgba(251, 191, 36, 0.07), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 50% 100%, rgba(0, 229, 160, 0.05), transparent 60%);
     pointer-events: none; z-index: 0;
   }
-  nav { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5,7,20,0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
-  nav .logo { font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; text-decoration: none; }
-  nav a.nav-cta { font-size: 13px; font-weight: 600; color: #050714; background: var(--accent); padding: 7px 16px; border-radius: 6px; text-decoration: none; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; position: relative; z-index: 1; }
-  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.25); border-radius: 20px; padding: 4px 12px; margin-bottom: 20px; }
-  h1 { font-size: 40px; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 800; }
-  h1 span { color: var(--accent); }
-  p.lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
-  h2 { font-size: 22px; margin: 48px 0 10px; font-weight: 700; border-top: 1px solid var(--border); padding-top: 32px; }
-  h2:first-of-type { border-top: none; padding-top: 0; }
-  p { margin: 10px 0; }
-  ul, ol { padding-left: 22px; margin: 10px 0; }
-  li { margin-bottom: 7px; }
-  .card { background: rgba(0,229,160,0.05); border: 1px solid rgba(0,229,160,0.2); border-radius: 10px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  nav.top { position: sticky; top: 0; backdrop-filter: blur(16px); background: rgba(5, 7, 20, 0.7); border-bottom: 1px solid var(--border); z-index: 100; padding: 14px 0; }
+  nav.top .row { display: flex; align-items: center; justify-content: space-between; }
+  nav.top .brand { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--fg); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+  nav.top .brand .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px var(--accent); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  nav.top .links a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 28px; transition: color 0.15s; }
+  nav.top .links a:hover { color: var(--fg); }
+  nav.top .cta-mini { display: inline-block; padding: 8px 16px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px; margin-left: 24px; transition: transform 0.15s, box-shadow 0.15s; }
+  nav.top .cta-mini:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0, 229, 160, 0.3); }
+  @media (max-width: 720px) { nav.top .links a:not(.cta-mini) { display: none; } }
+
+  .promo-strip { background: linear-gradient(90deg, rgba(0, 229, 160, 0.15), rgba(251, 191, 36, 0.15)); border-bottom: 1px solid var(--border); padding: 10px 0; text-align: center; font-family: var(--mono); font-size: 13px; color: var(--fg); }
+  .promo-strip .label { color: var(--accent); font-weight: 600; margin-right: 8px; }
+  .promo-strip a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--border-strong); }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; text-decoration: none; font-weight: 600; border-radius: 10px; font-size: 15px; transition: all 0.15s; border: none; cursor: pointer; font-family: var(--sans); }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--bg); box-shadow: 0 8px 32px rgba(0, 229, 160, 0.3); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0, 229, 160, 0.4); }
+  .btn-ghost { background: var(--surface); color: var(--fg); border: 1px solid var(--border-strong); }
+  .btn-ghost:hover { background: var(--surface-2); border-color: var(--accent); }
+
+  footer { border-top: 1px solid var(--border); padding: 48px 0 32px; margin-top: 64px; color: var(--muted); font-size: 13px; position: relative; z-index: 1; }
+  footer .row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; }
+  footer .col h4 { color: var(--fg); font-size: 13px; margin: 0 0 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; }
+  footer .col a { display: block; color: var(--muted); text-decoration: none; padding: 4px 0; transition: color 0.15s; }
+  footer .col a:hover { color: var(--fg); }
+  footer .disclosure { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-2); line-height: 1.6; }
+
+  /* Guide content styles */
+  .guide-wrap { padding: 80px 0 80px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.25); border-radius: 20px; padding: 4px 12px; margin-bottom: 20px; font-family: var(--mono); }
+  .guide-wrap h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 800; }
+  .guide-wrap h1 span { color: var(--accent); }
+  .guide-wrap p.lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; line-height: 1.5; }
+  .guide-wrap h2 { font-size: clamp(20px, 3.5vw, 26px); margin: 48px 0 10px; font-weight: 700; border-top: 1px solid var(--border); padding-top: 32px; letter-spacing: -0.01em; }
+  .guide-wrap h2:first-of-type { border-top: none; padding-top: 0; }
+  .guide-wrap p { margin: 10px 0; color: var(--fg); line-height: 1.65; }
+  .guide-wrap ul, .guide-wrap ol { padding-left: 22px; margin: 10px 0; }
+  .guide-wrap li { margin-bottom: 7px; color: var(--fg); line-height: 1.6; }
+  .card { background: rgba(0,229,160,0.05); border: 1px solid rgba(0,229,160,0.2); border-radius: 16px; padding: 16px 20px; margin: 20px 0; font-size: 15px; }
   .card strong { color: var(--accent); }
   table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; background: var(--bg-3); border-radius: 10px; overflow: hidden; }
-  th { padding: 10px 14px; background: rgba(120,140,200,0.08); color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; text-align: left; border-bottom: 1px solid var(--border); }
-  td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  th { padding: 10px 14px; background: rgba(120,140,200,0.08); color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; text-align: left; border-bottom: 1px solid var(--border); font-family: var(--mono); }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--fg); }
   tr:last-child td { border-bottom: none; }
   .yes { color: var(--yes); font-weight: 700; }
   .no { color: var(--no); font-weight: 700; }
-  .cta { display: inline-block; margin: 20px 0 8px; padding: 14px 28px; background: var(--accent); color: #050714; text-decoration: none; font-weight: 700; border-radius: 8px; font-size: 16px; transition: opacity 0.15s; }
-  .cta:hover { opacity: 0.88; }
+  .guide-cta { display: inline-flex; align-items: center; gap: 8px; margin: 20px 0 8px; padding: 14px 28px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--bg); text-decoration: none; font-weight: 700; border-radius: 10px; font-size: 16px; transition: all 0.15s; box-shadow: 0 8px 32px rgba(0, 229, 160, 0.3); }
+  .guide-cta:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0, 229, 160, 0.4); }
   .sig { margin-top: 40px; font-weight: 600; font-size: 16px; }
   .sig span { color: var(--muted); font-weight: 400; }
-  .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; line-height: 1.6; }
+  .guide-footer-note { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; line-height: 1.6; }
 
   @media print {
     body { background: #fff; color: #0a0a0a; font-size: 11pt; }
     body::before { display: none; }
-    nav { display: none; }
-    .wrap { padding: 0; max-width: 100%; }
+    nav.top { display: none; }
+    .promo-strip { display: none; }
+    footer { display: none; }
+    .guide-wrap { padding: 0; }
+    .container-narrow { max-width: 100%; padding: 0; }
     h1 { font-size: 24pt; color: #0a0a0a; }
     h1 span { color: #00b378; }
-    h2 { font-size: 14pt; color: #0a0a0a; border-top: 1px solid #e5e5e5; page-break-after: avoid; }
+    .guide-wrap h2 { font-size: 14pt; color: #0a0a0a; border-top: 1px solid #e5e5e5; page-break-after: avoid; }
     .badge { background: none; border: 1px solid #00b378; color: #00b378; }
     .card { background: none; border-left: 2px solid #00b378; border-top: none; border-right: none; border-bottom: none; border-radius: 0; }
     .card strong { color: #00b378; }
@@ -71,87 +107,140 @@
     td { border-bottom: 1px solid #e5e5e5; color: #0a0a0a; }
     .yes { color: #00b378; }
     .no { color: #dc2626; }
-    .cta { background: none; color: #00b378; padding: 0; font-weight: 700; text-decoration: underline; }
-    p.lead, .sig span { color: #555; }
-    .footer { color: #777; }
+    .guide-cta { background: none; color: #00b378; padding: 0; font-weight: 700; text-decoration: underline; box-shadow: none; }
+    .guide-wrap p, .guide-wrap li { color: #0a0a0a; }
+    p.lead { color: #555; }
+    .sig span { color: #555; }
+    .guide-footer-note { color: #777; }
     @page { margin: 0.6in; }
   }
 </style>
 </head>
 <body>
-<nav>
-  <a class="logo" href="https://omideveloper.com">omideveloper.com</a>
-  <a class="nav-cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-2&utm_content=nav">Get the Omi — $129</a>
-</nav>
-<div class="wrap">
 
-  <div class="badge">Free guide / by Ethan</div>
-  <h1>Plaud + Omi<br><span>Compatibility Guide</span></h1>
-  <p class="lead">Your Plaud already runs Omi marketplace apps. The setup is 90 seconds. Free.</p>
-
-  <p>Hi, I am Ethan. I build apps for the Omi necklace. New ones ship every two to four weeks from a pool of 250 plus vetted ideas. Most of them run on a Plaud you may already own.</p>
-  <p>Most Plaud users do not know this. It is the most useful and least talked about feature of the 2026 AI wearable space.</p>
-
-  <h2>What is the xor connection?</h2>
-  <p>It is a feature in the Omi mobile app that treats a Plaud recording as the input to an Omi app.</p>
-  <p>In plain English: if you have a Plaud Note, you can run my apps on your Plaud audio.</p>
-  <div class="card"><strong>Reference:</strong> PR #3287 in the BasedHardware/omi GitHub. Released in version 1.0.75 plus 450 mobile cm. The official Omi integrations page lists Plaud as a supported third party wearable.</div>
-
-  <h2>What works on Plaud through the xor bridge</h2>
-  <p>Memory Trigger pattern apps (post conversation summary). These work:</p>
-  <table>
-    <tr><th>App</th><th>Works on Plaud?</th><th>Pricing</th></tr>
-    <tr><td>Showing Notes (Realtor)</td><td class="yes">Yes</td><td>$29 per month</td></tr>
-    <tr><td>SalesSignal (CRM auto)</td><td class="yes">Yes</td><td>$49 per seat ($29 annual)</td></tr>
-    <tr><td>Field Report (techs)</td><td class="yes">Yes</td><td>$29 per seat, $99 company</td></tr>
-    <tr><td>Deposition Digest</td><td class="yes">Yes</td><td>$39 per month</td></tr>
-    <tr><td>Daily Wrapped Pro</td><td class="yes">Yes</td><td>Free, optional $4.99 Pro</td></tr>
-    <tr><td>Coffee Close (light CRM)</td><td class="yes">Yes</td><td>$19 per month</td></tr>
-    <tr><td>SignalDesk for Coaches</td><td class="yes">Yes</td><td>$29 per month</td></tr>
-    <tr><td>Open House Magnet</td><td class="yes">Yes</td><td>$39 per month</td></tr>
-    <tr><td>Roof Walk (solar D2D)</td><td class="yes">Yes</td><td>$29 per seat or fleet plan</td></tr>
-    <tr><td>Tesla Connect (real time)</td><td class="no">No</td><td>Free, requires Omi necklace</td></tr>
-  </table>
-  <p style="color: var(--muted); font-size: 14px;">More apps ship every 2 to 4 weeks. Most use the Memory Trigger pattern, so they are Plaud Compatible by default.</p>
-
-  <h2>How to set it up (90 seconds)</h2>
-  <ol>
-    <li>Install the Omi mobile app on your phone (free).</li>
-    <li>Open Settings, then Devices.</li>
-    <li>Tap "Connect a third party wearable."</li>
-    <li>Select Plaud.</li>
-    <li>Authorize Omi to read your Plaud recordings.</li>
-    <li>Open the Omi App Marketplace.</li>
-    <li>Install one of my apps.</li>
-  </ol>
-  <p>That is it. Your Plaud now runs Omi marketplace apps.</p>
-
-  <h2>Cost comparison</h2>
-  <ul>
-    <li>Plaud Note device: $159 (you may already have one)</li>
-    <li>Plaud Pro subscription: $8.33 per month or $99.96 per year</li>
-    <li>Omi mobile app: free</li>
-    <li>My Omi marketplace apps: free trials available, paid tiers $19 to $49 per month</li>
-  </ul>
-  <p>You can run my apps on your existing Plaud, no Omi device required.</p>
-
-  <h2>Should you also buy an Omi?</h2>
-  <p>If you want real time apps (Tesla Connect, live coaching, command and control), yes.</p>
-  <p>If you only want post conversation summaries, your Plaud handles all of it through the xor bridge.</p>
-  <p>If you want both: the Omi necklace is $129 right now ($50 off the $179 sticker, limited time at omi.me checkout).</p>
-  <a class="cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=guide&utm_campaign=lead-magnet-2&utm_content=cta-end">Get the Omi necklace — $129 (limited time)</a>
-
-  <h2>Why I am writing this</h2>
-  <p>I borrowed a Plaud to test compatibility before publishing this. It works. Almost no one is making this content because almost no one builds for both ecosystems.</p>
-  <p>If you are a Plaud user, install the Omi mobile app, run one of my apps on your Plaud, and tell me what worked and what did not. Reply to the email this came from.</p>
-
-  <div class="sig">Ethan<br><span>omideveloper.com</span></div>
-
-  <div class="footer">
-    <p>Affiliate disclosure: this guide links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.</p>
-    <p>Numbers verified May 5 2026 against omi.me, help.omi.me, and the Omi affiliate portal.</p>
-  </div>
-
+<div class="promo-strip">
+  <span class="label">LIMITED TIME</span> Omi necklace is $50 off, $129 right now.
+  <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud-guide&utm_campaign=promo-strip&utm_content=top-bar">Grab it.</a>
 </div>
+
+<nav class="top">
+  <div class="container">
+    <div class="row">
+      <a class="brand" href="/"><span class="dot"></span>omideveloper</a>
+      <div class="links">
+        <a href="/apps">All apps</a>
+        <a href="/guide">Use cases guide</a>
+        <a href="/subscriptions-guide">Subscriptions guide</a>
+        <a class="cta-mini" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud-guide&utm_campaign=nav&utm_content=cta-mini">Get Omi — $129</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="guide-wrap">
+  <div class="container-narrow">
+
+    <div class="badge">Free guide / by Ethan</div>
+    <h1>Plaud + Omi<br><span>Compatibility Guide</span></h1>
+    <p class="lead">Your Plaud already runs Omi marketplace apps. The setup is 90 seconds. Free.</p>
+
+    <p>Hi, I am Ethan. I build apps for the Omi necklace. New ones ship every two to four weeks from a pool of 250 plus vetted ideas. Most of them run on a Plaud you may already own.</p>
+    <p>Most Plaud users do not know this. It is the most useful and least talked about feature of the 2026 AI wearable space.</p>
+
+    <h2>What is the xor connection?</h2>
+    <p>It is a feature in the Omi mobile app that treats a Plaud recording as the input to an Omi app.</p>
+    <p>In plain English: if you have a Plaud Note, you can run my apps on your Plaud audio.</p>
+    <div class="card"><strong>Reference:</strong> PR #3287 in the BasedHardware/omi GitHub. Released in version 1.0.75 plus 450 mobile cm. The official Omi integrations page lists Plaud as a supported third party wearable.</div>
+
+    <h2>What works on Plaud through the xor bridge</h2>
+    <p>Memory Trigger pattern apps (post conversation summary). These work:</p>
+    <table>
+      <tr><th>App</th><th>Works on Plaud?</th><th>Pricing</th></tr>
+      <tr><td>Showing Notes (Realtor)</td><td class="yes">Yes</td><td>$29 per month</td></tr>
+      <tr><td>SalesSignal (CRM auto)</td><td class="yes">Yes</td><td>$49 per seat ($29 annual)</td></tr>
+      <tr><td>Field Report (techs)</td><td class="yes">Yes</td><td>$29 per seat, $99 company</td></tr>
+      <tr><td>Deposition Digest</td><td class="yes">Yes</td><td>$39 per month</td></tr>
+      <tr><td>Daily Wrapped Pro</td><td class="yes">Yes</td><td>Free, optional $4.99 Pro</td></tr>
+      <tr><td>Coffee Close (light CRM)</td><td class="yes">Yes</td><td>$19 per month</td></tr>
+      <tr><td>SignalDesk for Coaches</td><td class="yes">Yes</td><td>$29 per month</td></tr>
+      <tr><td>Open House Magnet</td><td class="yes">Yes</td><td>$39 per month</td></tr>
+      <tr><td>Roof Walk (solar D2D)</td><td class="yes">Yes</td><td>$29 per seat or fleet plan</td></tr>
+      <tr><td>Tesla Connect (real time)</td><td class="no">No</td><td>Free, requires Omi necklace</td></tr>
+    </table>
+    <p style="color: var(--muted); font-size: 14px;">More apps ship every 2 to 4 weeks. Most use the Memory Trigger pattern, so they are Plaud Compatible by default.</p>
+
+    <h2>How to set it up (90 seconds)</h2>
+    <ol>
+      <li>Install the Omi mobile app on your phone (free).</li>
+      <li>Open Settings, then Devices.</li>
+      <li>Tap "Connect a third party wearable."</li>
+      <li>Select Plaud.</li>
+      <li>Authorize Omi to read your Plaud recordings.</li>
+      <li>Open the Omi App Marketplace.</li>
+      <li>Install one of my apps.</li>
+    </ol>
+    <p>That is it. Your Plaud now runs Omi marketplace apps.</p>
+
+    <h2>Cost comparison</h2>
+    <ul>
+      <li>Plaud Note device: $159 (you may already have one)</li>
+      <li>Plaud Pro subscription: $8.33 per month or $99.96 per year</li>
+      <li>Omi mobile app: free</li>
+      <li>My Omi marketplace apps: free trials available, paid tiers $19 to $49 per month</li>
+    </ul>
+    <p>You can run my apps on your existing Plaud, no Omi device required.</p>
+
+    <h2>Should you also buy an Omi?</h2>
+    <p>If you want real time apps (Tesla Connect, live coaching, command and control), yes.</p>
+    <p>If you only want post conversation summaries, your Plaud handles all of it through the xor bridge.</p>
+    <p>If you want both: the Omi necklace is $129 right now ($50 off the $179 sticker, limited time at omi.me checkout).</p>
+    <a class="guide-cta" href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud-guide&utm_campaign=lead-magnet-2&utm_content=cta-end">Get the Omi necklace — $129 (limited time)</a>
+
+    <h2>Why I am writing this</h2>
+    <p>I borrowed a Plaud to test compatibility before publishing this. It works. Almost no one is making this content because almost no one builds for both ecosystems.</p>
+    <p>If you are a Plaud user, install the Omi mobile app, run one of my apps on your Plaud, and tell me what worked and what did not. Reply to the email this came from.</p>
+
+    <div class="sig">Ethan<br><span>omideveloper.com</span></div>
+
+    <div class="guide-footer-note">
+      <p>Affiliate disclosure: this guide links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.</p>
+      <p>Numbers verified May 5 2026 against omi.me, help.omi.me, and the Omi affiliate portal.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>// Plaud guide</h4>
+        <a href="#setup">Setup steps</a>
+        <a href="#compatibility">Compatibility table</a>
+        <a href="#cost">Cost comparison</a>
+      </div>
+      <div class="col">
+        <h4>// other apps</h4>
+        <a href="/apps">All apps</a>
+        <a href="https://app.omi.me/apps/tesla-connect">Tesla Connect</a>
+        <a href="/showing-notes">Showing Notes</a>
+      </div>
+      <div class="col">
+        <h4>// social</h4>
+        <a href="https://www.tiktok.com/@omi.developer" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@omi.developer" target="_blank">YouTube</a>
+        <a href="https://x.com/omideveloper" target="_blank">X</a>
+      </div>
+      <div class="col">
+        <h4>// device</h4>
+        <a href="https://www.omi.me/?ref=ETHAN.OMI.DEVELOPER&utm_source=affiliate&utm_medium=plaud-guide&utm_campaign=footer&utm_content=device">Get Omi $129</a>
+      </div>
+    </div>
+    <div class="disclosure">
+      omideveloper.com. Built and maintained by Ethan, sole developer of the omideveloper Omi app catalog. Affiliate disclosure: this page links to omi.me with my affiliate code. I earn a commission on devices purchased through that link.
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
