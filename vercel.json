@@ -2,7 +2,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/showing-notes/:path*", "destination": "https://connect.omideveloper.com/showing-notes/:path*" }
+    { "source": "/showing-notes/:path*", "destination": "https://connect.omideveloper.com/showing-notes/:path*" },
+    { "source": "/tesla-connect", "destination": "/tesla-connect/index.html" }
   ],
   "headers": [
     {
