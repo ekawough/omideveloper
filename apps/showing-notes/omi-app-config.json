@@ -1,0 +1,15 @@
+{
+  "name": "Showing Notes",
+  "description": "Real-time showing notes for real estate agents. Walk through the property while your Omi captures everything — the buyer's reactions, questions, concerns, and what they loved. Showing Notes generates a complete buyer profile, structured property notes, deal-breaker analysis, and a ready-to-send follow-up email. Syncs with Follow Up Boss, HubSpot, and GoHighLevel.",
+  "capabilities": ["transcript_processed"],
+  "memory_prompt": "A real estate agent is showing a property to a buyer. Listen for: the buyer's emotional reactions to rooms and features, specific concerns or objections raised, questions about the property or neighborhood, any price or offer commentary, lifestyle context (kids, pets, commute), comparisons to other properties they've seen, and what the agent observes about the buyer's interest level. Capture all of this as showing notes.",
+  "webhook_url": "https://showing-notes.up.railway.app/webhook",
+  "category": "real-estate",
+  "author": "ekawough",
+  "version": "1.0.0",
+  "tags": ["real-estate", "crm", "buyer-notes", "property-showing", "follow-up-boss", "hubspot"],
+  "pricing": {
+    "free_tier": "5 showings/month",
+    "pro": "$29/mo — unlimited showings, CRM sync, buyer signal scoring, follow-up email drafts"
+  }
+}

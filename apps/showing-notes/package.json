@@ -1,0 +1,16 @@
+{
+  "name": "showing-notes",
+  "version": "1.0.0",
+  "description": "Omi Integration App — realtor showing recap to CRM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@supabase/supabase-js": "^2.47.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1"
+  }
+}

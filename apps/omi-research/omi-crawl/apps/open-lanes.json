@@ -1,0 +1,232 @@
+[
+  {
+    "idea": "Urgent Incident Reporting",
+    "best_score": 0,
+    "best_app": "",
+    "best_app_id": "",
+    "best_app_installs": 0,
+    "best_app_rating": 0,
+    "best_app_category": "",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Service Level Agreement Sla Monitoring",
+    "best_score": 0.2,
+    "best_app": "StockSense AI",
+    "best_app_id": "01JKKKZFB0X3RZVJ74W5D3AHHS",
+    "best_app_installs": 40,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Client Consultation And Needs Assessment",
+    "best_score": 0.25,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Client Consultation And Property Requirements",
+    "best_score": 0.25,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Code Blue Event Documentation",
+    "best_score": 0.25,
+    "best_app": "CodiBot",
+    "best_app_id": "01JG9QZPCG4VMB2DC1VWMPK9M9",
+    "best_app_installs": 33,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Coordination With Legal And Compliance Teams",
+    "best_score": 0.25,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Court Proceedings And Testimony Recording",
+    "best_score": 0.25,
+    "best_app": "Seis ES AI: MindWell Multiverse",
+    "best_app_id": "01JQT96X8TNJP1P1KAB7Z6F42E",
+    "best_app_installs": 11,
+    "best_app_rating": 0.0,
+    "best_app_category": "health-and-wellness",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Event Timeline And Agenda Management",
+    "best_score": 0.25,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Guest Interaction And Service Personalization",
+    "best_score": 0.25,
+    "best_app": "Omira",
+    "best_app_id": "01JQ8VRYGM8K198ZMM7B1TA9KR",
+    "best_app_installs": 404,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Incident Post Mortem Reviews",
+    "best_score": 0.25,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Luxury Open House Planning",
+    "best_score": 0.25,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Marketing Strategy And Vacancy Management",
+    "best_score": 0.25,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Media Interaction And Response Planning",
+    "best_score": 0.25,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Penetration Testing And Vulnerability Assessment",
+    "best_score": 0.25,
+    "best_app": "PersonaLense",
+    "best_app_id": "personalense-01JDNHPHXBNWAA89J0AMBEEPJB",
+    "best_app_installs": 89,
+    "best_app_rating": 0.0,
+    "best_app_category": "entertainment-and-fun",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Property Staging And Presentation Planning",
+    "best_score": 0.25,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Stem Club Activities Management",
+    "best_score": 0.25,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Technical Documentation And Knowledge Sharing",
+    "best_score": 0.25,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Tenant Consultation And Lease Agreements",
+    "best_score": 0.25,
+    "best_app": "Agreements, Commitments & Conclusions reached. ",
+    "best_app_id": "01JFMFZEPY2YNRK17GDCPPPWBV",
+    "best_app_installs": 577,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Third Party Compliance Audits",
+    "best_score": 0.25,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Tour Guide And Activity Coordination",
+    "best_score": 0.25,
+    "best_app": "Omira",
+    "best_app_id": "01JQ8VRYGM8K198ZMM7B1TA9KR",
+    "best_app_installs": 404,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Trade Show And Event Planning",
+    "best_score": 0.25,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Vendor Quote And Proposal Organization",
+    "best_score": 0.25,
+    "best_app": "I Need To Remember To",
+    "best_app_id": "01JEP38S1HMN5YMJQWYKKVMCRZ",
+    "best_app_installs": 226,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Venue Selection And Site Visits",
+    "best_score": 0.25,
+    "best_app": "PhotoReal Gen",
+    "best_app_id": "01KCBZCNPGB74DJZAMC8RSA6R7",
+    "best_app_installs": 9,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": ""
+  }
+]

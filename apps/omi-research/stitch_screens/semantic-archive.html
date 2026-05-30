@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Semantic Archive - OMI AI Ecosystem</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#690005",
+              "secondary-container": "#00d1a7",
+              "background": "#141313",
+              "on-surface": "#e5e2e1",
+              "secondary": "#41eec2",
+              "on-primary-container": "#2b0088",
+              "surface-container-high": "#2a2a2a",
+              "surface": "#141313",
+              "on-secondary": "#00382b",
+              "on-primary-fixed-variant": "#4918c8",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-container": "#002d43",
+              "inverse-primary": "#613de0",
+              "on-secondary-fixed-variant": "#00513f",
+              "surface-bright": "#3a3939",
+              "secondary-fixed": "#55fcd0",
+              "on-tertiary-fixed": "#001e2e",
+              "on-background": "#e5e2e1",
+              "surface-variant": "#353434",
+              "surface-container": "#201f1f",
+              "outline": "#938ea1",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary-fixed-variant": "#004c6d",
+              "inverse-on-surface": "#313030",
+              "tertiary-fixed": "#c8e6ff",
+              "primary-fixed-dim": "#cabeff",
+              "on-primary-fixed": "#1c0062",
+              "surface-container-highest": "#353434",
+              "surface-dim": "#141313",
+              "primary": "#cabeff",
+              "surface-tint": "#cabeff",
+              "on-primary": "#32009a",
+              "on-secondary-fixed": "#002118",
+              "error-container": "#93000a",
+              "tertiary-container": "#289ad3",
+              "tertiary-fixed-dim": "#87ceff",
+              "on-tertiary": "#00344d",
+              "primary-fixed": "#e6deff",
+              "tertiary": "#87ceff",
+              "on-surface-variant": "#c9c4d8",
+              "primary-container": "#947dff",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed-dim": "#28dfb5",
+              "outline-variant": "#484555",
+              "on-secondary-container": "#005441"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .glass-card {
+        background: rgba(42, 42, 42, 0.6);
+        backdrop-filter: blur(20px);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#141313]/60 backdrop-blur-xl shadow-[0_32px_32px_rgba(202,190,255,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#E5E2E1] font-headline">OMI AI</div>
+<div class="hidden md:flex items-center space-x-10 font-headline tracking-tight">
+<a class="text-[#E5E2E1]/70 hover:text-[#CABEFF] transition-colors duration-300" href="#">Discover</a>
+<a class="text-[#CABEFF] border-b-2 border-[#CABEFF] pb-1" href="#">Plugins</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#CABEFF] transition-colors duration-300" href="#">Docs</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#CABEFF] transition-colors duration-300" href="#">Developers</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-[#E5E2E1]/70 hover:text-[#CABEFF] transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-6 py-2 rounded-md font-medium scale-95 active:opacity-80 transition-all">
+                    Sign In
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 lg:py-32 grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 text-secondary border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-xs font-label uppercase tracking-widest font-bold">Featured Plugin</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-none tracking-tighter text-on-surface">
+                    Semantic <span class="text-primary">Archive</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    A private, encrypted vault for your OMI interactions. Securely store, query, and relive every meaningful moment captured by your wearable.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-10 py-4 rounded-md font-bold text-lg shadow-xl shadow-primary/10 hover:scale-[1.02] transition-transform">
+                        Install App
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-10 py-4 rounded-md font-bold text-lg border border-outline-variant/15 hover:bg-surface-bright transition-colors">
+                        View Source
+                    </button>
+</div>
+<div class="flex items-center gap-6 pt-6 text-on-surface-variant/60 text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span>Audited Security</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">database</span>
+<span>Local-First</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative aspect-square rounded-2xl bg-surface-container-low border border-outline-variant/15 overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover mix-blend-lighten opacity-80" data-alt="Abstract 3D visualization of encrypted data streams with glowing purple nodes and geometric glass structures in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxvJlF6KNi1vUl0aGRcjkGru6qU8X7B7T4Lm6SdYWFasX0Dw66doFl5D7WaSchubt9EmGnWbCOw6Wno2-4IC9UKE0rghviHydhJ-y-tNALtnUKyJrP5TVh8qeyV4fe2BHugbUYE2oRipDCanokpoG4O2vsjOEg1KSSRTItOOmcknTPpmqA2eTfJv3_AB8_VHXJNmxmniplRxMlRvORoEleIPhiJk4_wLrEpjNEo_2dpBnwvefzyGbIMHyJFTO435JyBzVmEZn3hlVZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 p-6 glass-card rounded-xl border border-outline-variant/15">
+<div class="flex items-center gap-4 mb-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-weight="fill">lock</span>
+</div>
+<div>
+<div class="text-sm font-bold text-on-surface">AES-256 Enabled</div>
+<div class="text-xs text-on-surface-variant">Zero-knowledge architecture</div>
+</div>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-secondary"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold mb-4">Core Capabilities</h2>
+<div class="h-1 w-20 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Feature 1 -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between group hover:bg-surface-container transition-colors duration-500 overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-weight="fill">chat_bubble</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+<h3 class="text-3xl font-headline font-bold mb-4">Natural Language Queries</h3>
+<p class="text-on-surface-variant text-lg max-w-md">
+                            Stop scrolling and start asking. Use everyday language to find specific interactions, from business ideas to casual kitchen conversations.
+                        </p>
+</div>
+<div class="relative z-10 flex items-center gap-4 pt-8">
+<div class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-mono uppercase tracking-widest border border-outline-variant/15">Vector Search</div>
+<div class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-mono uppercase tracking-widest border border-outline-variant/15">NLP Processing</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-5 bg-surface-container-high rounded-xl p-10 flex flex-col justify-center items-center text-center border border-primary/5">
+<div class="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center mb-8 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-4xl" data-weight="fill">shield_lock</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Local-First Encryption</h3>
+<p class="text-on-surface-variant">
+                        Your data never leaves your device unencrypted. We use industry-leading standards to ensure only you hold the keys.
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-end relative overflow-hidden group border border-outline-variant/10">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Macro view of a sleek microchip circuit board with neon blue and green glowing paths on a matte black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNzX4AhPajhVRpc8M0hkdtuDBuPFBGEbEAsRELMOgIX_Dges6FxQWQT8Az4KtEEIfVceWlZNybshXw3KDIxJTZUscRjEB7bzguBDR5tYNitq3DK2VVwwfZh8-zZ8bYZAXRVIuG6xsnblZLqiu-0TPfhhWGOOduC0zhmK7YoR1BdPKrVkKdr_G95VlgUjziRjTHomFrZjONgfCCQWd2GNwQzrsiUIyz0acKzZ9p0SuJQKXGEmZkkBjCkBqXNP6w2csw8AUxMtY5Ubqw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-2">Multi-device Sync</h3>
+<p class="text-on-surface-variant text-sm">Seamlessly access your archives across your laptop, phone, and OMI wearable with end-to-end sync.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-7 bg-[#2A2A2A] rounded-xl p-10 flex items-center gap-10 overflow-hidden">
+<div class="flex-1">
+<h3 class="text-2xl font-headline font-bold mb-4">Developer Ready</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Extensible API for building custom filters and data visualizations. Export your logs in JSON, Markdown, or SQLite.
+                        </p>
+<button class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
+                            Explore API Docs <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="hidden lg:block w-48 font-mono text-[10px] text-secondary/40 p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/15">
+<pre><code>{
+  "vault": "primary",
+  "status": "locked",
+  "encryption": "AES-256",
+  "nodes": 4,
+  "last_sync": "2m ago"
+}</code></pre>
+</div>
+</div>
+</div>
+</section>
+<!-- Screenshot Gallery -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 mb-16 flex justify-between items-end">
+<div>
+<h2 class="text-4xl font-headline font-bold mb-4">Interface Preview</h2>
+<p class="text-on-surface-variant max-w-xl">A minimalist design that prioritizes clarity and focus, keeping your digital history accessible and beautiful.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-x-auto px-8 no-scrollbar pb-12">
+<div class="flex-none w-[800px] aspect-[16/10] bg-surface-container-lowest rounded-2xl border border-outline-variant/15 shadow-2xl overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="Clean UI interface on a dark screen showing a search bar and a list of categorized text logs with subtle syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr-vogGCutMD4FDKs-JAwrNOSx-7BWcMxOtqG2p5IWiMA5zx_RKb2q9YGo4ZEkyRa2XHNMgA0OviLOpvpWKgbI1S0Im1mi77XiyCp-Ja2Zu6UNOh-Iv1le1-iJPh5jFFYRXhabYS0qLbkXZfljR3w2mYcj-1-L3TN4XkOL9ByCml3v5bjWd1otqvSnXRbbxG5svqnw9BnuqK16pJPL1klBQ1_eO80m1YyHfsPtl8kcXh3eVhqT85MzndJR1avkpsZ5eL2V6xXgwNFr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-xs font-mono text-primary mb-2">SCREENSHOT // 01</span>
+<h4 class="text-xl font-bold font-headline">Semantic Search Engine</h4>
+</div>
+</div>
+<div class="flex-none w-[800px] aspect-[16/10] bg-surface-container-lowest rounded-2xl border border-outline-variant/15 shadow-2xl overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="Detailed view of an app interaction log with profile icons, timestamps, and glowing keyword tags in a dark-themed UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLv6X9NnL1Ro_7z3gBD7bupVIAscgtIt-cSq-zLziufitUcrYbAyEGDB9m9wZReWJI1E8JC4IZrKpDhMuWgbY9_OwS7sgh06IHy3ajZVpVSOhHp5L46uJOjoci_yRwe2owE8922OoYtMNbNbFWtlfjCeAeDm7WMXKuBpLGZGP1Im1CyHmTehdN4o-grmqWuUJhpdg493xk9rLakEjOhCO0VlfaFA2Soq3ya0d02dz3zXWWesNKLua0vsnP8iZZHaU15EXMsL7w4fNY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-xs font-mono text-primary mb-2">SCREENSHOT // 02</span>
+<h4 class="text-xl font-bold font-headline">Interaction Detail View</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 grid lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -inset-10 bg-secondary/5 blur-[120px] rounded-full"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="aspect-square bg-surface-container-high rounded-xl border border-outline-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/40">lock_person</span>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-xl border border-outline-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40">key</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="aspect-square bg-surface-container-lowest rounded-xl border border-outline-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40">fingerprint</span>
+</div>
+<div class="aspect-square bg-surface-container-high rounded-xl border border-outline-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/40">encrypted</span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-5xl font-headline font-bold mb-8">Architected for Privacy</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-none w-12 h-12 bg-surface-container-highest rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Zero-Knowledge Storage</h4>
+<p class="text-on-surface-variant">We never see your data. Everything is encrypted on your OMI device before it reaches the archive, and only your master key can unlock it.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-none w-12 h-12 bg-surface-container-highest rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Differential Privacy</h4>
+<p class="text-on-surface-variant">Our search algorithms use differential privacy techniques to ensure that even local analysis doesn't leak sensitive patterns.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-none w-12 h-12 bg-surface-container-highest rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">update</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Auto-Expunging Logs</h4>
+<p class="text-on-surface-variant">Set custom retention policies. Automatically delete logs after 30, 60, or 90 days to maintain a clean digital footprint.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="bg-gradient-to-br from-surface-container-low to-surface-container p-16 rounded-3xl border border-outline-variant/15 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5"></div>
+<h2 class="text-5xl font-headline font-bold mb-6 relative z-10">Start Your Archive Today</h2>
+<p class="text-xl text-on-surface-variant mb-10 max-w-2xl mx-auto relative z-10">
+                    Join thousands of developers and thinkers building their second brain with Semantic Archive.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6 relative z-10">
+<button class="w-full sm:w-auto bg-primary text-on-primary-container px-12 py-5 rounded-md font-bold text-xl hover:scale-105 transition-transform">
+                        Install Now
+                    </button>
+<a class="text-on-surface hover:text-secondary transition-colors font-bold uppercase tracking-widest text-sm underline underline-offset-8 decoration-primary/50" href="#">
+                        View Pricing Plans
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-[#E5E2E1]/15 bg-[#141313]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto space-y-8 md:space-y-0">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-[#E5E2E1] font-bold text-2xl tracking-tighter font-headline">OMI AI</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-[#E5E2E1]/40">
+                    © 2024 OMI AI. Built for the Digital Architect.
+                </p>
+</div>
+<div class="flex items-center gap-12 font-['Inter'] text-xs uppercase tracking-widest">
+<a class="text-[#E5E2E1]/40 hover:text-[#41EEC2] underline transition-all opacity-100 hover:opacity-80" href="#">Terms</a>
+<a class="text-[#E5E2E1]/40 hover:text-[#41EEC2] underline transition-all opacity-100 hover:opacity-80" href="#">Privacy</a>
+<a class="text-[#E5E2E1]/40 hover:text-[#41EEC2] underline transition-all opacity-100 hover:opacity-80" href="#">Twitter</a>
+<a class="text-[#E5E2E1]/40 hover:text-[#41EEC2] underline transition-all opacity-100 hover:opacity-80" href="#">GitHub</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-[10px] font-mono text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    SYSTEMS OPERATIONAL
+                </div>
+</div>
+</div>
+<!-- Technical Specs Sub-Footer -->
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-outline-variant/10 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<div class="text-[10px] text-on-surface-variant/40 uppercase mb-2">Build Version</div>
+<div class="text-sm font-mono text-on-surface-variant">v2.4.1-stable</div>
+</div>
+<div>
+<div class="text-[10px] text-on-surface-variant/40 uppercase mb-2">Latency</div>
+<div class="text-sm font-mono text-on-surface-variant">&lt; 14ms Query</div>
+</div>
+<div>
+<div class="text-[10px] text-on-surface-variant/40 uppercase mb-2">Storage Model</div>
+<div class="text-sm font-mono text-on-surface-variant">Vector + SQL</div>
+</div>
+<div>
+<div class="text-[10px] text-on-surface-variant/40 uppercase mb-2">Encryption</div>
+<div class="text-sm font-mono text-on-surface-variant">XChaCha20-Poly1305</div>
+</div>
+</div>
+</footer>
+</body></html>

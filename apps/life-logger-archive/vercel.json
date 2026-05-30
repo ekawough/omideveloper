@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/webhook", "destination": "/api/webhook" },
+    { "source": "/daily-summary", "destination": "/api/daily-summary" },
+    { "source": "/", "destination": "/api/index" }
+  ],
+  "crons": [
+    { "path": "/api/daily-summary", "schedule": "0 7 * * *" }
+  ]
+}

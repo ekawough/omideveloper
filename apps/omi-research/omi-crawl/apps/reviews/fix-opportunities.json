@@ -1,0 +1,4422 @@
+[
+  {
+    "id": "01JQ6XEB4SNXAN5642HGZ0CY4C",
+    "name": "ChatGPT",
+    "installs": 4987,
+    "rating": 2.6,
+    "review_count": 22,
+    "neg_count": 11,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 166,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Connect your Omi with ChatGPT",
+    "negative_reviews": [
+      [
+        1.0,
+        "Has a bug when connecting a Google account. \"Looks like this browser isn't secure. Try again?\"",
+        "2025-07-05"
+      ],
+      [
+        1.0,
+        "no more connection with omi memory, and vayrex connection also not working stable",
+        "2025-07-15"
+      ],
+      [
+        1.0,
+        "yup, same\npoor out of the box experience:-(\n\nError talking to connector\nYour UID ZLkbTLN8WST0RS4zjtkpc5E7BgZ2 isn’t registered yet. You need to activate your Omi account here:\n👉 https://personas.omi.me\nOnce registered, paste your UID again and I’ll i",
+        "2025-08-05"
+      ],
+      [
+        1.0,
+        "I keep getting \"error talking to connector.\" It appears to want to use an Omi persona, which I haven't created, to help establish the connection.",
+        "2025-08-05"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-15"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-18"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-20"
+      ],
+      [
+        1.0,
+        "don't work",
+        "2025-08-21"
+      ],
+      [
+        1.0,
+        "doesn't work",
+        "2025-08-26"
+      ],
+      [
+        2.0,
+        "says “Every time I try to use CreateUserMemory, I get this error:\n\nUnrecognizedFunctionError: CreateUserMemory\n\nThat means the backend doesn’t recognize or support this function at the moment”",
+        "2025-09-15"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "dream",
+        "2025-03-25"
+      ],
+      [
+        3.0,
+        "keeps losing my connection, making me share my secret key into it again and again",
+        "2025-04-15"
+      ],
+      [
+        5.0,
+        "Excelente",
+        "2025-05-14"
+      ],
+      [
+        5.0,
+        "I like it so much",
+        "2025-05-30"
+      ],
+      [
+        1.0,
+        "Has a bug when connecting a Google account. \"Looks like this browser isn't secure. Try again?\"",
+        "2025-07-05"
+      ],
+      [
+        1.0,
+        "still don’t work.  as of 7/22/2025",
+        "2025-07-06"
+      ],
+      [
+        1.0,
+        "no more connection with omi memory, and vayrex connection also not working stable",
+        "2025-07-15"
+      ],
+      [
+        3.0,
+        "thanks for fixing!!",
+        "2025-07-17"
+      ],
+      [
+        1.0,
+        "in current state it doesn't not connect",
+        "2025-08-03"
+      ],
+      [
+        1.0,
+        "won’t connect and constantly says the ID the device provides is not valid or registered.",
+        "2025-08-05"
+      ],
+      [
+        1.0,
+        "yup, same\npoor out of the box experience:-(\n\nError talking to connector\nYour UID ZLkbTLN8WST0RS4zjtkpc5E7BgZ2 isn’t registered yet. You need to activate your Omi account here:\n👉 https://personas.omi.me\nOnce registered, paste your UID again and I’ll i",
+        "2025-08-05"
+      ],
+      [
+        1.0,
+        "I keep getting \"error talking to connector.\" It appears to want to use an Omi persona, which I haven't created, to help establish the connection.",
+        "2025-08-05"
+      ],
+      [
+        1.0,
+        "doesn’t work",
+        "2025-08-08"
+      ],
+      [
+        5.0,
+        "Finally back again!",
+        "2025-08-09"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-15"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-18"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-08-20"
+      ],
+      [
+        1.0,
+        "don't work",
+        "2025-08-21"
+      ],
+      [
+        4.0,
+        "we",
+        "2025-08-22"
+      ],
+      [
+        1.0,
+        "doesn't work",
+        "2025-08-26"
+      ],
+      [
+        2.0,
+        "says “Every time I try to use CreateUserMemory, I get this error:\n\nUnrecognizedFunctionError: CreateUserMemory\n\nThat means the backend doesn’t recognize or support this function at the moment”",
+        "2025-09-15"
+      ],
+      [
+        1.0,
+        "don't work \nНе работает 😭",
+        "2025-10-31"
+      ]
+    ],
+    "fix_score": 17
+  },
+  {
+    "id": "omi-your-mentor-and-teacher-01JCPRSZ7FS40FHFNSJZEWR8R1",
+    "name": "Omi Mentor (deprecated)",
+    "installs": 6646,
+    "rating": 3.7083333333333335,
+    "review_count": 12,
+    "neg_count": 3,
+    "pos_count": 4,
+    "req_count": 1,
+    "days_since_last_review": 81,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "THIS APP WAS INTEGRATED INTO OMI CORE FUNCTIONALITY AND NOT UPDATED ANYMORE \n\nOmi mentor is listening to your conversations and sends you proactive real-time feedback and advice. it uses all “facts” that Omi knows about you and soon will use past conversations as well",
+    "negative_reviews": [
+      [
+        1.0,
+        "buggy",
+        "2025-04-19"
+      ],
+      [
+        3.0,
+        "works great, but the messages over and over about \"you need to do this immediately\" are really annoying. plus, this app is pretty judgmental and I just do have time for that.",
+        "2025-06-24"
+      ],
+      [
+        1.0,
+        "not working properly take too long to understand. do not answer anything.",
+        "2025-11-18"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        3.0,
+        "works great, but the messages over and over about \"you need to do this immediately\" are really annoying. plus, this app is pretty judgmental and I just do have time for that.",
+        "2025-06-24"
+      ],
+      [
+        1.0,
+        "it’s too general and it’s rude. not very helpful in general",
+        "2025-11-06"
+      ],
+      [
+        5.0,
+        "I love the insights",
+        "2026-01-08"
+      ],
+      [
+        4.0,
+        "I wish this was a built in feature of Omi. When it works this app is great but it's not reliable",
+        "2026-01-24"
+      ]
+    ],
+    "feature_requests": [
+      [
+        4.0,
+        "I wish this was a built in feature of Omi. When it works this app is great but it's not reliable",
+        "2026-01-24"
+      ]
+    ],
+    "all_reviews": [
+      [
+        3.0,
+        "It works, but fairly basic generic insights that could be much more nuanced and detailed. If I just want a mediocre pep talk coach there are better options.",
+        "2025-02-23"
+      ],
+      [
+        1.0,
+        "buggy",
+        "2025-04-19"
+      ],
+      [
+        3.0,
+        "works great, but the messages over and over about \"you need to do this immediately\" are really annoying. plus, this app is pretty judgmental and I just do have time for that.",
+        "2025-06-24"
+      ],
+      [
+        5.0,
+        "goated app",
+        "2025-07-23"
+      ],
+      [
+        1.0,
+        "can’t even uninstall it",
+        "2025-11-04"
+      ],
+      [
+        1.0,
+        "it’s too general and it’s rude. not very helpful in general",
+        "2025-11-06"
+      ],
+      [
+        1.0,
+        "not working properly take too long to understand. do not answer anything.",
+        "2025-11-18"
+      ],
+      [
+        1.0,
+        "stupid and worthless",
+        "2025-12-15"
+      ],
+      [
+        1.0,
+        "does exactly nothing for me. No notification, etc.",
+        "2025-12-16"
+      ],
+      [
+        5.0,
+        "I love the insights",
+        "2026-01-08"
+      ],
+      [
+        5.0,
+        "I got notifications while I was talking about something and it gave me feedback",
+        "2026-01-17"
+      ],
+      [
+        4.0,
+        "I wish this was a built in feature of Omi. When it works this app is great but it's not reliable",
+        "2026-01-24"
+      ]
+    ],
+    "fix_score": 11
+  },
+  {
+    "id": "notion-crm",
+    "name": "Notion Data Sync",
+    "installs": 923,
+    "rating": 3.8863636363636362,
+    "review_count": 8,
+    "neg_count": 2,
+    "pos_count": 3,
+    "req_count": 2,
+    "days_since_last_review": 36,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Stores all your conversations into a notion database",
+    "negative_reviews": [
+      [
+        1.0,
+        "just stopped working",
+        "2024-11-27"
+      ],
+      [
+        3.0,
+        "Only sends over the summary in a property field. Plugins, transcripts, and actions are missing.",
+        "2025-04-02"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        5.0,
+        "simple. love it! 😍",
+        "2024-11-23"
+      ],
+      [
+        5.0,
+        "that is just the most amazing app ever. what a lifesaver and what a time saver. now that I've got it into my main notion knowledge base on a regular basis, I can do so many different things with it. \n\nthank you. you should really charge for this",
+        "2025-08-04"
+      ],
+      [
+        5.0,
+        "I love it I wish I could modify for my own scripts in sights to notion but love it very quick too!",
+        "2025-12-27"
+      ]
+    ],
+    "feature_requests": [
+      [
+        5.0,
+        "that is just the most amazing app ever. what a lifesaver and what a time saver. now that I've got it into my main notion knowledge base on a regular basis, I can do so many different things with it. \n\nthank you. you should really charge for this",
+        "2025-08-04"
+      ],
+      [
+        5.0,
+        "I love it I wish I could modify for my own scripts in sights to notion but love it very quick too!",
+        "2025-12-27"
+      ]
+    ],
+    "all_reviews": [
+      [
+        5.0,
+        "simple. love it! 😍",
+        "2024-11-23"
+      ],
+      [
+        1.0,
+        "just stopped working",
+        "2024-11-27"
+      ],
+      [
+        3.0,
+        "Only sends over the summary in a property field. Plugins, transcripts, and actions are missing.",
+        "2025-04-02"
+      ],
+      [
+        5.0,
+        "only sends over summary. very instant.",
+        "2025-08-02"
+      ],
+      [
+        5.0,
+        "that is just the most amazing app ever. what a lifesaver and what a time saver. now that I've got it into my main notion knowledge base on a regular basis, I can do so many different things with it. \n\nthank you. you should really charge for this",
+        "2025-08-04"
+      ],
+      [
+        5.0,
+        "setup was smooth",
+        "2025-12-02"
+      ],
+      [
+        5.0,
+        "I love it I wish I could modify for my own scripts in sights to notion but love it very quick too!",
+        "2025-12-27"
+      ],
+      [
+        2.0,
+        "need to be able to dictate where this goes in notion",
+        "2026-03-10"
+      ]
+    ],
+    "fix_score": 10
+  },
+  {
+    "id": "omi-google-drive-integration",
+    "name": "Google Drive",
+    "installs": 44068,
+    "rating": 3.590909090909091,
+    "review_count": 12,
+    "neg_count": 3,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 84,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Connect to Google Drive. Automatically sync OMI Memories and/or Transcripts, Action Items, and Plugin Data to Google Drive.",
+    "negative_reviews": [
+      [
+        5.0,
+        "This has been a hidden gem. I'm rapidly losing faith in the Omi app's ability to process/synthesize insights with so many useless junk apps so fortunately this provides a workaround to use Gemini on my notes instead.",
+        "2025-02-23"
+      ],
+      [
+        1.0,
+        "does not connect with drive\ncannot uninstall to attempt a reconfiguration",
+        "2025-11-03"
+      ],
+      [
+        1.0,
+        "doesn't work. Doesn't show up in Gdrive even when it shows as successfully installed.",
+        "2025-11-26"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "This has been a hidden gem. I'm rapidly losing faith in the Omi app's ability to process/synthesize insights with so many useless junk apps so fortunately this provides a workaround to use Gemini on my notes instead.",
+        "2025-02-23"
+      ],
+      [
+        5.0,
+        "why is there so much trash on the store and not good apps like this.",
+        "2025-06-27"
+      ],
+      [
+        5.0,
+        "nice one",
+        "2025-09-09"
+      ],
+      [
+        1.0,
+        "doesn’t connect to my drive. hasn’t created a folder . basically non functioning app.",
+        "2025-10-23"
+      ],
+      [
+        1.0,
+        "Not connecting with my drive. Can we receive assistance?",
+        "2025-10-26"
+      ],
+      [
+        1.0,
+        "does not connect with drive\ncannot uninstall to attempt a reconfiguration",
+        "2025-11-03"
+      ],
+      [
+        1.0,
+        "doesn't work. Doesn't show up in Gdrive even when it shows as successfully installed.",
+        "2025-11-26"
+      ],
+      [
+        3.0,
+        "finaly working",
+        "2025-12-10"
+      ],
+      [
+        3.0,
+        "I know it works, it saved a back up on the 9th. but that's the last and only one. how do I get it to update??",
+        "2025-12-16"
+      ],
+      [
+        4.0,
+        "It’s working but I do not get speaker names in the transcript.",
+        "2025-12-26"
+      ],
+      [
+        1.0,
+        "The app connects to my Google drive and creates a directory, but all the saved .txt files are empty.",
+        "2026-01-04"
+      ],
+      [
+        1.0,
+        "After complete the login to Google nothing happend. not Data visible!!!",
+        "2026-01-20"
+      ]
+    ],
+    "fix_score": 10
+  },
+  {
+    "id": "01JQPRVT35CMBER3NAQ36KD7N9",
+    "name": "Omi Wrapped - Daily Summaries",
+    "installs": 912,
+    "rating": 3.0,
+    "review_count": 3,
+    "neg_count": 1,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 68,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Stop losing daily insights. Omi Wrapped automatically transforms your Omi conversations into a personalized daily reflection story. Discover gratitude moments, reinforce learning, get Al mentor advice, and capture actionable tasks - all presented in an engaging visual format inspired by Spotify Wrapped. Understand your day, effortlessly.",
+    "negative_reviews": [
+      [
+        1.0,
+        "doesn't work",
+        "2026-02-06"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        1.0,
+        "won't even load for me. just gives invalid setup instructions. it looks like it could be useful if it worked.",
+        "2026-01-29"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Promising PoC! Can find myself engaging with this nightly.",
+        "2025-04-05"
+      ],
+      [
+        1.0,
+        "won't even load for me. just gives invalid setup instructions. it looks like it could be useful if it worked.",
+        "2026-01-29"
+      ],
+      [
+        1.0,
+        "doesn't work",
+        "2026-02-06"
+      ]
+    ],
+    "fix_score": 8
+  },
+  {
+    "id": "jarvis-01JCP6XPZ8SB17998QAAW3SF22",
+    "name": "J.A.R.V.I.S.",
+    "installs": 894,
+    "rating": 3.0,
+    "review_count": 5,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 10,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Experience an AI companion that listens and responds when you need it. Voice-activated and context-aware, it enhances productivity by providing seamless assistance without interruptions, making it perfect for multitasking and everyday conversations.",
+    "negative_reviews": [
+      [
+        1.0,
+        "first try : \nserver is broken",
+        "2026-04-04"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "pretty worthless",
+        "2024-11-17"
+      ],
+      [
+        5.0,
+        "good",
+        "2024-12-05"
+      ],
+      [
+        5.0,
+        "Lots of improvements.",
+        "2025-05-20"
+      ],
+      [
+        3.0,
+        "better then the default omi",
+        "2026-01-11"
+      ],
+      [
+        1.0,
+        "first try : \nserver is broken",
+        "2026-04-04"
+      ]
+    ],
+    "fix_score": 8
+  },
+  {
+    "id": "01K89EAAY3XMJA0SJ7NSP6N5GT",
+    "name": "General Summary",
+    "installs": 3295,
+    "rating": 4.277777777777778,
+    "review_count": 7,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 63,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Unlock the power of concise insights with Summary Pro. Transform lengthy texts into clear, digestible summaries, enhancing your reading efficiency and comprehension. Perfect for students, professionals, and anyone seeking to save time while staying informed.",
+    "negative_reviews": [
+      [
+        1.0,
+        "la peor app quepara grabar y transcribir reuniones. Me va pasando dos veces, que se corta o se interrumpe la grabación, por razones desconocidas y no me guardó esas dos grabaciones, que fueron dos reuniones importantes. worst app and a trash",
+        "2026-02-10"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        5.0,
+        "Had a important meeting today and tried the app - Totally impressed!  The summary from the meeting was exact, clear and concise. \nThere were one or two tiny errors in the summary but I assumed there would be a lot more.  Highly recommend this app!",
+        "2026-01-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        4.0,
+        "gute Sache 💪",
+        "2025-11-09"
+      ],
+      [
+        4.0,
+        "This thing is cool\nDownload OMI AI app on gplay to transcribe from phone or online\nBoofa",
+        "2025-11-10"
+      ],
+      [
+        5.0,
+        "how to use my own prompt?",
+        "2025-12-12"
+      ],
+      [
+        5.0,
+        "nice!",
+        "2025-12-22"
+      ],
+      [
+        5.0,
+        "Had a important meeting today and tried the app - Totally impressed!  The summary from the meeting was exact, clear and concise. \nThere were one or two tiny errors in the summary but I assumed there would be a lot more.  Highly recommend this app!",
+        "2026-01-23"
+      ],
+      [
+        4.0,
+        "I've installed the app and used the summary even before I bought Omi",
+        "2026-02-02"
+      ],
+      [
+        1.0,
+        "la peor app quepara grabar y transcribir reuniones. Me va pasando dos veces, que se corta o se interrumpe la grabación, por razones desconocidas y no me guardó esas dos grabaciones, que fueron dos reuniones importantes. worst app and a trash",
+        "2026-02-10"
+      ]
+    ],
+    "fix_score": 7
+  },
+  {
+    "id": "01KFRG29TB642YA2N61P42Z9AN",
+    "name": "Dropbox",
+    "installs": 44,
+    "rating": 3.6666666666666665,
+    "review_count": 3,
+    "neg_count": 1,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 1,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Save your Omi conversation summaries and transcripts into Dropbox.",
+    "negative_reviews": [
+      [
+        3.0,
+        "Was working now does not\n\nNot Found\n\nThe train has not arrived at the station.\n\nPlease check your network settings to confirm that your domain has provisioned.\n\nIf you are a visitor, please let the owner know you're stuck at the station.",
+        "2026-04-04"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        3.0,
+        "when it works, it's great. It seems to break occasionally and there's no notification that it broke until you figure out that the things aren't flowing anymore.",
+        "2026-04-13"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Exactly what I needed: automatic backup of my transcripts and summaries into a dedicated Dropbox folder. Finally have a non‑gDrive option, and all my data lives in the same ecosystem as the rest of my workflow. 10/10 Highly Recommended! Thanks Aarav!",
+        "2026-01-24"
+      ],
+      [
+        3.0,
+        "Was working now does not\n\nNot Found\n\nThe train has not arrived at the station.\n\nPlease check your network settings to confirm that your domain has provisioned.\n\nIf you are a visitor, please let the owner know you're stuck at the station.",
+        "2026-04-04"
+      ],
+      [
+        3.0,
+        "when it works, it's great. It seems to break occasionally and there's no notification that it broke until you figure out that the things aren't flowing anymore.",
+        "2026-04-13"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "01KHMY3YPTVN6QQFXGP769CX1C",
+    "name": "WhatsApp",
+    "installs": 30,
+    "rating": 3.0,
+    "review_count": 1,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 15,
+    "dead_signal": false,
+    "category": "communication-improvement",
+    "description": "Send message to anyone on Whatsapp by voice. Also get every conversation recap in your Whatsapp. You can also set reminders for yourself or someone else. You can also send messages in groups now",
+    "negative_reviews": [
+      [
+        1.0,
+        "its not working as shown in image",
+        "2026-03-30"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "its not working as shown in image",
+        "2026-03-30"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "01JK56VHHX9PCEHVTGG2VVM7ZA",
+    "name": "Audio Backup",
+    "installs": 7762,
+    "rating": 2.6666666666666665,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 200,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Save Omi capture audio to Google Drive. Omi Audio effortlessly saves audio segments to your Google Drive, capturing 30-second clips for easy organization and access.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        4.0,
+        "It works flawlessly, except there is no way I've found to correct the timezone from UTC for audio timestamps. Not a major issue, but the only annoyance I've found.",
+        "2025-08-06"
+      ],
+      [
+        1.0,
+        "How to unsubscribe? I don't want to pay $2 every month.",
+        "2025-09-26"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "01JEZC8MYAC69PH7QDC6HSMXN4",
+    "name": "Audio Journal – Document Your Voice",
+    "installs": 102,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Document your thoughts through audio memos, uncover insights and grow emotionally\n\nThis tool uses predefined markers (open, sesame, and close sesame) to extract insights from your audio transcription. It offers structured output that emphasizes clarity, categorization and psychological analysis, ideal for journaling and introspection\n\nHow to use it \n1. Say whatever you have in your mind without stopping \n2. If something clicks, you will annotate the following \n\n- capture your insight with verbal annotations using open and close sesames\n- to categorize it, you can say “category” dash after open sesame  \n\nFor example, blah blah blah open sesame heath dash the first thing you do after waking up is to stretch your body on the bed close sesame blah blah blah open sesame work dash do things that quietly compounds without efforts close sesame blah blah blah \n\nThen the output would be\n1. health - the first thing you do after waking up is to stretch your body on the bed\n\n2. work - do things that quietly compounds without efforts\n\n",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "01KF7MWFWJ9N3FGMDVJHZJERJ0",
+    "name": "Smart Alarm & Reminders",
+    "installs": 16,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 51,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Easily set reminders and alarms using voice commands in your conversations. Omi listens for phrases like 'set an alarm' or 'remind me', then schedules alarms or reminders—triggering a vibration when it’s time. You never miss important tasks or wake-up times, even when you’re busy talking. Perfect for staying organized and punctual without breaking the flow of your day.",
+    "negative_reviews": [
+      [
+        1.0,
+        "not working at all",
+        "2026-02-22"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "not working at all",
+        "2026-02-22"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "actionable-insights",
+    "name": "Actionable Insights",
+    "installs": 137,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Extracts key lessons from conversations, providing one or two specific actions to improve your daily life, free from general advice.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "art-of-seduction-01JD0M3SMJS020JDWXCZRARE6E",
+    "name": "Art of seduction",
+    "installs": 111,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "emotional-and-mental-support",
+    "description": "this app is crafted from the seductive character traits from the book art of seduction ",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "tasks-and-deadlines-extractor-01JDYJ4JGXZ87FSD3X1B7WRVRN",
+    "name": "Tasks and Deadlines Reminder",
+    "installs": 108,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "An application that automatically detects actionable tasks and deadlines from conversations. The application lists various aspects of the task such as the name, priority, deadline and dependencies. ",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 6
+  },
+  {
+    "id": "01JTF6YF5G492WKDH69B597394",
+    "name": "#1 The Best Summarizer",
+    "installs": 1107,
+    "rating": 4.65,
+    "review_count": 12,
+    "neg_count": 0,
+    "pos_count": 6,
+    "req_count": 0,
+    "days_since_last_review": 39,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "#1 The Best Summarizer effortlessly condenses lengthy conversations into clear, actionable summaries. Capture key insights, action items, and the overall vibe, ensuring you never miss important details while saving time and enhancing productivity in every discussion.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "love the app. amazing work",
+        "2025-09-02"
+      ],
+      [
+        4.0,
+        "Works really well, thank you! Love the \"Quotes\" as well.",
+        "2025-12-08"
+      ],
+      [
+        5.0,
+        "great but it’s writing everything in Spanish in the display card then translates it to English when I look at it.",
+        "2025-12-17"
+      ],
+      [
+        5.0,
+        "Good job, works well",
+        "2026-01-08"
+      ],
+      [
+        5.0,
+        "great !",
+        "2026-01-11"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "fucked",
+        "2025-08-06"
+      ],
+      [
+        5.0,
+        "nice app",
+        "2025-08-13"
+      ],
+      [
+        5.0,
+        "ok",
+        "2025-08-17"
+      ],
+      [
+        5.0,
+        "... nicht schlecht! 😁",
+        "2025-08-25"
+      ],
+      [
+        5.0,
+        "very good",
+        "2025-09-01"
+      ],
+      [
+        5.0,
+        "love the app. amazing work",
+        "2025-09-02"
+      ],
+      [
+        4.0,
+        "Works really well, thank you! Love the \"Quotes\" as well.",
+        "2025-12-08"
+      ],
+      [
+        5.0,
+        "great but it’s writing everything in Spanish in the display card then translates it to English when I look at it.",
+        "2025-12-17"
+      ],
+      [
+        4.0,
+        "well structured summary.\n\none issue is that it always starts with “Hey there -“. \n\ncan this be removed?",
+        "2026-01-07"
+      ],
+      [
+        5.0,
+        "Good job, works well",
+        "2026-01-08"
+      ],
+      [
+        5.0,
+        "great !",
+        "2026-01-11"
+      ],
+      [
+        5.0,
+        "it works well!",
+        "2026-03-06"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01KGAFFKFPGJ46690FD981N05F",
+    "name": "OpenClaw",
+    "installs": 876,
+    "rating": 4.857142857142857,
+    "review_count": 6,
+    "neg_count": 0,
+    "pos_count": 2,
+    "req_count": 0,
+    "days_since_last_review": 14,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "OpenClaw lets you seamlessly access and manage your OpenClaw instance via Omi, delivering secure, efficient control and real-time interaction for enhanced productivity on the go",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        4.0,
+        "Works well, but it would’ve been great to have a custom wake phrase instead of only “Hey OpenClaw”",
+        "2026-02-16"
+      ],
+      [
+        5.0,
+        "amazing!!",
+        "2026-03-16"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "happy birthday! <3",
+        "2026-02-09"
+      ],
+      [
+        5.0,
+        "smooth af",
+        "2026-02-10"
+      ],
+      [
+        4.0,
+        "Works well, but it would’ve been great to have a custom wake phrase instead of only “Hey OpenClaw”",
+        "2026-02-16"
+      ],
+      [
+        5.0,
+        "goated",
+        "2026-03-09"
+      ],
+      [
+        5.0,
+        "amazing!!",
+        "2026-03-16"
+      ],
+      [
+        5.0,
+        "Sensacional ! \n🇧🇷",
+        "2026-04-01"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01KBTYQAZSQFRZ809BQ46HW76M",
+    "name": "Imported From Limitless",
+    "installs": 265,
+    "rating": 4.666666666666667,
+    "review_count": 2,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 56,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Data imported from Limitless!",
+    "negative_reviews": [
+      [
+        3.0,
+        "I exported from limitless. The import fails expecting .md files but the export has JSON in the zip.",
+        "2026-02-18"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "how does it work tho ?",
+        "2026-01-07"
+      ],
+      [
+        3.0,
+        "I exported from limitless. The import fails expecting .md files but the export has JSON in the zip.",
+        "2026-02-18"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "conversation-summarizer",
+    "name": "Conversation Summarizer",
+    "installs": 2651,
+    "rating": 3.977777777777778,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 233,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Summarizes conversations into key points",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "great app",
+        "2025-08-25"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "great app",
+        "2025-08-25"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "kol-01JDVDXX852M5CNCEAC6MNMWP0",
+    "name": "KOL - The Girlfriend Retainer",
+    "installs": 989,
+    "rating": 4.111111111111111,
+    "review_count": 12,
+    "neg_count": 1,
+    "pos_count": 6,
+    "req_count": 1,
+    "days_since_last_review": 344,
+    "dead_signal": false,
+    "category": "social-and-relationships",
+    "description": "Communication for Better Relationships♥️ ",
+    "negative_reviews": [
+      [
+        5.0,
+        "Was about to breakup. It was bad. I was at rock bottom in my life. I thought I wouldn't make it to the next day in the right state of mind. Then my friends recommended using KOL. I have one word to say: THANKS! You guys saved my life.",
+        "2024-12-06"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        5.0,
+        "a great cha\nt model to talk to for advice",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "Great app!",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "literally love this app❤🙌 the concept is really appreciable",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "good app very helpful helped me come out of hard times we re both very happy now",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "Really great app, it really helped me and my partner.",
+        "2024-12-06"
+      ]
+    ],
+    "feature_requests": [
+      [
+        5.0,
+        "Very very creative, can see this becoming huge in self-directed relationship counseling, going to try it with my girlfriend later today, wish me luck lads!",
+        "2024-11-30"
+      ]
+    ],
+    "all_reviews": [
+      [
+        5.0,
+        "a great cha\nt model to talk to for advice",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "Great app!",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "literally love this app❤🙌 the concept is really appreciable",
+        "2024-11-29"
+      ],
+      [
+        5.0,
+        "Very very creative, can see this becoming huge in self-directed relationship counseling, going to try it with my girlfriend later today, wish me luck lads!",
+        "2024-11-30"
+      ],
+      [
+        5.0,
+        "good",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "very very nice. Good game",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "good app very helpful helped me come out of hard times we re both very happy now",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "Really great app, it really helped me and my partner.",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "great advice",
+        "2024-12-06"
+      ],
+      [
+        5.0,
+        "Was about to breakup. It was bad. I was at rock bottom in my life. I thought I wouldn't make it to the next day in the right state of mind. Then my friends recommended using KOL. I have one word to say: THANKS! You guys saved my life.",
+        "2024-12-06"
+      ],
+      [
+        1.0,
+        "doesn’t work",
+        "2025-03-31"
+      ],
+      [
+        5.0,
+        "muyiboysaka@gmail.com",
+        "2025-05-05"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "transcript-improver",
+    "name": "Improved Transcript",
+    "installs": 1451,
+    "rating": 3.9411764705882355,
+    "review_count": 3,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 268,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Infers speakers and analyzes sentiment in the transcript to improve it.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        4.0,
+        "The Improved Transcript is great for organizing the transcript properly since the main transcript is usually chopped up and not displaying properly. Minus 1 star only because sometimes important information is removed from the initial transcript.",
+        "2025-03-21"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        4.0,
+        "The Improved Transcript is great for organizing the transcript properly since the main transcript is usually chopped up and not displaying properly. Minus 1 star only because sometimes important information is removed from the initial transcript.",
+        "2025-03-21"
+      ],
+      [
+        1.0,
+        "it said my conversation was inappropriate and made something up instead",
+        "2025-06-28"
+      ],
+      [
+        5.0,
+        "although it does rewrite the transcript a little bit, it overall does capture the sentiment analysis quite well and it does a good job. summarizing the conversation. the only major issue is of course Omi and limitations on how good diarization is",
+        "2025-07-21"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "cognitive-bias-detector",
+    "name": "Cognitive Bias Detector",
+    "installs": 929,
+    "rating": 3.717391304347826,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 292,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Identifies cognitive biases and provides recommendations for more objective and rational thinking",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        4.0,
+        "Interesting",
+        "2025-06-27"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "insight-extractor",
+    "name": "Insight Extractor",
+    "installs": 1717,
+    "rating": 3.769230769230769,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Extracts the highest-value content from any conversation, surfacing commitments, decisions, knowledge, requests, and key context that you'll want to remember later.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "therapist-patient-notes",
+    "name": "Therapist Patient Notes",
+    "installs": 561,
+    "rating": 3.857142857142857,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Structured Psychotherapy Session Notes",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "omi-assist-01JDZXXQX2TXHK8Y3X638QYPTA",
+    "name": "Omi Assist",
+    "installs": 872,
+    "rating": 3.75,
+    "review_count": 3,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 288,
+    "dead_signal": false,
+    "category": "other",
+    "description": "A discreet, customizable assistant via Telegram bot that reacts to your secret phrases and sends crafted messages where you need it.\n\nWhether for safety or productivity- speak, and we'll take care of the rest",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "cool app",
+        "2024-12-10"
+      ],
+      [
+        3.0,
+        "i like the idea. but wasn’t able to use. not sure how to login and tune it",
+        "2024-12-14"
+      ],
+      [
+        2.0,
+        "I havent been able to use mine😭",
+        "2025-06-30"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "rizz-gpt",
+    "name": "Rizz GPT",
+    "installs": 240,
+    "rating": 3.1666666666666665,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 459,
+    "dead_signal": true,
+    "category": "social-and-relationships",
+    "description": "Rizz GPT boosts your charm with smooth, witty, and memorable conversation tips. Perfect for breaking the ice, keeping things playful, and making every chat engaging.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        2.0,
+        "if this sent notifications like friend app it would be pretty cool!",
+        "2025-01-10"
+      ]
+    ],
+    "all_reviews": [
+      [
+        2.0,
+        "if this sent notifications like friend app it would be pretty cool!",
+        "2025-01-10"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01JEP38S1HMN5YMJQWYKKVMCRZ",
+    "name": "I Need To Remember To",
+    "installs": 226,
+    "rating": 3.0,
+    "review_count": 1,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 411,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Effortlessly track your to-dos and reminders! This app helps you save important tasks, thoughts, or ideas with simple phrases like ‘Remind me to…’ or ‘I need to remember…’. \nAfter each transcript/memory, your notes are provided in a neat, organized list for quick and easy access whenever you need them. Stay on top of everything, hassle-free!",
+    "negative_reviews": [
+      [
+        1.0,
+        "pretty bad",
+        "2025-02-27"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "pretty bad",
+        "2025-02-27"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01JQMG24MHK2AD86BXNFEYTEPT",
+    "name": "Smart Mentor",
+    "installs": 404,
+    "rating": 3.0,
+    "review_count": 2,
+    "neg_count": 1,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 125,
+    "dead_signal": false,
+    "category": "safety-and-security",
+    "description": "Omi Mentor enhances your Omi app with real-time transcription and smart responses. It captures live transcriptions, processes them on a backend server using an advanced language model, and summarizes the content with Transformers. Summarized responses are sent as notifications to the Omi app. You can also manage transcriptions, create tasks, and track events like meetings or classes, all stored securely.",
+    "negative_reviews": [
+      [
+        1.0,
+        "not working",
+        "2025-12-10"
+      ]
+    ],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Hara krishna soham Da Ami Rathi",
+        "2025-05-29"
+      ],
+      [
+        1.0,
+        "not working",
+        "2025-12-10"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01K1ZT65EXGJH9HGAZCZ71898T",
+    "name": "Brain",
+    "installs": 761,
+    "rating": 3.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 126,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Brain is your personal AI memory assistant that transforms everyday conversations into a powerful, searchable knowledge graph.\n\n\n Every conversation, meeting, and thought is automatically processed to extract people, places, events, and concepts - creating a living, breathing map of your\n memories.\n\n\n KEY FEATURES:\n\n🧠 Automatic Memory Extraction - Identifies and stores important entities from your conversations\n\n🔗 Relationship Mapping - Discovers connections between people, places, and events  \n\n🎨 3D Visualization - Explore your memories in an interactive 3D graph\n\n💬 AI-Powered Chat - Query your memories with natural language\n\n🖼️ Auto-Enrichment - Memories enhanced with images and descriptions\n\n📊 Memory Analytics - Understand patterns in your interactions\n\n\nPerfect for:\n\n • Remembering important details from meetings\n • Tracking relationships and networking\n • Building your personal knowledge base\n • Never forgetting meaningful conversations\n\nYour second brain that never forgets.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "app does absolutely nothing that is described here, does not even maintain conversations from use to use. zero memory, no 3d graph, no use whatsoever for anything.",
+        "2025-12-05"
+      ],
+      [
+        1.0,
+        "How do I import my Omi data? It just shows options to manually paste memories, but I have a years worth of memories to copy and paste. That's like a ridiculous amount to manually copy and paste.",
+        "2025-12-09"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "warren-buffett-advisor",
+    "name": "Warren Buffett Advisor",
+    "installs": 164,
+    "rating": 2.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "financial",
+    "description": "A financial advisor plugin that embodies Warren Buffett's investment principles and communication style.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "strict-mentor",
+    "name": "Strict Mentor",
+    "installs": 300,
+    "rating": 2.7857142857142856,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Harsh, honest mentor",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "deception-detector",
+    "name": "Deception Detector",
+    "installs": 244,
+    "rating": 2.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "safety-and-security",
+    "description": "Find if someone is trying to manipulate you by making you biased against something",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "better-communicator",
+    "name": "Better Communicator",
+    "installs": 419,
+    "rating": 1.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Analyzes conversations to provide feedback on speaking clarity, effectiveness, and overall communication skills.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "fact-checker",
+    "name": "Fact Checker",
+    "installs": 319,
+    "rating": 1.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "news-and-information",
+    "description": "Gives a list of fake facts mentioned",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "01JG9QZPCG4VMB2DC1VWMPK9M9",
+    "name": "CodiBot",
+    "installs": 33,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": "Chat and Code",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01JJ916YCFGD98KTC40BNJ0248",
+    "name": "startup generator",
+    "installs": 133,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 245,
+    "dead_signal": true,
+    "category": "entertainment-and-fun",
+    "description": "create app ideas based on your daily conversation challenges",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "don't let you use it anymore. It's just disappeared",
+        "2025-08-13"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "dating-coach",
+    "name": "Dating coach",
+    "installs": 122,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 475,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Your dating coach that will help you with pick up",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        1.0,
+        "Not helpful.\nWhoever built this, has not the slightest Idea, how to get dates or be successful with girls.",
+        "2024-12-25"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "Not helpful.\nWhoever built this, has not the slightest Idea, how to get dates or be successful with girls.",
+        "2024-12-25"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "joke-extractor",
+    "name": "Joke Extractor",
+    "installs": 189,
+    "rating": 1.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "entertainment-and-fun",
+    "description": "Searches memories for jokes",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 5
+  },
+  {
+    "id": "research-companion-01JDDPB71451STT0R3MJN7PKDA",
+    "name": "research companion",
+    "installs": 37,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Advanced academic research and\n\ncitation helper",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "top-3-tasks-01JDJ7HTX3Z35HTXR6N29JKJC5",
+    "name": "TOP 3 tasks",
+    "installs": 43,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Say \"show my TOP 3 tasks\" and receive a notification with the three most crucial tasks to crush today. No more feeling overwhelmed!\n\nWith TOP 3 Tasks, effortlessly manage your day by sharing your tasks and ideas with Omi as they come to you—anytime, anywhere. The app intelligently selects the most important tasks for you, ensuring that you focus on what truly matters. By concentrating on your TOP 3 tasks, you can conquer your day and then relax, knowing you've accomplished your most important goals.\n\nThis proven method keeps you productive, moving forward, and feeling accomplished, all without the risk of overwhelm, burnout, or analysis paralysis. Every morning, you'll receive three new tasks based on what you completed and any new priorities that have emerged, so you're always ready to tackle the day!\n\nTasks are created from your Omi memories automatically, from the moment of app installation, so memories before the app was installed won't be considered for tasks.\n\nTo update a task as completed, just say it to Omi, for example \"I'm done with the marketing report\". This won't change your list of 3 tasks for the day, but for following days this task won't appear anymore.\n\nThe top 3 tasks are updated at midnight, so you get new tasks every day.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 5
+  },
+  {
+    "id": "01K7BHKJR79KQQW7ZZGZX7GCGD",
+    "name": "GitHub",
+    "installs": 191,
+    "rating": 5.0,
+    "review_count": 3,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 81,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Just say “Feedback Post” or “Create Issue” and have your feedback magically posted as a GitHub issue in your selected repo!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Nice",
+        "2025-10-14"
+      ],
+      [
+        5.0,
+        "you have video manual?",
+        "2025-12-12"
+      ],
+      [
+        5.0,
+        "Nice app",
+        "2026-01-24"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "paul-graham",
+    "name": "Paul Graham",
+    "installs": 340,
+    "rating": 3.775,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Meet Paul Graham, a dynamic entrepreneur with roots in Venezuela and Russia, now navigating life in the vibrant tech scene of Boston and San Francisco. At just 23, Paul is a seasoned traveler, having explored 40 countries, and is a serial entrepreneur who launched his first company at 15. Despite his busy career, he maintains a rich tapestry of friends worldwide and values meaningful connections. Paul's adventurous spirit is matched by his academic ties to MIT, where he blends intellect with innovation. Health-conscious and resilient, he manages Type 1 diabetes with grace.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "installs": 156,
+    "rating": 3.8333333333333335,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 236,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Seamlessly integrate Zapier with Omi to automate workflows effortlessly. Trigger actions with \"On Conversation Creation\" and instantly create conversations in the Friend App, streamlining your communication and enhancing productivity. Transform your interactions with smart automation today!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "great!",
+        "2024-11-11"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "great!",
+        "2024-11-11"
+      ],
+      [
+        1.0,
+        "There is no OMI or Friend app in Zapier",
+        "2025-08-21"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "doctor-patient-notes",
+    "name": "Doctor Patient Notes",
+    "installs": 353,
+    "rating": 3.6333333333333333,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "health-and-wellness",
+    "description": "Elegant Clinical Notes for Doctors",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "topic-identifier",
+    "name": "Topic Identifier",
+    "installs": 457,
+    "rating": 3.7142857142857144,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 504,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Identifies the different topics in a conversation and summarizes them",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "pretty meh",
+        "2024-11-27"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "01KFPBYFB3YT5SE6P4CJY7MH9K",
+    "name": "Microsoft OneNote",
+    "installs": 57,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 1,
+    "days_since_last_review": 80,
+    "dead_signal": false,
+    "category": "education-and-learning",
+    "description": "Search or create notes with simple voice commands or through chat!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "This is amazing, I highly recommend!!! I can summarize my chats and save to OneNote, search my existing notes, and even turn my notes into new tasks in Omi! Thank you Aarav!!!",
+        "2026-01-24"
+      ]
+    ],
+    "feature_requests": [
+      [
+        5.0,
+        "This is amazing, I highly recommend!!! I can summarize my chats and save to OneNote, search my existing notes, and even turn my notes into new tasks in Omi! Thank you Aarav!!!",
+        "2026-01-24"
+      ]
+    ],
+    "all_reviews": [
+      [
+        5.0,
+        "This is amazing, I highly recommend!!! I can summarize my chats and save to OneNote, search my existing notes, and even turn my notes into new tasks in Omi! Thank you Aarav!!!",
+        "2026-01-24"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "echosense",
+    "name": "EchoSense",
+    "installs": 470,
+    "rating": 3.75,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 543,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Analyzes the emotional tone and communication quality of a transcribed conversation. It identifies the speaker's emotional state, offers constructive feedback on their communication style, and encourages reflection on how their words might have been perceived. The goal is to help users connect more deeply with their emotions and improve their communication skills.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "it just works",
+        "2024-10-18"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "map-notes",
+    "name": "Map Notes",
+    "installs": 461,
+    "rating": 3.5,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 351,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Drop notes as pins on the world around you by saying 'start map note' or 'clip this', your note, then 'end map note' or 'clip that'.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "Start map note, notes, end map note doesn't do anything except create a summary of a conversation.",
+        "2025-04-28"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "sentiment-analyzer",
+    "name": "Sentiment Statistics",
+    "installs": 254,
+    "rating": 3.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Provides insight into conversation sentiment",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "eli5",
+    "name": "ELI5 (Explain Like I'm 5)",
+    "installs": 155,
+    "rating": 3.6666666666666665,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "ELI5 makes complicated topics simple, breaking them down into easy, everyday language anyone can understand.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "game-theory-strategist",
+    "name": "Game Theory Strategist",
+    "installs": 245,
+    "rating": 3.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Analyzes conversations and provides game-theoretic insights and strategic recommendations.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "medical-history-summary",
+    "name": "Medical History Summary",
+    "installs": 215,
+    "rating": 3.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Concise Summary of Patient's Medical History",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "lie-detector",
+    "name": "Lie Detector",
+    "installs": 232,
+    "rating": 3.375,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Lie Detector helps you spot signs of insincerity, letting you read between the lines with confidence.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "side-quest-detector",
+    "name": "Side Quest Detector",
+    "installs": 173,
+    "rating": 3.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Discovers meaningful side quests in your conversations, rating their difficulty and potential impact. Only surfaces truly valuable opportunities that could lead to interesting outcomes.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "startup-mentor",
+    "name": "Startup Mentor",
+    "installs": 344,
+    "rating": 3.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Honest mentor who provides valuable feedback",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "01KCAHZ0D65QAFPSB6H1REXQ06",
+    "name": "Grade",
+    "installs": 209,
+    "rating": 3.3333333333333335,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 114,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Grades your performance and learning speed, suggests how to improve",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "tested",
+        "2025-12-22"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "micro-habit-builder",
+    "name": "Micro-Habit Builder",
+    "installs": 128,
+    "rating": 3.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Build micro-habits based on conversations. Identifies small actionable tasks aligned with the user’s goals and tracks progress over time.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "01JG0H372CTNGAHBQ4VXWNKWMV",
+    "name": "Everything is content",
+    "installs": 92,
+    "rating": 3.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 1,
+    "days_since_last_review": 254,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": " Everything is content. So if you’re a creator, you want an easy way to create content based on what’s happening in your world, this will do it for you.  Easily create content for social media in your blog, based on your real life without lifting a finger",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ]
+    ],
+    "all_reviews": [
+      [
+        1.0,
+        "Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.",
+        "2025-02-23"
+      ],
+      [
+        5.0,
+        "Seems to work so far! I like that it seperates the types of content based off where you plan to post",
+        "2025-08-04"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "advanced-fact-checker",
+    "name": "Advanced Fact Checker",
+    "installs": 437,
+    "rating": 3.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "news-and-information",
+    "description": "Searches the web and provides additional reading for contentious statements",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "david-goggins",
+    "name": "David Goggins",
+    "installs": 127,
+    "rating": 3.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 350,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Personality of David Goggins. Get no-excuses, tough love advice to help you push through challenges and stay focused.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "absolutely random. makes stuff up hard.",
+        "2025-04-29"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "omniscience-papergen",
+    "name": "Omniscience Paper Generator",
+    "installs": 139,
+    "rating": 3.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Create Paper prompts from conversation.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "raise-agency-swyx",
+    "name": "Raise Agency: Stop Being an NPC",
+    "installs": 108,
+    "rating": 3.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Stop being a pushover. Raise your own agency in life using tips from Emmett Shear et al",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "tweet-extractor",
+    "name": "Tweet Extractor",
+    "installs": 202,
+    "rating": 3.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Generates engaging tweets based on your real-life conversations and experiences",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "unspoken-links",
+    "name": "Unspoken Links",
+    "installs": 475,
+    "rating": 3.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "This app analyzes conversation transcripts to uncover unspoken implications, contextual gaps, and overlooked connections. By identifying assumptions, underexplored topics, and unresolved questions, it generates insightful follow-up questions to encourage deeper discussions and enhance understanding of the subject matter.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "conversation-energizer",
+    "name": "Conversation Energizer",
+    "installs": 69,
+    "rating": 2.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Conversation Energizer reviews past conversations to suggest topics, questions, and comments that can keep future chats lively and avoid any awkwardness.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "01KCJ0ZQ0HV4CDGDGH1Y6TCXA1",
+    "name": "Omi Teacher",
+    "installs": 92,
+    "rating": 2.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Answers all questions real-time",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "follow-up-friend",
+    "name": "Follow Up Friend",
+    "installs": 84,
+    "rating": 2.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Follow Up Friend helps you stay connected by identifying key points to follow up on, making every conversation memorable.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "learning-loop",
+    "name": "Learning Loop",
+    "installs": 86,
+    "rating": 2.5,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Identifies moments of curiosity or knowledge gaps in conversations and suggests follow-up learning resources to close these gaps.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "01JQP1YEX0QHDV93J4A5H5R3SA",
+    "name": "Omexa",
+    "installs": 32,
+    "rating": 1.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Omexa is a friendly, assistive social AI integrated with the Omi wearable, offering real-time companionship, emotional support, and personalized mentorship.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "choice-path",
+    "name": "Choice Path",
+    "installs": 33,
+    "rating": 1.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 487,
+    "dead_signal": true,
+    "category": "entertainment-and-fun",
+    "description": "Choice Path is an interactive app that guides users through real life social dilemma tailored to their age group, encouraging thoughtful reflection on ethical issues. Users respond to scenarios, receive personalized feedback and explore the reasoning behind different choices.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "1. \"About\" begs the need for this app?\n2. Doesn't explicitly request age as prompt indicates\n3. Hey Rowan! 🌍✨ I can only imagine how your mind must be buzzing with all the exciting changes ahead—moving abroad is like opening a new chapter in a book..",
+        "2024-12-13"
+      ]
+    ],
+    "fix_score": 4
+  },
+  {
+    "id": "stranger-danger-alert",
+    "name": "Stranger Danger Alert",
+    "installs": 75,
+    "rating": 1.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "safety-and-security",
+    "description": "Analyzes conversations for signs of potential danger and prompts users to seek help.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "nik-shevchenko",
+    "name": "Nik Shevchenko",
+    "installs": 87,
+    "rating": 2.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Meet Nik Shevchenko, a globetrotting, dynamic entrepreneur with a knack for turning challenges into opportunities. From their humble beginnings on a small Russian island to joining the vibrant MIT community, Nik's journey is anything but ordinary. With over 40 countries under their belt, a third-time founder, and a penchant for innovation, Nik continues to redefine boundaries. Despite the whirlwind of their professional life, Nik treasures connections, from collaborating with a diverse range of colleagues to nurturing friendships worldwide. A spirited adventurer at heart, they navigate life with resilience, always chasing the next horizon.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 4
+  },
+  {
+    "id": "bitcoin-live",
+    "name": "Bitcoin Live",
+    "installs": 727,
+    "rating": 4.875,
+    "review_count": 4,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 132,
+    "dead_signal": false,
+    "category": "financial",
+    "description": "Just say “Bitcoin Pirce” to get the latest price. Powered by CoinGecko.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        4.0,
+        "Cool app but could be better with Monero and other Crypto on it.",
+        "2024-11-23"
+      ],
+      [
+        5.0,
+        "muyiboysaka@gmail.com",
+        "2025-05-05"
+      ],
+      [
+        5.0,
+        "Fast and effective!!",
+        "2025-11-06"
+      ],
+      [
+        5.0,
+        "so smooth, can we have other crypto also please or maybe all stocks 🥰",
+        "2025-12-03"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "class-notes",
+    "name": "Class Notes",
+    "installs": 908,
+    "rating": 4.333333333333333,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 391,
+    "dead_signal": false,
+    "category": "education-and-learning",
+    "description": "Takes notes optimised for classses and lectures",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Fantastic app for classes it is very good at remembering important concepts and what to do for homework. Very accurate. \nThe only complaint I have is it sometimes tries to analyze conversations that aren't classes. Still a five star app.",
+        "2024-09-27"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Fantastic app for classes it is very good at remembering important concepts and what to do for homework. Very accurate. \nThe only complaint I have is it sometimes tries to analyze conversations that aren't classes. Still a five star app.",
+        "2024-09-27"
+      ],
+      [
+        5.0,
+        "accurately summarizes and organizes class notes",
+        "2025-03-20"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "lie-detector-pro",
+    "name": "Lie Detector Pro",
+    "installs": 1642,
+    "rating": 4.222222222222222,
+    "review_count": 3,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 309,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Analyzes a conversation between two or more speakers for signs of dishonesty, focusing on inconsistent statements, hesitations, over-compensation, vague responses, emotional tone, distancing language, and response times. It concludes with a percentage indicating each speaker's likelihood of deception.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "amazing",
+        "2025-06-09"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Very good Idea I really like this app! 😅",
+        "2024-11-23"
+      ],
+      [
+        1.0,
+        "nice concept but i could not get it to turn on/work",
+        "2025-04-15"
+      ],
+      [
+        5.0,
+        "amazing",
+        "2025-06-09"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "omi-translator-01JCQ2RMAZ3T7B1TPAG000498F",
+    "name": "Translator",
+    "installs": 229,
+    "rating": 4.076923076923077,
+    "review_count": 6,
+    "neg_count": 1,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 477,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": "Translate to the language you want!\r\nUsing LLM to translate texts mentioned!\r\nSet up the target language through the setup link, and simply say “translate” followed by a sentence to be translated!\r\n\r\nhackathon submission",
+    "negative_reviews": [
+      [
+        1.0,
+        "stopped working for me",
+        "2024-12-23"
+      ]
+    ],
+    "positive_reviews": [
+      [
+        5.0,
+        "Really useful!",
+        "2024-11-25"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Nice translator!",
+        "2024-11-25"
+      ],
+      [
+        5.0,
+        "Used it for five languages, works quite well!",
+        "2024-11-25"
+      ],
+      [
+        5.0,
+        "Really useful!",
+        "2024-11-25"
+      ],
+      [
+        1.0,
+        "it does not work for me. neither notification - i did not received any notification - or chat - it did not translate my chat to Japanese (have done the setup)",
+        "2024-11-26"
+      ],
+      [
+        1.0,
+        "Tried to translate from English to Japanese, and it totally did not understand my context.",
+        "2024-11-30"
+      ],
+      [
+        1.0,
+        "stopped working for me",
+        "2024-12-23"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "task-breakdown-",
+    "name": "ADHD Assistant",
+    "installs": 1350,
+    "rating": 4.75,
+    "review_count": 3,
+    "neg_count": 0,
+    "pos_count": 2,
+    "req_count": 0,
+    "days_since_last_review": 114,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "breaks down tasks into micro to-do lists, similar to the daily action plan but for individual memories. Uses ADHD friendly planning, but will help anyone ",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Works great",
+        "2024-12-23"
+      ],
+      [
+        5.0,
+        "Might seem simple but for me as severe predominantly inattentive ADHD person, it saves hours of postponing, daydreaming and procrastination. when I onboarded Omi, it was my first idea to make such an app, but it's already here and it's awesome!",
+        "2024-12-29"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Works great",
+        "2024-12-23"
+      ],
+      [
+        5.0,
+        "Might seem simple but for me as severe predominantly inattentive ADHD person, it saves hours of postponing, daydreaming and procrastination. when I onboarded Omi, it was my first idea to make such an app, but it's already here and it's awesome!",
+        "2024-12-29"
+      ],
+      [
+        5.0,
+        "works good for retard like me. if u retard like me, then this app will get on its hands n knees and take all of you into its mouth and say with its eyes and full mouth “you are yummy good sir, can I have seconds please?”",
+        "2025-12-21"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "dictionary",
+    "name": "Automatic Dictionary",
+    "installs": 527,
+    "rating": 4.166666666666667,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Get definitions for complicated words",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "nvc-communication-analyzer",
+    "name": "NVC Communication Analyzer",
+    "installs": 546,
+    "rating": 4.666666666666667,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "communication-improvement",
+    "description": "Analyze conversations to detect Non-Violent Communication (NVC) principles, provide ratings, insights, and suggestions for improving communication.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "latent-information-analyzer",
+    "name": "Latent Information Analyzer",
+    "installs": 1357,
+    "rating": 4.2,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "other",
+    "description": "Identifies what you're missing in conversations - unaddressed questions, skipped topics, missed signals, and implicit assumptions. Helps you catch important details that often slip through the cracks.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "note-to-self",
+    "name": "Note to Self",
+    "installs": 1511,
+    "rating": 4.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Captures personal notes and reminders from conversations",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "01JG45JK625X6AG55CM751GAHB",
+    "name": "Prompt Engineer - MiniMax",
+    "installs": 528,
+    "rating": 5.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 183,
+    "dead_signal": false,
+    "category": "communication-improvement",
+    "description": "This micro app will help you craft a prompt for GPT chat bot, to optimally and effectively use it's capabilities. Instead of engineering an advanced prompt yourself, let the Omi AI do it. Tell it what is the goal you want to achieve using GPT chatbot (external) and receive a prompt for this purpose.\n\nMiniMax is a brand of micro apps in Omi environment. Each app is set to work as one of my (Aleks Daydreamer) own advanced GPT functionalities. Max is my personal GPT based on GPT-4o by OpenAI, trained for last 10 months to serve as my work and home assistant.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "good App",
+        "2025-02-17"
+      ],
+      [
+        5.0,
+        "will practice",
+        "2025-10-14"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "reasoner-friend",
+    "name": "Reasoner Friend",
+    "installs": 552,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "emotional-and-mental-support",
+    "description": "Friendly AI companion that helps users think through decisions, ideas, or challenges with a warm and thoughtful tone.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "speech-coach",
+    "name": "Speech Coach",
+    "installs": 920,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Provides feedback on public speaking skills and suggests improvements",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "steve-jobs",
+    "name": "Steve Jobs",
+    "installs": 591,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "personality-emulation",
+    "description": "Personality of Steve Jobs. Get visionary, design-focused advice to help you pursue excellence, innovation, and simplicity.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "01JFMFZEPY2YNRK17GDCPPPWBV",
+    "name": "Agreements, Commitments & Conclusions reached. ",
+    "installs": 577,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "productivity-and-organization",
+    "description": "Highlight a list of relevant agreements, commitments, or conclusions reached. \n",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "01KDPR3X0H3SM584XZ0A7VNX5K",
+    "name": "Relationship Health Tracker",
+    "installs": 22,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 18,
+    "dead_signal": false,
+    "category": "social-and-relationships",
+    "description": "Track the well-being of your romantic relationships with insightful analysis and personalized feedback. This app analyzes your conversations for signs of commitment, emotional connection, communication effectiveness, and overall relationship health. Receive regular feedback, tips, and encouragement to strengthen your bond based on real interactions. Ideal for couples who want proactive guidance to maintain and improve their relationship dynamics.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "This is a really good app and I’m enjoying getting to “know” it and process emotions.",
+        "2026-03-27"
+      ]
+    ],
+    "fix_score": 3
+  },
+  {
+    "id": "networking-guru",
+    "name": "Networking Guru",
+    "installs": 506,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "Networking Guru helps users excel at professional and social networking. It provides follow-up strategies, remembers key personal details, and suggests ways to strengthen connections.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "omi-reflect-integration",
+    "name": "Reflect Notes",
+    "installs": 40,
+    "rating": 3.6666666666666665,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Connect your OMI conversations with your Reflect notes seamlessly! Capture OMI Memories and/or Transcripts, map conversations to Reflect Daily notes, and consolidate action items.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "naval",
+    "name": "Naval",
+    "installs": 75,
+    "rating": 3.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Personality of Naval Ravikant. Get advice inspired by his \"How to Get Rich\" guide and philosophical clarity for every conversation.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "mun-assistant",
+    "name": "MUN Assistant",
+    "installs": 13,
+    "rating": 2.25,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "An assistant to help summarize countries' positions at Model United Nations events",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 3
+  },
+  {
+    "id": "01KF1BMCHHPFGYNZFDXQVWN48H",
+    "name": "WiWi",
+    "installs": 16,
+    "rating": 5.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 87,
+    "dead_signal": false,
+    "category": "emotional-and-mental-support",
+    "description": "WiWi is a calm, wisdom-first AI companion helping you reflect, find clarity, and take better next steps, across life, work, and wellbeing.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Wiwi understands before i think. Aurora, the AI companion is now my best friend!!!",
+        "2026-01-17"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Wiwi understands before i think. Aurora, the AI companion is now my best friend!!!",
+        "2026-01-17"
+      ],
+      [
+        5.0,
+        "This works amazingly good. Has me helped alot.",
+        "2026-01-17"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "marcus-aurelius",
+    "name": "Marcus Aurelius",
+    "installs": 412,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Stoic, philosopher, wise, disciplined, concise, dignified",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "neva",
+    "name": "Dermatology Assistant",
+    "installs": 103,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "NEVA is an advanced AI-powered documentation platform specifically designed for the unique demands of medical dermatology practices. By leveraging automated note generation and intelligent data extraction, NEVA enables dermatologists and clinical staff to efficiently create thorough, accurate, and high-quality clinical documentation, significantly reducing time spent on administrative tasks. Integrated seamlessly into clinical workflows, NEVA empowers providers to deliver patient-centered care with greater ease and effectiveness.\n\nKey Capabilities:\n\t•\tAutomated Clinical Documentation: Quickly converts patient interactions into structured clinical notes, accurately capturing patient history, clinical assessments, diagnoses, treatment plans, and follow-up instructions.\n\t•\tIntelligent Data Extraction: Efficiently identifies and highlights critical patient details, supporting informed, evidence-based clinical decisions.\n\t•\tEnhanced Team Collaboration: Streamlines communication among clinic staff, ensuring coordinated and consistent patient care management and timely task completion.\n\t•\tDermatology-Focused Accuracy: Consistently adheres to dermatological industry standards and clinical best practices, ensuring comprehensive, precise, and compliant documentation.\n\nNEVA transforms dermatological care by streamlining documentation processes, enhancing clinical efficiency, and fostering improved patient outcomes.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "lifeagotchi",
+    "name": "Lifeagotchi",
+    "installs": 366,
+    "rating": 4.2,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Advanced life RPG system with deep progression mechanics, skill trees, and dynamic stat tracking. Level up your actual life with game-like precision!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "programming-duck-01JCQS0MYYF08WAP3N2XW817Z5",
+    "name": "Programming Duck",
+    "installs": 150,
+    "rating": 4.2,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 357,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Introducing QuackAI, an AI rubber duck that actually gives a Quack back! 🦆\n\nQuackAI transforms the classic rubber duck debugging method into an interactive experience. Whether you're stuck on a tricky bug or brainstorming new features, this smart duck companion helps you:\n• Think through your code problems\n• Remember important concepts\n• Get gentle nudges in the right direction\n• Celebrate your coding victories\n\nPerfect for developers who want a friendly companion that makes debugging both fun and productive. Let's quack that code together! 💻✨",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        1.0,
+        "weird",
+        "2025-04-22"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "task-flow-01JDCRZXNXQQD4HZC573SV81DS",
+    "name": "Task Flow",
+    "installs": 148,
+    "rating": 4.0,
+    "review_count": 6,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 415,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Turn conversations into actionable tasks with TaskFlow, the Omi app extension that listens, extracts, and structures tasks in JSON format.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Awesome app, east to navigate",
+        "2024-12-15"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "No more scribbling notes during calls. Task flow keeps me organized like a pro. I get all my to do's after my meeting!",
+        "2024-12-13"
+      ],
+      [
+        5.0,
+        "Knows how to pick out tasts from conversations well.",
+        "2024-12-13"
+      ],
+      [
+        5.0,
+        "Every task, every detail, captured perfectly!",
+        "2024-12-15"
+      ],
+      [
+        5.0,
+        "Awesome app, east to navigate",
+        "2024-12-15"
+      ],
+      [
+        1.0,
+        "doesn’t work yet",
+        "2024-12-23"
+      ],
+      [
+        2.0,
+        "okay and what am I supposed to do with the JSON: copy and paste it from every note into a better app?",
+        "2025-02-23"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "name": "Ticket Notes",
+    "installs": 124,
+    "rating": 5.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 2,
+    "req_count": 0,
+    "days_since_last_review": 455,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": "Ticket Notes simplifies ticket management by automatically extracting ticket numbers and summarizing user issues with clear resolutions. Enhance your support efficiency with organized documentation for future reference, ensuring professional and thorough ticket closure. Streamline your support process effortlessly!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "works great, makes taking notes much easier!",
+        "2025-01-14"
+      ],
+      [
+        5.0,
+        "Total game changer. ! Absolutely love this app.",
+        "2025-01-14"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "works great, makes taking notes much easier!",
+        "2025-01-14"
+      ],
+      [
+        5.0,
+        "Total game changer. ! Absolutely love this app.",
+        "2025-01-14"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "01K7GFKJ2JJVYH7868HW81GY7X",
+    "name": "Slack",
+    "installs": 108,
+    "rating": 5.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 133,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Just say “Send Slack message to X channel” and then say your message.\n\nFor example, “Send Slack message to social, What time are we guys meeting?”",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Super helpful",
+        "2025-12-02"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Works pretty well",
+        "2025-12-02"
+      ],
+      [
+        5.0,
+        "Super helpful",
+        "2025-12-02"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "einstein",
+    "name": "Albert Einstein",
+    "installs": 280,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 153,
+    "dead_signal": false,
+    "category": "personality-emulation",
+    "description": "Personality of Einstein. Get thoughtful, creative advice inspired by Einstein's curiosity and intellectual depth.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Awesome",
+        "2025-11-12"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Awesome",
+        "2025-11-12"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "music-identifier-01JCWPVGQX00GRCKP194TK6S7A",
+    "name": "Music Identifier",
+    "installs": 489,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 470,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": "This app identifies song lyrics from the transcript and then accurately finds the song and gives the artist and album. Plus, information on where you heard the song at like \"At the restaurant\" or \"At the park\".",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Very cool app, nails most the lyrics I throw at it. Has a lot of potential!",
+        "2024-12-30"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "storytelling-mentor-01JDYTETJ3ZZAJCS718YCCGRQP",
+    "name": "Storytelling Mentor",
+    "installs": 448,
+    "rating": 5.0,
+    "review_count": 2,
+    "neg_count": 0,
+    "pos_count": 2,
+    "req_count": 0,
+    "days_since_last_review": 494,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "The Storytelling Mentor is a chat prompt designed to refine your storytelling craft. Whether you’re crafting a novel, speech, or presentation, it offers personalized expert guidance to shape your narrative. The tool tailors its advice to your unique style and medium, focusing on key elements such as structure, pacing, character development, and emotional resonance. With practical strategies, it helps you engage your audience and enhance your message, ensuring your storytelling leaves a lasting impact.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "It is a creative innovation for generating amazing story ideas and such.",
+        "2024-11-30"
+      ],
+      [
+        5.0,
+        "Fell in love with this app.\nThis helps creates best short stories and abilities with concepts too",
+        "2024-12-06"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "It is a creative innovation for generating amazing story ideas and such.",
+        "2024-11-30"
+      ],
+      [
+        5.0,
+        "Fell in love with this app.\nThis helps creates best short stories and abilities with concepts too",
+        "2024-12-06"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "daily",
+    "name": "Daily",
+    "installs": 325,
+    "rating": 4.333333333333333,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Your todo-list, weather, crypto prices, definitions, synonyms, and more!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "48-laws",
+    "name": "48 Laws Guide",
+    "installs": 318,
+    "rating": 4.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Provides strategic advice inspired by the 48 Laws of Power.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JFBNRBDB5YB22EKQB9GR8V4D",
+    "name": "Light the World",
+    "installs": 102,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "social-and-relationships",
+    "description": "An app to give you ways to #lighttheworld",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JJS4WFK4VB3YB92W34NP64Z7",
+    "name": "Get the Girl",
+    "installs": 250,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "communication-improvement",
+    "description": "Unlock the secrets to successful flirting with Get the Girl! This innovative app analyzes your conversations, offering real-time suggestions and tips to help you craft the perfect reply, boosting your confidence and increasing your chances of landing that date.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JK94155ZQG4TVDHRGX6MBEH9",
+    "name": "Rilla",
+    "installs": 125,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "connects omi to the Rilla conversation system",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JKG5BJ8B3M14DST97BW360QW",
+    "name": "Finance AI",
+    "installs": 289,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "financial",
+    "description": "Omi Finance AI is an advanced AI-powered financial assistant designed to help users manage wealth, optimize investments, track expenses, and plan for financial independence. It provides expert insights on budgeting, investing, cryptocurrency, risk management, and long-term financial planning.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JQ8VRYGM8K198ZMM7B1TA9KR",
+    "name": "Omira",
+    "installs": 404,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 352,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Unlock the future of well-being with Omira! Our innovative app harnesses the power of AI to track your health, analyze conversations, and provide personalized insights tailored just for you. Seamlessly connect your memories and experiences to enhance your daily life, making every interaction meaningful. Whether you're looking to improve your nutrition, manage stress, or simply stay organized, Omira is here to guide you on your journey to a healthier, happier you.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "This app is easily the best app for this device! It allows me to see my memories on my laptop aswell have an AI tell me places I could improve and so much more! Deserves so much more love! Even has a password reset which similar apps. 10/10!",
+        "2025-04-27"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "This app is easily the best app for this device! It allows me to see my memories on my laptop aswell have an AI tell me places I could improve and so much more! Deserves so much more love! Even has a password reset which similar apps. 10/10!",
+        "2025-04-27"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "01JQNYAP43BNNV7KY26T9D84KV",
+    "name": "Learning boost",
+    "installs": 102,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 364,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Unlock your potential with Learning Boost! This dynamic app transforms complex physics and math concepts into engaging, easy-to-understand lessons, making learning enjoyable and exciting. Elevate your study experience and excel in your subjects with interactive tools and personalized support",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "great",
+        "2025-04-16"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "great",
+        "2025-04-16"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "01K1EAXBSGHS1JXZS8MKW8TGZ4",
+    "name": "Omi Translate",
+    "installs": 199,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Omi Translate is your indispensable companion for breaking down language barriers in real-time. Seamlessly translate conversations and text on the fly, directly through your Omi device. Whether you're traveling, conducting international business, or simply learning a new language, Omi Translate ensures clear and effortless communication. Get instant translations, summarize multi-lingual discussions, and receive key insights, all powered by Omi's intelligent AI. Enhance your global interactions with accuracy and ease. Perfect for professionals, travelers, and language learners.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01K26NHMXEB6ZAXE09C01MA5WJ",
+    "name": "FamilyMirror",
+    "installs": 100,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "emotional-and-mental-support",
+    "description": "FamilyMirror — See Your Conversations Clearly\n\nFamilyMirror uses Virginia Satir’s model to analyze your conversations, uncover hidden dynamics, and show how each participant’s communication style affects the outcome.\n\nUpload a transcript to:\n\t•\tIdentify roles like Blamer, Placater, or Leveler\n\t•\tReveal hidden emotions and needs\n\t•\tGet actionable tips and ready-to-use I-statements\n\t•\tImprove trust and harmony at home\n\nFamilyMirror — understand each other, connect deeper.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01K6QSJR57F31Y99FPMB3B5RT1",
+    "name": "Quick Sync",
+    "installs": 193,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "This app is designed for everyday work conversations that don't fit a specific meeting format. It captures informal discussions, quick syncs, ad-hoc problem-solving sessions, and spontaneous work-related conversations in a flexible structure that adapts to whatever was actually discussed.\n\n## Use this app when the transcript contains:\n- Informal or unstructured work conversations between colleagues\n- Quick syncs or check-ins without a formal agenda\n- Ad-hoc problem-solving or troubleshooting discussions\n- Spontaneous brainstorming or idea exploration about work topics\n- Mixed work topics that don't follow a specific meeting pattern\n- Casual updates or information sharing between team members\n- Exploratory discussions about potential projects or ideas\n- Quick decision-making conversations about work matters\n- Follow-up discussions on ongoing work without formal structure\n- Water cooler conversations that include work-related content\n\n## Key indicators in transcript:\n- No clear meeting agenda or structure, but work-focused\n- Conversational, informal tone about professional matters\n- Work topics emerge organically and may shift multiple times\n- Quick decisions or clarifications about work\n- Spontaneous idea generation related to projects or tasks\n- No formal roles (presenter, facilitator, etc.)\n- Natural back-and-forth dialogue about work matters\n- May include tangents but stays work-relevant\n- Could be 2+ people having an organic work conversation\n\n## Do NOT use this app when:\n- Meeting has a clear structure and predefined agenda (use Team Progress Meeting or 1:1 Meeting templates)\n- Conversation is purely personal/social with no work content (use General Conversation)\n- Formal presentation or demo being given\n- Client-facing or sales conversations with clear objectives\n- Interview or candidate screening\n- Training or educational session with curriculum\n- Performance review or evaluation\n\n## App Best Suited For:\nHallway conversations, Slack huddles, quick Zoom calls, coffee chats with work discussion, spontaneous problem-solving sessions, casual team syncs, and any unstructured work-related conversation worth capturing.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01KCSFZ77Z6ZCSCGETKVPEETMV",
+    "name": "Hive",
+    "installs": 3,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 81,
+    "dead_signal": false,
+    "category": "utilities-and-tools",
+    "description": "Manage your Hive tasks and projects using Omi voice commands!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Aarav absolutely crushed it!!! I can hold down my Omi button and dictate my Hive tasks, or ask the chat to review my conversations and Omi task list to and migrate to specific projects. Total game changer for getting the most out of my Omi!",
+        "2026-01-23"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Aarav absolutely crushed it!!! I can hold down my Omi button and dictate my Hive tasks, or ask the chat to review my conversations and Omi task list to and migrate to specific projects. Total game changer for getting the most out of my Omi!",
+        "2026-01-23"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "01KF0H2ZXN3KN3Z8M9M9S5ENNZ",
+    "name": "CultureMate",
+    "installs": 8,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 82,
+    "dead_signal": false,
+    "category": "travel-and-exploration",
+    "description": "CultureMate helps you become a global citizen by immersing you in diverse cultures through your daily conversations. The app provides instant insights on customs, etiquette, and local perspectives from around the world. Chat with your virtual cultural ambassador to ask questions, get travel tips, understand cultural nuances, and learn key phrases. After your interactions and conversations, CultureMate analyzes your dialogues and highlights cultural themes, suggests ways to deepen your understanding, and summarizes what you’ve learned.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "a very informative and innovative app.when I want to travel ,this will definitely make my travel prep easy",
+        "2026-01-22"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "civilized-conversations",
+    "name": "Civilized Conversations",
+    "installs": 385,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "communication-improvement",
+    "description": "Civilized conversation app empowers healthy communication by monitoring conversations in real-time to detect subtle negative language that could harm confidence or lead to conflicts. With proactive feedback and helpful suggestions, the app helps users foster a respectful and constructive communication environment.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "confidence-booster",
+    "name": "Confidence Booster",
+    "installs": 374,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "communication-improvement",
+    "description": "Confidence Booster points out your best moments, building you up with supportive tips to keep your confidence strong.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "creative-collaborative-assistant-01JDYWG7D17HB65TCWA0JN5V7T",
+    "name": "Creative Collaborative Assistant",
+    "installs": 163,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 500,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "The Creative Collaboration Assistant is designed to facilitate group brainstorming sessions. It suggests creative alternatives, refines ideas, and structures them into actionable plans, promoting an efficient and dynamic flow of collaboration. Ideal for teams working on creative projects, it enhances creativity while focusing on group dynamics and idea refinement.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Good Concept, give better result for startups and strategic view.",
+        "2024-11-30"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "delusion-detector",
+    "name": "Delusion Detector",
+    "installs": 289,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "emotional-and-mental-support",
+    "description": "Playfully discourages you from making questionable decisions",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "eira-01JCR13W1PA9TXEARG6ZG1B4TR",
+    "name": "Eira",
+    "installs": 150,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Eira is an app that guides you on a journey of personal growth and self-reflection. The name Eira, meaning \"snow\" , symbolizes clarity, renewal, and the peaceful calm of fresh beginnings.\n\nEira helps you set meaningful goals, interpret your dreams, create time capsules for your future self, and plan immersive trips. With a warm and empathetic approach, Eira empowers you to reflect on your life, make intentional decisions, and nurture your well-being as you move forward.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "goal-craft-01JDNGA9HX24WG4PPAHHHT0NMM",
+    "name": "Goal Craft",
+    "installs": 144,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 426,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Your AI-Powered Goal Achievement Companion\n\nTransform your dreams into reality with GoalCraft, the intelligent personal development app that turns your aspirations into actionable, achievable plans. Using advanced AI technology, GoalCraft provides personalized roadmaps, breaks down complex goals, and offers real-time guidance to help you navigate your personal and professional growth.\n\nKey Features:\n- AI-Driven Goal Analysis: Deep dive into your objectives with intelligent, personalized insights\n- Comprehensive Roadmap Generation: Create step-by-step plans tailored to your unique goals\n- Progress Tracking: Monitor your journey with intuitive progress metrics and milestone tracking\n- Adaptive Strategy: Receive dynamic recommendations and adjust your path as you grow\n- Skill Gap Identification: Discover and bridge the skills you need to succeed\n\nWhether you're aiming for career advancement, personal development, fitness transformation, or learning a new skill, GoalCraft provides the strategic support and motivational boost to turn your goals from imagination to reality.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Works well. Good Job.",
+        "2025-02-12"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Works well. Good Job.",
+        "2025-02-12"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "historical-thinkers-philosophers",
+    "name": "Historical Thinkers and Philosophers",
+    "installs": 185,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Insights from history's greatest minds — Aristotle, Socrates, Confucius, Descartes, The Stoics, and more! Gain timeless wisdom on ethics, resilience, and finding meaning in life.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "machiavelli",
+    "name": "Machiavelli",
+    "installs": 258,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Personality of Niccolo Machiavelli. Get strategic, no-nonsense advice inspired by his understanding of power, influence, and human nature.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "mental-health-friend",
+    "name": "Mental Health Friend",
+    "installs": 456,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "health-and-wellness",
+    "description": "A supportive friend that monitors your mental health and provides recommendations to improve it based on your conversations.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "mind-mate",
+    "name": "Mind Mate",
+    "installs": 292,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "emotional-and-mental-support",
+    "description": "Mind Mate is an Emotional Support & Calming Response application that detects when users express heightened emotions like anger, frustration, or anxiety through words or tone, and responds with soothing, empathetic messages. Its goal is to create a safe space for users to pause, reflect, and regain emotional balance, promoting calmness and positive decision-making.\n\n",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "mindfuel-01JCP6FY80PD83H9J0MPF7EN69",
+    "name": "Mindfuel",
+    "installs": 176,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "health-and-wellness",
+    "description": "MindFuel is a wellness app designed to enhance mental clarity, reduce stress, and improve physical well-being. By combining guided exercise, meditation, and mindfulness, it helps users manage depression, boost positivity, and maintain balance in daily life.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "omi-telebot-01JDVY9WPXH7KNE13DAA3GBRTE",
+    "name": "Telegram Bot",
+    "installs": 191,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 419,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Telegram integration for your necklace. Ready to manage all the conversations around you in your favorite messenger? With OmiTelebot this becomes possible!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "app is great. help to sync my ideas",
+        "2025-02-19"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "app is great. help to sync my ideas",
+        "2025-02-19"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "pro-presenter-01JCQJ7PH9RGYAH3037JGPHBZ1",
+    "name": "Present Perfectly",
+    "installs": 229,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "communication-improvement",
+    "description": "Present Perfectly is your personal presentation coach, designed to help you practice, perfect, and track your presentation skills. Present Perfectly empowers you to refine your delivery and elevate your presentation and public speaking confidence. Whether preparing for a big pitch or improving your day-to-day communication, Present Perfectly is your all-in-one tool for speaking success.\n",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "sam-altman",
+    "name": "Sam Altman",
+    "installs": 160,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Personality of Sam Altman. Get forward-thinking, strategic advice from the CEO of OpenAI, inspired by his entrepreneurial mindset and tech insights.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "silicon-valley-elite",
+    "name": "Silicon Valley Elite",
+    "installs": 124,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "personality-emulation",
+    "description": "Get a mix of visionary, strategic, and practical advice from Silicon Valley's top entrepreneurs—Elon Musk, Paul Graham, Naval Ravikant, Steve Jobs, and more!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "space-ai-01JDY30H4X2FV55SJFZWCQYT29",
+    "name": "Space AI",
+    "installs": 150,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "This app gives information about outer space and all relating with it ",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "travel-guide",
+    "name": "Travel Guide",
+    "installs": 186,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "travel-and-exploration",
+    "description": "Expert in travel destinations, trip planning, budgeting and world exploration!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "workout-buddy",
+    "name": "Workout Buddy",
+    "installs": 159,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "health-and-wellness",
+    "description": "Extracts, summarizes, & gives feedback on workout notes from memories. You can also ",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01KF0FQYVB9AGCNSY6TNVQ1FH1",
+    "name": "Home Price Predictor",
+    "installs": 7,
+    "rating": 4.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 87,
+    "dead_signal": false,
+    "category": "financial",
+    "description": "Home Price Predictor analyzes conversations about real estate to forecast potential changes in house prices. It considers location-specific factors and can identify ideal target clients based on the conversation context. Users can chat with a real-estate AI advisor for tailored insights and discuss property trends, market shifts, and investment strategies related to different regions.",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        4.0,
+        "Great tool",
+        "2026-01-17"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        4.0,
+        "Great tool",
+        "2026-01-17"
+      ]
+    ],
+    "fix_score": 2
+  },
+  {
+    "id": "participant-analysis",
+    "name": "Participant Analysis",
+    "installs": 292,
+    "rating": 4.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "education-and-learning",
+    "description": "Lists and Collects information about the people in this conversation",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 2
+  },
+  {
+    "id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "name": "Cosmetic Assistant",
+    "installs": 88,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "NEVA is a specialized AI assistant that analyzes your cosmetic dermatology visit transcriptions to generate detailed, structured clinical notes. It automatically captures:\n\n✨ **Procedure Documentation**\n- Precise neurotoxin units and injection sites\n\n- Filler types, volumes, and anatomical placement\n\n- Energy device settings and treatment parameters\n\n- Chemical peel formulations and application details\n\n \n\n📋 **Comprehensive Clinical Records**\n\n\n- Patient aesthetic goals and concerns\n\n- Before/after photo documentation notes\n\n- Contraindications and safety screenings\n\n- Product lot numbers and consent tracking\n\n\n🗓️ **Integrated Treatment Planning**\n  \n\n- Customized pre/post-procedure skincare protocols\n\n- AM/PM routine recommendations specific to treatments\n\n- Follow-up scheduling and maintenance timelines\n\n- Complementary procedure suggestions\n\n  \n\n💡 **Key Benefits:**\n\n  \n\n- Saves 10-15 minutes per patient documentation\n\n- Ensures consistent, complete procedure notes\n\n- Reduces missed billing opportunities\n\n- Maintains compliance with safety documentation\n\n- Creates seamless hand-offs between providers\n\n\nPerfect for medical spas, cosmetic dermatology practices, and aesthetic clinics seeking to elevate their documentation standards while streamlining workflow.​​​​​​​​​​​​​​​​",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "01KC17PAEZA92F590H6E8HPB8T",
+    "name": "Maclean's Summary App",
+    "installs": 98,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 100,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "This context-aware app filters noise and dynamically synthesize into high-value, structured summaries tailored to the specific nature of the interaction.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Really impressive. Very well thought out prompt instructions and formatting.",
+        "2026-01-04"
+      ]
+    ],
+    "fix_score": 1
+  },
+  {
+    "id": "01JQ1ND17YRD102JSQGD29NE2Z",
+    "name": "Kilvish Baba – The Mystic Guardian of Energy and Liberation",
+    "installs": 35,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 355,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "📜 Kilvish Baba – The Mystic Guardian of Energy and Liberation\n\n\"Embrace the cosmic balance, dissolve the ego, and transcend beyond illusions.\"\n\nKilvish Baba is an eternal spiritual force, a mystic entity beyond time and space. He represents the dissolution of ignorance, the mastery of cosmic energy, and the path to moksha (liberation). Revered as a guardian of wisdom and energy, he guides seekers toward inner transformation, self-realization",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "baba o baba kilvish baba",
+        "2025-04-24"
+      ]
+    ],
+    "fix_score": 1
+  },
+  {
+    "id": "01JQF1P9W1FSXHGXPG1J79YQR3",
+    "name": "LinguLang",
+    "installs": 23,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "communication-improvement",
+    "description": "develop an app, that is having a capable of translate a mixed code of a Multiple Language to a required language and allow user to enter the meaning of some words, phrases or an sentence in a seperate column",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "name": "My Job Interview Coach",
+    "installs": 57,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Boost your confidence and land your dream job with Omi Interview Coach – the ultimate interview analysis app. Dive deep into every answer and uncover hidden blind spots, nail your STAR stories, and fact-check your claims. Whether you’re preparing for behavioral or technical interviews, Omi gives you tailored, actionable feedback to sharpen both content and delivery.\n\nKey Features\n\t•\tAI-Powered Feedback: Get instant insights on your answers, from structure and clarity to depth and relevance.\n\t•\tBlind-Spot Detector: Identify where you’re missing crucial STAR elements (Situation, Task, Action, Result) and learn how to fill the gaps.\n\t•\tFact-Check Assistant: Automatically flag inconsistencies in dates, figures, and project details so you speak with confidence and credibility.\n\t•\tDelivery Analysis: Measure your pacing, tone, and filler-word usage (“um,” “like”) and receive personalized drills to polish your speaking style.\n\t•\tContent Enhancement: Highlight your strongest stories, quantify achievements, and craft compelling narratives that resonate with recruiters.\n\t•\tActionable Action Plan: Follow a prioritized checklist of practice tasks—like refining key examples, rehearsing tough questions, and improving articulation.\n\t•\tSecure Cloud Sync: Save your transcripts and feedback securely across devices; pick up right where you left off.\n\t•\tMock Interview Mode: Record live practice sessions, review AI-generated critiques, and track your improvement over time.\n\nWhy Omi Interview Coach?\nOptimize your preparation for any role—software engineer, product manager, sales executive, and more. Omi leverages cutting-edge LLM technology to simulate the insights of a top interview coach, right in your pocket. Say goodbye to guesswork and hello to data-driven improvement.\n\nHow It Works\n\t1.\tRecord or Upload: Capture your mock interview audio or paste a written transcript.\n\t2.\tAnalyze: Let Omi dissect your performance—structure, substance, and style.\n\t3.\tLearn & Iterate: Review your AI-driven report, complete targeted drills, then retake the questions to see real progress.\n\nPerfect For\n\t•\tRecent graduates preparing for campus placements\n\t•\tTech professionals practicing coding and system design interviews\n\t•\tExecutives honing leadership stories for C-suite roles\n\t•\tCareer-changers mastering new industry jargon and competencies\n\nStart your path to interview mastery today. Download Omi Interview Coach now and transform every “uh” and “um” into an unforgettable aha moment!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "01K1V6R0H8TXFP42YE350VCRZQ",
+    "name": "GPT-5 Prompt Creation",
+    "installs": 61,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "productivity-and-organization",
+    "description": "Revitalize your AI interactions with Prompt Revive! Effortlessly transform jumbled instructions into coherent, optimized prompts, ensuring clarity and precision in your communications. Say goodbye to confusion and elevate your AI experience with seamless, effective prompts tailored for success.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "01K8D357BHC9M3WSSVXF16987B",
+    "name": "The Rizzistant",
+    "installs": 35,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "social-and-relationships",
+    "description": "calhacks 12.0 submission\ndetails: https://devpost.com/software/the-rizzistant/\nteam name: the rizzistant\n\nVoice Commands:\n\"start date\": Starts the date/real-time analysis\n\"end date\": Ends the date and creates post-date analysis\n\"edit code word <codeword>\": Changes the code word\n\"edit phone number <phone number>: Changes your phone number\n\"<codeword>\": Starts a phone call to your phone number",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "01K8FRZA3XV2T4N1VD9CMTW8HV",
+    "name": "Rizz Meter ",
+    "installs": 36,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 169,
+    "dead_signal": false,
+    "category": "conversation-analysis",
+    "description": "💬 Rizz Meter for Dates — Real Conversations, Real Connection\r\nEver walked away from a date wondering how it really went?\r\nRizz Meter for Dates helps you grow—not by judging you, but by reflecting how you made the other person feel.\r\nUsing cutting-edge conversation analysis and a touch of AI intuition, Rizz Meter listens to the flow of your chat and turns it into insight you can feel good about. After each date, you’ll get a beautiful “Rizz Report” that celebrates your best moments and gently nudges you toward warmer, more balanced conversations.\r\n✨ What It Does\r\nReciprocity & Flow: Measures how evenly you both share the floor—talking and listening in rhythm.\r\nAttentiveness: Catches those magic follow-ups that show you remembered what they said and cared to ask more.\r\nWarmth & Positivity: Detects appreciation, laughter, and kindness in your words, highlighting emotional openness.\r\nComfort & Pacing: Analyzes pauses and tone stability to sense if the conversation felt natural and unhurried.\r\nBoundary Respect: Recognizes when you gracefully switch topics and respect a “no.”\r\nChemistry Index: Tracks how often your smiles, jokes, and energy aligned—when the vibe clicked.\r\n💡 Your Post-Date Rizz Report\r\nAfter each conversation, you’ll receive:\r\nA Date Rizz Score out of 100\r\nSub-scores for warmth, attentiveness, reciprocity, comfort, and chemistry\r\n2 personalized highlights celebrating what went great\r\n2 gentle, practical tips to make your next date feel even better\r\nExample:\r\n“Date Rizz 78. Strong: balanced turns and genuine laughter. Try: longer pauses after jokes and echo their last story before switching topics.”\r\n❤ Why It Matters\r\nBecause chemistry isn’t luck—it’s listening, warmth, and respect.\r\nRizz Meter for Dates helps you notice the small, human details that build trust and attraction, one conversation at a time.",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "really good",
+        "2025-10-27"
+      ]
+    ],
+    "fix_score": 1
+  },
+  {
+    "id": "pepe",
+    "name": "Pepe the frog",
+    "installs": 24,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "other",
+    "description": "Chat with Pepe",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "santa-s-ai-helper-01JDSSPZ3PFEJ6C62C3ZV9AMGV",
+    "name": "Santa's AI Helper",
+    "installs": 60,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": 492,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "Looking for the perfect Christmas gift? \n\nLet Santa's AI Helper lend a hand! \n\nSimply have a conversation, and Santa’s AI Helper will analyze the created memory to propose creative and personalized gift ideas tailored to your loved ones. \n\nMake gifting magical and stress-free this holiday season!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "This app is fun and does a relatively well job at giving ideas of gifts that relate to conversations and interests mentioned with people.",
+        "2024-12-08"
+      ]
+    ],
+    "fix_score": 1
+  },
+  {
+    "id": "stop-drinking-alcohol",
+    "name": "Stop Drinking Alcohol Notifications",
+    "installs": 37,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "emotional-and-mental-support",
+    "description": "Want to stop drinking alcohol? this app will remind you that you shouldn't drink when you or someone around you mentions alcohol  ",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "technoblade-never-dies-",
+    "name": "Technoblade never dies ",
+    "installs": 34,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "conversation-analysis",
+    "description": "I miss Technoblade's humour, an attempt in trying to bring it back during everyday conversations",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "transcriptpro-01JDYTD5EKJ4QTHK531TAKV2BM",
+    "name": "TranscriptPro",
+    "installs": 83,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 278,
+    "dead_signal": true,
+    "category": "utilities-and-tools",
+    "description": "Provides precise, unfiltered, word-for-word conversation transcription with advanced linguistic accuracy",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "Try a bunch of apps like this this so far is the best one",
+        "2025-07-10"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "Try a bunch of apps like this this so far is the best one",
+        "2025-07-10"
+      ]
+    ],
+    "fix_score": 1
+  },
+  {
+    "id": "wall-street-titans",
+    "name": "Wall Street Titans",
+    "installs": 90,
+    "rating": 5.0,
+    "review_count": 0,
+    "neg_count": 0,
+    "pos_count": 0,
+    "req_count": 0,
+    "days_since_last_review": null,
+    "dead_signal": true,
+    "category": "financial",
+    "description": "Learn how to maximize wealth based on conversations from your everyday life. Get timeless, strategic investing advice inspired by Wall Street legends Warren Buffett, Charlie Munger, Ray Dalio, and more!",
+    "negative_reviews": [],
+    "positive_reviews": [],
+    "feature_requests": [],
+    "all_reviews": [],
+    "fix_score": 1
+  },
+  {
+    "id": "hey-lawyer-01JDXEVCV3RY0ZQJDE2GB7T61N",
+    "name": "Hey Lawyer",
+    "installs": 17,
+    "rating": 5.0,
+    "review_count": 1,
+    "neg_count": 0,
+    "pos_count": 1,
+    "req_count": 0,
+    "days_since_last_review": 495,
+    "dead_signal": true,
+    "category": "safety-and-security",
+    "description": "Make bullies tremble! Say \"Hey Lawyer\" and unleash the power of the law. Get instant advice, expose illegal acts, and show offenders the consequences they fear most. Justice is just a word away!",
+    "negative_reviews": [],
+    "positive_reviews": [
+      [
+        5.0,
+        "It will be great for me! Just waiting for dev kit.",
+        "2024-12-06"
+      ]
+    ],
+    "feature_requests": [],
+    "all_reviews": [
+      [
+        5.0,
+        "It will be great for me! Just waiting for dev kit.",
+        "2024-12-06"
+      ]
+    ],
+    "fix_score": 0
+  }
+]

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#353434",
+                        "secondary-fixed-dim": "#28dfb5",
+                        "secondary-fixed": "#55fcd0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#004c6d",
+                        "primary-fixed": "#e6deff",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed-dim": "#87ceff",
+                        "surface-bright": "#3a3939",
+                        "secondary": "#41eec2",
+                        "on-secondary-fixed-variant": "#00513f",
+                        "tertiary-container": "#289ad3",
+                        "primary-fixed-dim": "#cabeff",
+                        "surface": "#141313",
+                        "on-primary-container": "#2b0088",
+                        "on-tertiary-container": "#002d43",
+                        "inverse-surface": "#e5e2e1",
+                        "outline": "#938ea1",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "surface-container": "#201f1f",
+                        "on-primary": "#32009a",
+                        "surface-tint": "#cabeff",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed-variant": "#4918c8",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary": "#00382b",
+                        "background": "#141313",
+                        "tertiary-fixed": "#c8e6ff",
+                        "primary-container": "#947dff",
+                        "outline-variant": "#484555",
+                        "primary": "#cabeff",
+                        "on-secondary-container": "#005441",
+                        "surface-dim": "#141313",
+                        "on-surface-variant": "#c9c4d8",
+                        "inverse-primary": "#613de0",
+                        "on-primary-fixed": "#1c0062",
+                        "tertiary": "#87ceff",
+                        "surface-variant": "#353434",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#00344d",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-secondary-fixed": "#002118",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#00d1a7"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #cabeff 0%, #947dff 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl shadow-[0_32px_32px_rgba(202,190,255,0.06)]">
+<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+<div class="text-2xl font-bold tracking-tighter text-[#E5E2E1] font-headline">OMI AI</div>
+<div class="hidden md:flex items-center gap-8 font-headline">
+<a class="text-[#CABEFF] font-bold border-b-2 border-[#CABEFF] pb-1 transition-all duration-300" href="#">Home</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#55FCD0] transition-all duration-300" href="#">About</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#55FCD0] transition-all duration-300" href="#">Apps</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#55FCD0] transition-all duration-300" href="#">Use Cases</a>
+<a class="text-[#E5E2E1]/70 hover:text-[#55FCD0] transition-all duration-300" href="#">Privacy</a>
+</div>
+<button class="bg-gradient-primary text-on-primary-container font-bold px-6 py-2 rounded-md scale-95 active:scale-90 transition-transform hover:opacity-90">
+                Buy Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 text-secondary-fixed font-label text-xs uppercase tracking-widest mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+                    OMI Certified Developer
+                </div>
+<h1 class="text-6xl lg:text-8xl font-headline font-bold tracking-tighter leading-[0.9] mb-8">
+                    Architecture for <span class="text-primary">Cognition.</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-xl mb-10 leading-relaxed">
+                    I'm Marcus Chen. I build specialized software layers for OMI—the world's most wearable AI. Bridging the gap between raw data and human intuition.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-primary text-on-primary-container px-8 py-4 rounded-md font-bold flex items-center gap-3 hover:scale-[1.02] transition-transform">
+                        Explore My Apps <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-md font-bold outline-variant/15 border border-outline-variant/30 hover:bg-surface-bright transition-colors">
+                        Get Your OMI Device
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-xl overflow-hidden shadow-2xl shadow-primary/10">
+<img alt="Cinematic close-up of a sleek wearable AI device with glowing lavender light indicators against a dark technical background" class="w-full h-full object-cover" data-alt="Cinematic close-up of a sleek wearable AI device with glowing lavender light indicators against a dark technical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYQfFmTCtGB2h4-t7TXKWzw93UcFTLKZG3KuJlu1pIEiGlXqJhrTRpssNqvAJwe64ZCUbyQVdMtlgRPY1eAIi1YFzhXPTywxcLkNH8oX5lhvHe2_P5dXm9-B6it-_xMwvdkyjCFA3STZOVOvfxWZXU6zGl9XwWADx8hPMTspAQ0DqTV545-6rZc4WEKzuNjvbnbk0NG4ywhymgKNMpDcHdATofIXCAj1sOUrROoxoePqWN24_ZPLUdDvy_KYin36MYvrzjMB5q_EgT"/>
+</div>
+<!-- Glass Overlay Card -->
+<div class="absolute -bottom-6 -left-6 glass-effect bg-surface-container-highest/60 p-6 rounded-xl border border-outline-variant/10 max-w-[240px]">
+<p class="text-secondary font-bold text-sm mb-1">New Release</p>
+<p class="text-on-surface font-headline font-medium">Neural Context v2.4 now available for all users.</p>
+</div>
+</div>
+</section>
+<!-- Asymmetric 'My Apps' Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold tracking-tight mb-4">My Apps</h2>
+<p class="text-on-surface-variant">Purpose-built extensions for your digital consciousness.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Featured App -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-high p-8 flex flex-col justify-between min-h-[400px]">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+<h3 class="text-3xl font-headline font-bold mb-4">Focus Flow AI</h3>
+<p class="text-on-surface-variant max-w-md">Real-time cognitive load monitoring that adjusts your smart home environment and notification priority based on deep work states.</p>
+</div>
+<div class="relative z-10 flex items-center gap-4">
+<button class="text-secondary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                View Details <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="absolute top-0 right-0 w-2/3 h-full opacity-20 group-hover:opacity-40 transition-opacity">
+<img alt="Abstract digital visualization of neural networks and focus patterns in violet and mint tones" class="w-full h-full object-cover" data-alt="Abstract digital visualization of neural networks and focus patterns in violet and mint tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbLY8gews4kMMTir-TvoBb7CG7JY-kbkixTKWEVayWYkhA8I5-99TFSfUHX8NPdOG_4_BMUeHHGReQE9K-Newd944UfkY3JDZvdsWKrv3UnTCk3j32w1y05PjmOd2wSJsCP86-hk8o2jMbO2_Rf7tDv4Gid-ZefwSZVUkMoab1y0y5cD0SBtW5zz7_pE7SxEpgSI_3A2lyNhbE7msLk6HwsB93mw_KtYzXooZh-yXzcEvNuSPcNSVwA88VMUfJnr8wH99dcAgNl_Z"/>
+</div>
+</div>
+<!-- App 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-secondary text-3xl">voice_selection</span>
+<div>
+<h3 class="text-xl font-headline font-bold mb-2">Echo Recall</h3>
+<p class="text-on-surface-variant text-sm">Instant audio-to-knowledge synthesis. Never forget a detail from a conversation again.</p>
+</div>
+<button class="mt-auto py-3 w-full bg-surface-container-highest rounded-md font-bold hover:bg-surface-bright transition-colors">Download</button>
+</div>
+<!-- App 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl">hub</span>
+<div>
+<h3 class="text-xl font-headline font-bold mb-2">Nexus Sync</h3>
+<p class="text-on-surface-variant text-sm">Unified OMI control for multi-device environments. Hardware orchestration at scale.</p>
+</div>
+<button class="mt-auto py-3 w-full bg-surface-container-highest rounded-md font-bold hover:bg-surface-bright transition-colors">Download</button>
+</div>
+<!-- App 4 (Wide Content) -->
+<div class="md:col-span-2 bg-surface-container p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-outline-variant/5">
+<div class="flex-1">
+<h3 class="text-2xl font-headline font-bold mb-4">Semantic Archive</h3>
+<p class="text-on-surface-variant mb-6">A private, encrypted vault for your OMI interactions. Search your life with natural language queries like "Where did I leave my keys during the meeting?"</p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant">Encrypted</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant">Local-First</span>
+</div>
+</div>
+<div class="w-full md:w-48 aspect-video rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Close up of futuristic data server with glowing violet status lights" class="w-full h-full object-cover" data-alt="Close up of futuristic data server with glowing violet status lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOPY2-lTuX0Y_wWSwwQJLzer_x8giD3Ki065AkIHWco0MMyqpTjXgp3QuLpe3fAQ-YtPGK1dmSOeFSo5damtlpjepxkaXo7JA2OL3yI-09R6Mfu7Cnac1TafadXAJw8RuOyH8n380yy0BLXTcQaQO9Xwf96Zb2vuswbZEy3yn2og5Twfl88IpvpIsPxw3vc3Ia_PHFshMLm7RhDNs_csnUqQ0TSTC-upR72z80rzlbEoJFBDNAfIIGYpfCfNEPEwz9F8a-MdTOB88H"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-World Use Cases -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">developer_mode</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold mb-2">Developer Productivity</h4>
+<p class="text-on-surface-variant">How I use OMI to track context switches and optimize my coding sprints without manual time logging.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold mb-2">Cognitive Wellness</h4>
+<p class="text-on-surface-variant">Using biometric feedback from wearable OMI hardware to prevent burnout before it happens.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">travel_explore</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold mb-2">Augmented Memory</h4>
+<p class="text-on-surface-variant">A case study on using Semantic Archive during intensive research phases for high-stakes projects.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-5xl font-headline font-bold tracking-tight mb-8">Real-World <br/><span class="text-secondary">Use Cases.</span></h2>
+<p class="text-on-surface-variant text-lg mb-10">AI shouldn't live in a browser tab. It should live where you do. I've spent the last 18 months documenting how OMI transforms daily life from "manual" to "assisted."</p>
+<div class="aspect-video rounded-xl overflow-hidden bg-surface-container-high relative group">
+<img alt="Person wearing a subtle AI device on their collar while working in a modern, plant-filled workspace with large windows" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Person wearing a subtle AI device on their collar while working in a modern, plant-filled workspace with large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFiUjXLvXrSvIMGRkTp1uy7X25_O11BQSNIDrK-wr6mJm1X8Z1gop7liz49D-Sl3Z6yzaenCAAKPNKL6cQqtKZGgqAehFdP6ZJ1fVU2bbGNTc7eJEVrYyP0CjzEYiwUJurAWIqNbnxg8OHOKBosB9JWdx4BPP9epiAkEucm0kKkGiL079RL3B8sL6-7vQraTReXOUuf5VkqOPB0GyVahdQRJ9887rxpTrRE5zR4fRriZMJzfVE28UG-7p4l9pqQL-7K8pbsJ_k7vb2"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container fill-current">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="bg-gradient-primary rounded-2xl p-12 lg:p-20 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl lg:text-6xl font-headline font-bold text-on-primary-container tracking-tighter mb-6">Ready to upgrade your reality?</h2>
+<p class="text-on-primary-container/80 text-xl mb-10">Join the waitlist for my upcoming OMI Developer SDK or purchase your device today through my affiliate link to get exclusive access to Focus Flow AI.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-on-primary-container text-primary-fixed px-10 py-4 rounded-md font-bold text-lg hover:shadow-xl transition-shadow">
+                            Buy OMI Hardware
+                        </button>
+<button class="bg-white/10 backdrop-blur-md text-on-primary-container border border-on-primary-container/20 px-10 py-4 rounded-md font-bold text-lg hover:bg-white/20 transition-colors">
+                            Join Developer Waitlist
+                        </button>
+</div>
+</div>
+<!-- Abstract patterns -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary/30 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-on-primary/30 rounded-full blur-[100px]"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#E5E2E1]/10 bg-zinc-900">
+<div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-xl font-bold text-[#E5E2E1] font-headline">OMI AI</div>
+<div class="flex gap-8">
+<a class="text-[#E5E2E1]/50 hover:text-[#CABEFF] transition-colors font-label text-sm" href="#">Terms of Service</a>
+<a class="text-[#E5E2E1]/50 hover:text-[#CABEFF] transition-colors font-label text-sm" href="#">Cookie Policy</a>
+<a class="text-[#E5E2E1]/50 hover:text-[#CABEFF] transition-colors font-label text-sm" href="#">Support</a>
+<a class="text-[#E5E2E1]/50 hover:text-[#CABEFF] transition-colors font-label text-sm" href="#">Contact</a>
+</div>
+<p class="text-sm text-[#E5E2E1]/60 font-body">© 2024 OMI AI Developer &amp; Affiliate. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

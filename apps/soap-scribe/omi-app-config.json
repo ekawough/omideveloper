@@ -1,0 +1,16 @@
+{
+  "name": "SOAP Scribe",
+  "description": "AI clinical documentation for physicians and nurse practitioners. Wear your Omi during patient visits — SOAP Scribe generates complete SOAP notes with ICD-10 codes, CPT suggestions, prescription details, and follow-up instructions automatically. Supports SOAP, DAP, and BIRP formats. Designed for HIPAA-compliant deployment — no PHI logging, session cleared after note generation.",
+  "capabilities": ["transcript_processed"],
+  "memory_prompt": "A clinician is conducting a patient visit. Capture: the patient's chief complaint, symptom history and duration, relevant medical history if mentioned, medications and allergies discussed, physical exam findings, vital signs, test results or imaging discussed, the clinician's assessment and diagnosis, treatment plan including medications with doses, any orders placed, patient education provided, and follow-up instructions. Treat all content as protected health information.",
+  "webhook_url": "https://soap-scribe.up.railway.app/webhook",
+  "category": "healthcare",
+  "author": "ekawough",
+  "version": "1.0.0",
+  "tags": ["medical-ai", "healthcare", "soap-notes", "ehr", "clinical-documentation", "hipaa"],
+  "hipaa_note": "HIPAA compliance requires BAA with Anthropic and your cloud provider before production use with real PHI. BAA available at console.anthropic.com.",
+  "pricing": {
+    "free_tier": "10 visits/month (non-PHI testing only)",
+    "pro": "$79/mo — unlimited visits, SOAP/DAP/BIRP, ICD-10, CPT suggestions, EHR paste"
+  }
+}

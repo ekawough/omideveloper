@@ -1,0 +1,169 @@
+======================================================================
+ChatGPT | 4,987 installs | 2.6* | 22 text reviews
+  category: conversation-analysis  |  fix_score: 17
+  description: Connect your Omi with ChatGPT
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2025-07-05] Has a bug when connecting a Google account. "Looks like this browser isn't secure. Try again?"
+  [1.0*, 2025-07-15] no more connection with omi memory, and vayrex connection also not working stable
+  [1.0*, 2025-08-05] yup, same
+poor out of the box experience:-(
+
+Error talking to connector
+Your UID ZLkbTLN8WST0RS4zjtkpc5E7BgZ2 isn’t registered yet. You need to activate your Omi account here:
+👉 https://personas.omi.me
+Once registered, paste your UID again and I’ll i
+  [1.0*, 2025-08-05] I keep getting "error talking to connector." It appears to want to use an Omi persona, which I haven't created, to help establish the connection.
+  [1.0*, 2025-08-15] not working
+  [1.0*, 2025-08-18] not working
+  [1.0*, 2025-08-20] not working
+  [1.0*, 2025-08-21] don't work
+  [1.0*, 2025-08-26] doesn't work
+  [2.0*, 2025-09-15] says “Every time I try to use CreateUserMemory, I get this error:
+
+UnrecognizedFunctionError: CreateUserMemory
+
+That means the backend doesn’t recognize or support this function at the moment”
+
+======================================================================
+Omi Mentor (deprecated) | 6,646 installs | 3.7* | 12 text reviews
+  category: productivity-and-organization  |  fix_score: 11
+  description: THIS APP WAS INTEGRATED INTO OMI CORE FUNCTIONALITY AND NOT UPDATED ANYMORE 
+
+Omi mentor is listening to your conversations and sends you proactive re
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2025-04-19] buggy
+  [3.0*, 2025-06-24] works great, but the messages over and over about "you need to do this immediately" are really annoying. plus, this app is pretty judgmental and I just do have time for that.
+  [1.0*, 2025-11-18] not working properly take too long to understand. do not answer anything.
+FEATURE REQUESTS:
+  [4.0*, 2026-01-24] I wish this was a built in feature of Omi. When it works this app is great but it's not reliable
+
+======================================================================
+Notion Data Sync | 923 installs | 3.9* | 8 text reviews
+  category: productivity-and-organization  |  fix_score: 10
+  description: Stores all your conversations into a notion database
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2024-11-27] just stopped working
+  [3.0*, 2025-04-02] Only sends over the summary in a property field. Plugins, transcripts, and actions are missing.
+FEATURE REQUESTS:
+  [5.0*, 2025-08-04] that is just the most amazing app ever. what a lifesaver and what a time saver. now that I've got it into my main notion knowledge base on a regular basis, I can do so many different things with it. 
+
+thank you. you should really charge for this
+  [5.0*, 2025-12-27] I love it I wish I could modify for my own scripts in sights to notion but love it very quick too!
+
+======================================================================
+Google Drive | 44,068 installs | 3.6* | 12 text reviews
+  category: productivity-and-organization  |  fix_score: 10
+  description: Connect to Google Drive. Automatically sync OMI Memories and/or Transcripts, Action Items, and Plugin Data to Google Drive.
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [5.0*, 2025-02-23] This has been a hidden gem. I'm rapidly losing faith in the Omi app's ability to process/synthesize insights with so many useless junk apps so fortunately this provides a workaround to use Gemini on my notes instead.
+  [1.0*, 2025-11-03] does not connect with drive
+cannot uninstall to attempt a reconfiguration
+  [1.0*, 2025-11-26] doesn't work. Doesn't show up in Gdrive even when it shows as successfully installed.
+
+======================================================================
+Omi Wrapped - Daily Summaries | 912 installs | 3.0* | 3 text reviews
+  category: productivity-and-organization  |  fix_score: 8
+  description: Stop losing daily insights. Omi Wrapped automatically transforms your Omi conversations into a personalized daily reflection story. Discover gratitude
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2026-02-06] doesn't work
+
+======================================================================
+J.A.R.V.I.S. | 894 installs | 3.0* | 5 text reviews
+  category: productivity-and-organization  |  fix_score: 8
+  description: Experience an AI companion that listens and responds when you need it. Voice-activated and context-aware, it enhances productivity by providing seamle
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2026-04-04] first try : 
+server is broken
+
+======================================================================
+General Summary | 3,295 installs | 4.3* | 7 text reviews
+  category: conversation-analysis  |  fix_score: 7
+  description: Unlock the power of concise insights with Summary Pro. Transform lengthy texts into clear, digestible summaries, enhancing your reading efficiency and
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2026-02-10] la peor app quepara grabar y transcribir reuniones. Me va pasando dos veces, que se corta o se interrumpe la grabación, por razones desconocidas y no me guardó esas dos grabaciones, que fueron dos reuniones importantes. worst app and a trash
+FEATURE REQUESTS:
+  [5.0*, 2026-01-23] Had a important meeting today and tried the app - Totally impressed!  The summary from the meeting was exact, clear and concise. 
+There were one or two tiny errors in the summary but I assumed there would be a lot more.  Highly recommend this app!
+
+======================================================================
+Dropbox | 44 installs | 3.7* | 3 text reviews
+  category: utilities-and-tools  |  fix_score: 6
+  description: Save your Omi conversation summaries and transcripts into Dropbox.
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [3.0*, 2026-04-04] Was working now does not
+
+Not Found
+
+The train has not arrived at the station.
+
+Please check your network settings to confirm that your domain has provisioned.
+
+If you are a visitor, please let the owner know you're stuck at the station.
+
+======================================================================
+WhatsApp | 30 installs | 3.0* | 1 text reviews
+  category: communication-improvement  |  fix_score: 6
+  description: Send message to anyone on Whatsapp by voice. Also get every conversation recap in your Whatsapp. You can also set reminders for yourself or someone el
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2026-03-30] its not working as shown in image
+
+======================================================================
+Audio Backup | 7,762 installs | 2.7* | 2 text reviews
+  category: utilities-and-tools  |  fix_score: 6
+  description: Save Omi capture audio to Google Drive. Omi Audio effortlessly saves audio segments to your Google Drive, capturing 30-second clips for easy organizat
+----------------------------------------------------------------------
+ALL REVIEWS:
+  [4.0*, 2025-08-06] It works flawlessly, except there is no way I've found to correct the timezone from UTC for audio timestamps. Not a major issue, but the only annoyance I've found.
+  [1.0*, 2025-09-26] How to unsubscribe? I don't want to pay $2 every month.
+
+======================================================================
+Audio Journal – Document Your Voice | 102 installs | 1.0* | 1 text reviews
+  category: conversation-analysis  |  fix_score: 6
+  description: Document your thoughts through audio memos, uncover insights and grow emotionally
+
+This tool uses predefined markers (open, sesame, and close sesame) 
+----------------------------------------------------------------------
+FEATURE REQUESTS:
+  [1.0*, 2025-02-23] Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.
+
+======================================================================
+Smart Alarm & Reminders | 16 installs | 1.0* | 1 text reviews
+  category: productivity-and-organization  |  fix_score: 6
+  description: Easily set reminders and alarms using voice commands in your conversations. Omi listens for phrases like 'set an alarm' or 'remind me', then schedules
+----------------------------------------------------------------------
+NEGATIVE / COMPLAINTS:
+  [1.0*, 2026-02-22] not working at all
+
+======================================================================
+Actionable Insights | 137 installs | 1.0* | 1 text reviews
+  category: conversation-analysis  |  fix_score: 6
+  description: Extracts key lessons from conversations, providing one or two specific actions to improve your daily life, free from general advice.
+----------------------------------------------------------------------
+FEATURE REQUESTS:
+  [1.0*, 2025-02-23] Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.
+
+======================================================================
+Art of seduction | 111 installs | 1.0* | 1 text reviews
+  category: emotional-and-mental-support  |  fix_score: 6
+  description: this app is crafted from the seductive character traits from the book art of seduction 
+----------------------------------------------------------------------
+FEATURE REQUESTS:
+  [1.0*, 2025-02-23] Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.
+
+======================================================================
+Tasks and Deadlines Reminder | 108 installs | 1.0* | 1 text reviews
+  category: productivity-and-organization  |  fix_score: 6
+  description: An application that automatically detects actionable tasks and deadlines from conversations. The application lists various aspects of the task such as
+----------------------------------------------------------------------
+FEATURE REQUESTS:
+  [1.0*, 2025-02-23] Seems not to work, like an increasing number of junk apps that should probably be removed after a certain grace period if there are minimal users and no reviews or unfavorable reviews.
+

@@ -1,0 +1,9 @@
+{
+  "name": "omi-life-logger",
+  "version": "2.0.0",
+  "description": "Omi → Notion life logger. Captures everything, routes by category.",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}

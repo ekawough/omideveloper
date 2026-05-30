@@ -1,0 +1,1502 @@
+[
+  {
+    "idea": "Advertising Campaign Review",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Dnd Notes; Pipeline Review Analyzer"
+  },
+  {
+    "idea": "B Roll Footage Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Bride And Groom Consultation",
+    "best_score": 0.33,
+    "best_app": "K.V Financial Services \u2013 AI Financial Guide",
+    "best_app_id": "01JR3SQW7MKS096YEM0SP7G0PZ",
+    "best_app_installs": 13,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Business Model Evaluation",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Mentor AI; Social AI; Logic AI"
+  },
+  {
+    "idea": "Ceremony And Reception Coordination",
+    "best_score": 0.33,
+    "best_app": "Weekly Team Meeting",
+    "best_app_id": "01K6QCJXF9H870P4PRH9QQB1JW",
+    "best_app_installs": 48,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "1 to 1 Meeting; SetSync Pro; Health Butler"
+  },
+  {
+    "idea": "Classroom Lecture Enhancement",
+    "best_score": 0.33,
+    "best_app": "My Job Interview Coach",
+    "best_app_id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "best_app_installs": 57,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Pedagogical DocuMate; Class Notes Summarizer; EchoVision"
+  },
+  {
+    "idea": "Client Intake And Consultation",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "K.V Financial Services \u2013 AI Financial Guide; Current Investor Meeting Analyzer; Car Sales Assistant"
+  },
+  {
+    "idea": "Client Needs Assessment",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Parent Whisperer; Current Investor Meeting Analyzer; Account Management Meeting Analyzer"
+  },
+  {
+    "idea": "Clinical Trial Coordination",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Weekly Team Meeting; 1 to 1 Meeting; SetSync Pro"
+  },
+  {
+    "idea": "Compliance And Regulatory Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Cosmetic Assistant; Smart Mentor"
+  },
+  {
+    "idea": "Compliance Committee Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Cosmetic Assistant; Smart Mentor"
+  },
+  {
+    "idea": "Conference And Seminar Attendance",
+    "best_score": 0.33,
+    "best_app": "Conference Notes App",
+    "best_app_id": "01K6R5SVBG96QCR1A3T49X32PJ",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Contract Review And Signing",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Pipeline Review Analyzer; Sprint Planning Analyzer"
+  },
+  {
+    "idea": "Creative Concept Development",
+    "best_score": 0.33,
+    "best_app": "Mentor AI",
+    "best_app_id": "01JKG5WHA8GK19KAPKQWBQTG7X",
+    "best_app_installs": 74,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Logic AI; Book Writing Support (trauma informed); Hollywood Mentor: Your Guide to Stardom"
+  },
+  {
+    "idea": "Crisis Simulation Drills",
+    "best_score": 0.33,
+    "best_app": "Couples Therapy",
+    "best_app_id": "01JTP15BJ34PJA7KD4GQ55NX13",
+    "best_app_installs": 65,
+    "best_app_rating": 0.0,
+    "best_app_category": "communication-improvement",
+    "runner_up_names": "My Job Interview Coach"
+  },
+  {
+    "idea": "Design And Architecture Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; KV Master \u2013 AI Project Guide & Tech Solutions Expert"
+  },
+  {
+    "idea": "Design And Decor Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Disaster Preparedness Drills",
+    "best_score": 0.33,
+    "best_app": "Couples Therapy",
+    "best_app_id": "01JTP15BJ34PJA7KD4GQ55NX13",
+    "best_app_installs": 65,
+    "best_app_rating": 0.0,
+    "best_app_category": "communication-improvement",
+    "runner_up_names": "My Job Interview Coach"
+  },
+  {
+    "idea": "Dissertation Defense Preparation",
+    "best_score": 0.33,
+    "best_app": "My Job Interview Coach",
+    "best_app_id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "best_app_installs": 57,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "EMDR On-the-Go; HakiScribe"
+  },
+  {
+    "idea": "Distribution And Marketing Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Pulse MkT (alpha test only)"
+  },
+  {
+    "idea": "Emergency Procedure Training",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "Cosmetic Assistant; TranscripTeach; Weekly Team Meeting"
+  },
+  {
+    "idea": "Emergency Protocol Training",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscripTeach; hebrew summary; Totem Protocol Dynamic Summarizer"
+  },
+  {
+    "idea": "Emergency Response Coordination",
+    "best_score": 0.33,
+    "best_app": "Be a Better Friend",
+    "best_app_id": "01JJS5D482E9TAD2EAVECYP6SH",
+    "best_app_installs": 193,
+    "best_app_rating": 0.0,
+    "best_app_category": "communication-improvement",
+    "runner_up_names": "Weekly Team Meeting; 1 to 1 Meeting; SetSync Pro"
+  },
+  {
+    "idea": "Enforcement And Infringement Analysis",
+    "best_score": 0.33,
+    "best_app": "waiter",
+    "best_app_id": "01JE4DCB9QN9QPC0RA7S33Y7E0",
+    "best_app_installs": 28,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Audio Journal \u2013 Document Your Voice; Coherent transcription; Apex Predator"
+  },
+  {
+    "idea": "Equipment And Procedure Reviews",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Weekly Team Meeting Analyzer; Weekly Team Meeting; SetSync Pro"
+  },
+  {
+    "idea": "Equipment Installation And Setup",
+    "best_score": 0.33,
+    "best_app": "Spark",
+    "best_app_id": "01JQP1JH28DY9F78EFGT0X9H6B",
+    "best_app_installs": 56,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "SetSync Pro; ArchEquip Checker; Image Generator"
+  },
+  {
+    "idea": "Evidence Collection And Categorization",
+    "best_score": 0.33,
+    "best_app": "Audio Journal \u2013 Document Your Voice",
+    "best_app_id": "01JEZC8MYAC69PH7QDC6HSMXN4",
+    "best_app_installs": 102,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "BBC Marriage Agent \u2013 Smart Matchmaking AI for India; Osteopath; bible journal"
+  },
+  {
+    "idea": "Exam Preparation Workshops",
+    "best_score": 0.33,
+    "best_app": "Brain Bounty Club \u2013 Learn, Quiz & Win",
+    "best_app_id": "01JQZGQC8155C51NRD4P2H7SGC",
+    "best_app_installs": 18,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "BBC SmartBuddy \u2013 Your AI Business Assistant; My Job Interview Coach; EMDR On-the-Go"
+  },
+  {
+    "idea": "Executive Training Programs",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscripTeach; Brain Bounty Club \u2013 Learn, Quiz & Win; My Job Interview Coach"
+  },
+  {
+    "idea": "Experiment Planning And Execution",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Faculty Collaboration Workshops",
+    "best_score": 0.33,
+    "best_app": "Brotea community",
+    "best_app_id": "01JQGT1PGS2XYS46RAF69VG93N",
+    "best_app_installs": 14,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "Brain Bounty Club \u2013 Learn, Quiz & Win; Networking Conversation Analyzer; BBC SmartBuddy \u2013 Your AI Business Assistant"
+  },
+  {
+    "idea": "Feature Prioritization Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Smart Mentor; Spark"
+  },
+  {
+    "idea": "Financial Education And Workshops",
+    "best_score": 0.33,
+    "best_app": "Math Friend",
+    "best_app_id": "01JEAFFY4YBAERMQMH69YN3MJY",
+    "best_app_installs": 160,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "French Companion; Job Training Notes; TranscribeAI"
+  },
+  {
+    "idea": "Financial Reporting Preparation",
+    "best_score": 0.33,
+    "best_app": "Finance AI",
+    "best_app_id": "01JKG5BJ8B3M14DST97BW360QW",
+    "best_app_installs": 289,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "StockSense AI; Spark; FinMentor AI"
+  },
+  {
+    "idea": "Footage Review And Editing",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Pipeline Review Analyzer; Sprint Planning Analyzer"
+  },
+  {
+    "idea": "Guest List Management",
+    "best_score": 0.33,
+    "best_app": "I Need To Remember To",
+    "best_app_id": "01JEP38S1HMN5YMJQWYKKVMCRZ",
+    "best_app_installs": 226,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Where did I put; Agreements, Commitments & Conclusions reached. ; Ticket Notes"
+  },
+  {
+    "idea": "Incident Documentation And Reporting",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; Doctor patient visit; Pedagogical DocuMate"
+  },
+  {
+    "idea": "Incident Investigation Documentation",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; Doctor patient visit; Pedagogical DocuMate"
+  },
+  {
+    "idea": "Incident Response Coordination",
+    "best_score": 0.33,
+    "best_app": "Be a Better Friend",
+    "best_app_id": "01JJS5D482E9TAD2EAVECYP6SH",
+    "best_app_installs": 193,
+    "best_app_rating": 0.0,
+    "best_app_category": "communication-improvement",
+    "runner_up_names": "Weekly Team Meeting; 1 to 1 Meeting; SetSync Pro"
+  },
+  {
+    "idea": "Incident Response Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Be a Better Friend; Finance AI; Cosmetic Assistant"
+  },
+  {
+    "idea": "Interdisciplinary Research Coordination",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "KV Master \u2013 AI Project Guide & Tech Solutions Expert; Weekly Team Meeting; 1 to 1 Meeting"
+  },
+  {
+    "idea": "Interview Recording And Transcription",
+    "best_score": 0.33,
+    "best_app": "Audio Journal \u2013 Document Your Voice",
+    "best_app_id": "01JEZC8MYAC69PH7QDC6HSMXN4",
+    "best_app_installs": 102,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Coherent transcription; TranscribeAI; Smart Mentor"
+  },
+  {
+    "idea": "Invention Disclosure Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Smart Mentor; Lumina Mentor"
+  },
+  {
+    "idea": "Inventory And Equipment Management",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Finance AI; Dnd Notes; Spark"
+  },
+  {
+    "idea": "Ip Due Diligence Reviews",
+    "best_score": 0.33,
+    "best_app": "Weekly Team Meeting Analyzer",
+    "best_app_id": "01JRHM3X75WNX3B32XEKW3R4D5",
+    "best_app_installs": 66,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Weekly Team Meeting; Board meeting transcriber; TLDR"
+  },
+  {
+    "idea": "Lab Experiment Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Laboratory Experiment Documentation",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; Doctor patient visit; Pedagogical DocuMate"
+  },
+  {
+    "idea": "Lease Renewal And Negotiation",
+    "best_score": 0.33,
+    "best_app": "Eira",
+    "best_app_id": "eira-01JCR13W1PA9TXEARG6ZG1B4TR",
+    "best_app_installs": 150,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Licensing Agreement Negotiations",
+    "best_score": 0.33,
+    "best_app": "Lie Detector Pro",
+    "best_app_id": "01KEHXBC5FDG8PQBJD1Z7A963Q",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Luxury Client Profiles",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "The Color Theory; Current Investor Meeting Analyzer; BBC Marriage Agent \u2013 Smart Matchmaking AI for India"
+  },
+  {
+    "idea": "Maintenance And Repair Procedures",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Recode; SKYAI Pilot Insight"
+  },
+  {
+    "idea": "Marketing Campaign Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Pulse MkT (alpha test only)"
+  },
+  {
+    "idea": "Media Briefing And Preparation",
+    "best_score": 0.33,
+    "best_app": "Everything is content",
+    "best_app_id": "01JG0H372CTNGAHBQ4VXWNKWMV",
+    "best_app_installs": 92,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "My Job Interview Coach; EMDR On-the-Go; chat tool"
+  },
+  {
+    "idea": "Merger And Acquisition Discussions",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Current Investor Meeting Analyzer; Stand-Up Meeting Analyzer"
+  },
+  {
+    "idea": "Negotiation And Offer Discussions",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Spark; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Officer Training And Debriefing",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscripTeach; Weekly Team Meeting; 1 to 1 Meeting"
+  },
+  {
+    "idea": "On Location Filming Coordination",
+    "best_score": 0.33,
+    "best_app": "SalahTime",
+    "best_app_id": "01JVB7JSTMKGTCFBTCQHQ36TV5",
+    "best_app_installs": 4,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Weekly Team Meeting; 1 to 1 Meeting; SetSync Pro"
+  },
+  {
+    "idea": "Operational Efficiency Review",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Job Training Notes; TranscribeAI; What Would Frank Do? "
+  },
+  {
+    "idea": "Patent Examination Reviews",
+    "best_score": 0.33,
+    "best_app": "Weekly Team Meeting Analyzer",
+    "best_app_id": "01JRHM3X75WNX3B32XEKW3R4D5",
+    "best_app_installs": 66,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Weekly Team Meeting; Omi Daily Diary; Omi Daily Diary"
+  },
+  {
+    "idea": "Plea Bargain Negotiations",
+    "best_score": 0.33,
+    "best_app": "Lie Detector Pro",
+    "best_app_id": "01KEHXBC5FDG8PQBJD1Z7A963Q",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Policy Update And Dissemination",
+    "best_score": 0.33,
+    "best_app": "ontic_works_ai",
+    "best_app_id": "01K233TSQ929RHHXZA1DTX904F",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Linear; Shopping Lists; TOP 3 tasks"
+  },
+  {
+    "idea": "Post Emergency Debriefing",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Couples Therapy; EISA; GitHub"
+  },
+  {
+    "idea": "Post Surgery Debriefing",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Couples Therapy; EISA; GitHub"
+  },
+  {
+    "idea": "Press Conference Documentation",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; Doctor patient visit; Conference Notes App"
+  },
+  {
+    "idea": "Product Issue Reporting",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "K.V Health & Wellness \u2013 Your AI Health Companion; Current Investor Meeting Analyzer; VC Pitch Analyzer"
+  },
+  {
+    "idea": "Product Knowledge Transfer",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "awesome sky; Sanatan Wisdom; Brotea community"
+  },
+  {
+    "idea": "Product Launch Coordination",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "K.V Health & Wellness \u2013 Your AI Health Companion; Current Investor Meeting Analyzer; VC Pitch Analyzer"
+  },
+  {
+    "idea": "Property Maintenance And Inspection",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "SKYAI Pilot Insight; MedReg Meeting Coach; MedReg Meeting Coach"
+  },
+  {
+    "idea": "Property Maintenance Coordination",
+    "best_score": 0.33,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Weekly Team Meeting; 1 to 1 Meeting; SKYAI Pilot Insight"
+  },
+  {
+    "idea": "Property Showings And Tours",
+    "best_score": 0.33,
+    "best_app": "Legal Guru",
+    "best_app_id": "01KEYQ4M2A0X2FDEN1HWX7YWF1",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Real Estate Dev Pro; Home Price Predictor"
+  },
+  {
+    "idea": "Property Showings Follow Up",
+    "best_score": 0.33,
+    "best_app": "RPG Translator: Speak Gamer, Think Human",
+    "best_app_id": "01JE2Q73KAMPCRNK920F92EASA",
+    "best_app_installs": 32,
+    "best_app_rating": 0.0,
+    "best_app_category": "entertainment-and-fun",
+    "runner_up_names": "TranscribeAI; Cosmetic Assistant; User Interview Analyzer"
+  },
+  {
+    "idea": "Quality Assurance Audits",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Sleep Quality Analyzer; Board meeting transcriber; Sherlock"
+  },
+  {
+    "idea": "Quality Assurance Reviews",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Weekly Team Meeting Analyzer; Sleep Quality Analyzer; Weekly Team Meeting"
+  },
+  {
+    "idea": "Regulatory Audit Preparations",
+    "best_score": 0.33,
+    "best_app": "MedReg Meeting Coach",
+    "best_app_id": "01KEXCZAD9P9GNF21THZGT28WG",
+    "best_app_installs": 0,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "MedReg Meeting Coach"
+  },
+  {
+    "idea": "Regulatory Compliance Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Cosmetic Assistant; Smart Mentor"
+  },
+  {
+    "idea": "Regulatory Filing Preparation",
+    "best_score": 0.33,
+    "best_app": "My Job Interview Coach",
+    "best_app_id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "best_app_installs": 57,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "EMDR On-the-Go; MedReg Meeting Coach; MedReg Meeting Coach"
+  },
+  {
+    "idea": "Regulatory Update Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Smart Mentor; Lumina Mentor"
+  },
+  {
+    "idea": "Research Proposal Development",
+    "best_score": 0.33,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Mentor AI; Logic AI; KV Master \u2013 AI Project Guide & Tech Solutions Expert"
+  },
+  {
+    "idea": "Retirement Planning Consultations",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Risk Assessment Sessions",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Finance AI; StockSense AI"
+  },
+  {
+    "idea": "Risk Assessment Workshops",
+    "best_score": 0.33,
+    "best_app": "Finance AI",
+    "best_app_id": "01JKG5BJ8B3M14DST97BW360QW",
+    "best_app_installs": 289,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "StockSense AI; Board Meeting Analyzer; BBC SmartBuddy \u2013 Your AI Business Assistant"
+  },
+  {
+    "idea": "Script Continuity Tracking",
+    "best_score": 0.33,
+    "best_app": "Where did I put",
+    "best_app_id": "01JEYR1G4ZMG8W4806RNGVRBS2",
+    "best_app_installs": 147,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Mentor AI; Social AI; StockSense AI"
+  },
+  {
+    "idea": "Security Awareness Training",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscripTeach; Smart Mentor; Seis ES AI: MindWell Multiverse"
+  },
+  {
+    "idea": "Service Call Documentation",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; Better Call Saul; Doctor patient visit"
+  },
+  {
+    "idea": "Service Route Optimization",
+    "best_score": 0.33,
+    "best_app": "Soweto Ai",
+    "best_app_id": "01JZDEKEVYXP977FRWW9APBQM2",
+    "best_app_installs": 19,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Soweto; SkyAI MCP Hub; Service Manager Pro"
+  },
+  {
+    "idea": "Stem Conference Attendance",
+    "best_score": 0.33,
+    "best_app": "Conference Notes App",
+    "best_app_id": "01K6R5SVBG96QCR1A3T49X32PJ",
+    "best_app_installs": 6,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": ""
+  },
+  {
+    "idea": "Stem Education Webinars",
+    "best_score": 0.33,
+    "best_app": "Math Friend",
+    "best_app_id": "01JEAFFY4YBAERMQMH69YN3MJY",
+    "best_app_installs": 160,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "French Companion; Job Training Notes; TranscribeAI"
+  },
+  {
+    "idea": "Storyboarding And Script Development",
+    "best_score": 0.33,
+    "best_app": "Mentor AI",
+    "best_app_id": "01JKG5WHA8GK19KAPKQWBQTG7X",
+    "best_app_installs": 74,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Logic AI; Current Investor Meeting Analyzer; hebrew summary"
+  },
+  {
+    "idea": "Supplier And Vendor Negotiations",
+    "best_score": 0.33,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Lie Detector Pro"
+  },
+  {
+    "idea": "Surgical Resource Management",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Finance AI; Dnd Notes; Spark"
+  },
+  {
+    "idea": "Swot Analysis Workshops",
+    "best_score": 0.33,
+    "best_app": "waiter",
+    "best_app_id": "01JE4DCB9QN9QPC0RA7S33Y7E0",
+    "best_app_installs": 28,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Audio Journal \u2013 Document Your Voice; Coherent transcription; Apex Predator"
+  },
+  {
+    "idea": "Technician Training And Certification",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscripTeach; Brain Bounty Club \u2013 Learn, Quiz & Win; Weekly Team Meeting"
+  },
+  {
+    "idea": "Technology And Tool Evaluation",
+    "best_score": 0.33,
+    "best_app": "Audio Journal \u2013 Document Your Voice",
+    "best_app_id": "01JEZC8MYAC69PH7QDC6HSMXN4",
+    "best_app_installs": 102,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "TranscribeAI; Pulse MkT (alpha test only); TranscripTeach"
+  },
+  {
+    "idea": "Technology Integration Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Omi Task Assistant"
+  },
+  {
+    "idea": "Tenant Issue Resolution",
+    "best_score": 0.33,
+    "best_app": "Weekly Team Meeting",
+    "best_app_id": "01K6QCJXF9H870P4PRH9QQB1JW",
+    "best_app_installs": 48,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "GitHub; Love Health Check; LeglAi India - For Law students, Advocates and Judges"
+  },
+  {
+    "idea": "Thesis Defense Preparation",
+    "best_score": 0.33,
+    "best_app": "My Job Interview Coach",
+    "best_app_id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "best_app_installs": 57,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "EMDR On-the-Go; HakiScribe"
+  },
+  {
+    "idea": "Threat Assessment And Analysis",
+    "best_score": 0.33,
+    "best_app": "waiter",
+    "best_app_id": "01JE4DCB9QN9QPC0RA7S33Y7E0",
+    "best_app_installs": 28,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Audio Journal \u2013 Document Your Voice; Coherent transcription; Apex Predator"
+  },
+  {
+    "idea": "Trademark Registration Meetings",
+    "best_score": 0.33,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Smart Mentor; Lumina Mentor"
+  },
+  {
+    "idea": "Training And Quality Assurance",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; TranscripTeach; Sleep Quality Analyzer"
+  },
+  {
+    "idea": "Travel Arrangements And Logistics",
+    "best_score": 0.33,
+    "best_app": "Brotea community",
+    "best_app_id": "01JQGT1PGS2XYS46RAF69VG93N",
+    "best_app_installs": 14,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "My Travel Buddy; Zenosophy; Drive-by"
+  },
+  {
+    "idea": "Victim Interview Documentation",
+    "best_score": 0.33,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Cosmetic Assistant; User Interview Analyzer; Hiring Interview Analyzer"
+  },
+  {
+    "idea": "Vision Casting Sessions",
+    "best_score": 0.33,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Sanatan Wisdom; Seis ES AI: MindWell Multiverse"
+  },
+  {
+    "idea": "Wedding Rehearsal Planning",
+    "best_score": 0.33,
+    "best_app": "Elon Musk",
+    "best_app_id": "01JET97VXXQACQCC24KXV0J6ZV",
+    "best_app_installs": 79,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Finance AI; Cosmetic Assistant; Current Investor Meeting Analyzer"
+  },
+  {
+    "idea": "Crisis Issue Tracking And Log Management",
+    "best_score": 0.4,
+    "best_app": "Dnd Notes",
+    "best_app_id": "01JN7K448F3816J9H4BCE4PSP1",
+    "best_app_installs": 16,
+    "best_app_rating": 0.0,
+    "best_app_category": "entertainment-and-fun",
+    "runner_up_names": "Spark; DayTrack Log; Where did I put"
+  },
+  {
+    "idea": "Security Operations Center Soc Meetings",
+    "best_score": 0.4,
+    "best_app": "Smart Mentor",
+    "best_app_id": "01JQMG24MHK2AD86BXNFEYTEPT",
+    "best_app_installs": 404,
+    "best_app_rating": 0.0,
+    "best_app_category": "safety-and-security",
+    "runner_up_names": "Current Investor Meeting Analyzer; Meeting Notes"
+  },
+  {
+    "idea": "Client Consultation And Requirements Gathering",
+    "best_score": 0.5,
+    "best_app": "Requirements Gathering Analyzer",
+    "best_app_id": "01JRHM48W3MTZXWFVCY4909V9H",
+    "best_app_installs": 71,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "TranscribeAI"
+  },
+  {
+    "idea": "Client Issue Escalation Documentation",
+    "best_score": 0.5,
+    "best_app": "HakiScribe",
+    "best_app_id": "01KF0FY53MERWPHFNYXZNEV1VR",
+    "best_app_installs": 3,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Ticket Notes"
+  },
+  {
+    "idea": "Client Needs Assessment Sessions",
+    "best_score": 0.5,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Current Investor Meeting Analyzer; Weekly Team Meeting; 1 to 1 Meeting"
+  },
+  {
+    "idea": "Code Review And Quality Assurance",
+    "best_score": 0.5,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Image Generator; CodiBot"
+  },
+  {
+    "idea": "Collaboration With External Security Experts",
+    "best_score": 0.5,
+    "best_app": "1 to 1 Meeting",
+    "best_app_id": "01K6QPZS7CS29689FGY7JB12AE",
+    "best_app_installs": 76,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Prompt Engineer - MiniMax"
+  },
+  {
+    "idea": "Community Engagement And Public Meetings",
+    "best_score": 0.5,
+    "best_app": "BBC Marriage Agent \u2013 Smart Matchmaking AI for India",
+    "best_app_id": "01JS9E1GCF1EQ4XKW751DK0T18",
+    "best_app_installs": 2,
+    "best_app_rating": 0.0,
+    "best_app_category": "emotional-and-mental-support",
+    "runner_up_names": "Meeting Notes"
+  },
+  {
+    "idea": "Continuing Medical Education And Training",
+    "best_score": 0.5,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "Math Friend"
+  },
+  {
+    "idea": "Crisis Management And Response Planning",
+    "best_score": 0.5,
+    "best_app": "Finance AI",
+    "best_app_id": "01JKG5BJ8B3M14DST97BW360QW",
+    "best_app_installs": 289,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "1 to 1 Meeting; Elon Musk"
+  },
+  {
+    "idea": "Crisis Response Strategy Planning",
+    "best_score": 0.5,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Elon Musk"
+  },
+  {
+    "idea": "Customer Case Escalation Tracking",
+    "best_score": 0.5,
+    "best_app": "Weekly Team Meeting",
+    "best_app_id": "01K6QCJXF9H870P4PRH9QQB1JW",
+    "best_app_installs": 48,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Where did I put"
+  },
+  {
+    "idea": "Customer Interaction And Support Documentation",
+    "best_score": 0.5,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Current Investor Meeting Analyzer; Doctor patient visit; Dental Drug Interaction & Decision Support"
+  },
+  {
+    "idea": "Estate Planning And Wealth Transfer",
+    "best_score": 0.5,
+    "best_app": "Finance AI",
+    "best_app_id": "01JKG5BJ8B3M14DST97BW360QW",
+    "best_app_installs": 289,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "Elon Musk"
+  },
+  {
+    "idea": "Faculty Meetings And Curriculum Planning",
+    "best_score": 0.5,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Sprint Planning Analyzer; Weekly Team Meeting; 1 to 1 Meeting"
+  },
+  {
+    "idea": "Family Consultations",
+    "best_score": 0.5,
+    "best_app": "BBC Marriage Agent \u2013 Smart Matchmaking AI for India",
+    "best_app_id": "01JS9E1GCF1EQ4XKW751DK0T18",
+    "best_app_installs": 2,
+    "best_app_rating": 0.0,
+    "best_app_category": "emotional-and-mental-support",
+    "runner_up_names": "IFS Parts Work Companion; Personal Chat; chat tool"
+  },
+  {
+    "idea": "Field Service Reports And Feedback",
+    "best_score": 0.5,
+    "best_app": "Service Manager Pro",
+    "best_app_id": "01KCJZ6WRBCQ4FG6MT31F25QM7",
+    "best_app_installs": 2,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "French Companion"
+  },
+  {
+    "idea": "Field Service Strategy Planning",
+    "best_score": 0.5,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Elon Musk"
+  },
+  {
+    "idea": "Incident Documentation And Evidence Collection",
+    "best_score": 0.5,
+    "best_app": "Pedagogical DocuMate",
+    "best_app_id": "01KC9A50C7GDK2VEXPBGSWAJQJ",
+    "best_app_installs": 3,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "Dermatology Assistant; Ticket Notes"
+  },
+  {
+    "idea": "Interdepartmental Coordination",
+    "best_score": 0.5,
+    "best_app": "Weekly Team Meeting",
+    "best_app_id": "01K6QCJXF9H870P4PRH9QQB1JW",
+    "best_app_installs": 48,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "1 to 1 Meeting; SetSync Pro; Health Butler"
+  },
+  {
+    "idea": "Investigative Research And Note Taking",
+    "best_score": 0.5,
+    "best_app": "Book Writing Support (trauma informed)",
+    "best_app_id": "01JMZE0EPABJ5H7DD96XBWVTM9",
+    "best_app_installs": 28,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Doctor patient visit; chameleon; TranscribeAI"
+  },
+  {
+    "idea": "Ip Portfolio Management",
+    "best_score": 0.5,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Finance AI; Dnd Notes; Spark"
+  },
+  {
+    "idea": "Leadership Workshops",
+    "best_score": 0.5,
+    "best_app": "Mentor AI",
+    "best_app_id": "01JKG5WHA8GK19KAPKQWBQTG7X",
+    "best_app_installs": 74,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Current Investor Meeting Analyzer; BBC SmartBuddy \u2013 Your AI Business Assistant; My Job Interview Coach"
+  },
+  {
+    "idea": "Lecture Recording And Note Taking",
+    "best_score": 0.5,
+    "best_app": "Book Writing Support (trauma informed)",
+    "best_app_id": "01JMZE0EPABJ5H7DD96XBWVTM9",
+    "best_app_installs": 28,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Doctor patient visit; chameleon"
+  },
+  {
+    "idea": "Legal Compliance And Regulatory Meetings",
+    "best_score": 0.5,
+    "best_app": "HakiScribe",
+    "best_app_id": "01KF0FY53MERWPHFNYXZNEV1VR",
+    "best_app_installs": 3,
+    "best_app_rating": 0.0,
+    "best_app_category": "other",
+    "runner_up_names": "Meeting Notes"
+  },
+  {
+    "idea": "Multi Disciplinary Emergency Meetings",
+    "best_score": 0.5,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Meeting Notes"
+  },
+  {
+    "idea": "Multidisciplinary Tumor Board Meetings",
+    "best_score": 0.5,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "VC Board Meeting Analyzer; Meeting Minutes Assistant; Meeting Notes"
+  },
+  {
+    "idea": "Parent Teacher Conference Documentation",
+    "best_score": 0.5,
+    "best_app": "My AI Child \u2013 Love. Teach. Grow.",
+    "best_app_id": "01JRTKK1NCFX9699DGFF7AK7QQ",
+    "best_app_installs": 5,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "Ticket Notes"
+  },
+  {
+    "idea": "Patient Consultations",
+    "best_score": 0.5,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Doctor patient visit; Osteopath; Dental Drug Interaction & Decision Support"
+  },
+  {
+    "idea": "Patient Handoff And Continuity Of Care",
+    "best_score": 0.5,
+    "best_app": "Osteopath",
+    "best_app_id": "01JYTTG5KGQDEWEQ8WHQCARBYG",
+    "best_app_installs": 2,
+    "best_app_rating": 0.0,
+    "best_app_category": "health-and-wellness",
+    "runner_up_names": "Dermatology Assistant; Cosmetic Assistant"
+  },
+  {
+    "idea": "Patient Intake And Triage Documentation",
+    "best_score": 0.5,
+    "best_app": "Cosmetic Assistant",
+    "best_app_id": "01JKZTY9THXYC13C5N0M07XK4X",
+    "best_app_installs": 88,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Doctor patient visit; Dermatology Assistant; Ticket Notes"
+  },
+  {
+    "idea": "Patient Support Group Coordination",
+    "best_score": 0.5,
+    "best_app": "Dental Drug Interaction & Decision Support",
+    "best_app_id": "01K1RH2DX0380PQNC8YQ9TNYV7",
+    "best_app_installs": 1,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "1 to 1 Meeting; late night owl"
+  },
+  {
+    "idea": "Personal Journal And Memory Keeper",
+    "best_score": 0.5,
+    "best_app": "DadiBot \u2013 \u0918\u0930 \u0915\u0940 AI \u0926\u093e\u0926\u0940 \u092e\u093e\u0901",
+    "best_app_id": "01JR3WBHGF8DKGH2D9K5Q2EM58",
+    "best_app_installs": 1,
+    "best_app_rating": 0.0,
+    "best_app_category": "social-and-relationships",
+    "runner_up_names": "Recipe Recorder; Brain; bible journal"
+  },
+  {
+    "idea": "Post Trial Review Meetings",
+    "best_score": 0.5,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Pipeline Review Analyzer; Sprint Planning Analyzer; Couples Therapy"
+  },
+  {
+    "idea": "Production Coordination",
+    "best_score": 0.5,
+    "best_app": "Soweto Ai",
+    "best_app_id": "01JZDEKEVYXP977FRWW9APBQM2",
+    "best_app_installs": 19,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Soweto; Weekly Team Meeting; 1 to 1 Meeting"
+  },
+  {
+    "idea": "Project Oversight And Task Management",
+    "best_score": 0.5,
+    "best_app": "My Job Interview Coach",
+    "best_app_id": "01JVDXNA2H52Y1ZEPD7YV1Q3ST",
+    "best_app_installs": 57,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "Soweto Ai; Soweto; Weekly Team Meeting"
+  },
+  {
+    "idea": "Property Development And Renovation Planning",
+    "best_score": 0.5,
+    "best_app": "Current Investor Meeting Analyzer",
+    "best_app_id": "01JRHM2ECBBY5P22P4QY32YNA7",
+    "best_app_installs": 77,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "1 to 1 Meeting; Career Climber Insights; Elon Musk"
+  },
+  {
+    "idea": "Prototyping Discussions",
+    "best_score": 0.5,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Current Investor Meeting Analyzer; Stand-Up Meeting Analyzer"
+  },
+  {
+    "idea": "Retrospective Meetings",
+    "best_score": 0.5,
+    "best_app": "Meeting Notes",
+    "best_app_id": "01JF605JH7DRH6BW663664FTTF",
+    "best_app_installs": 353,
+    "best_app_rating": 0.0,
+    "best_app_category": "productivity-and-organization",
+    "runner_up_names": "TranscribeAI; Smart Mentor; Lumina Mentor"
+  },
+  {
+    "idea": "Root Cause Analysis Discussions",
+    "best_score": 0.5,
+    "best_app": "TranscribeAI",
+    "best_app_id": "01JK2W07FZBXS4XPNPASR67EBQ",
+    "best_app_installs": 176,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "Current Investor Meeting Analyzer; Stand-Up Meeting Analyzer; Investor Catch-up Analyzer"
+  },
+  {
+    "idea": "Security Audit And Compliance Meetings",
+    "best_score": 0.5,
+    "best_app": "Smart Mentor",
+    "best_app_id": "01JQMG24MHK2AD86BXNFEYTEPT",
+    "best_app_installs": 404,
+    "best_app_rating": 0.0,
+    "best_app_category": "safety-and-security",
+    "runner_up_names": "Meeting Notes"
+  },
+  {
+    "idea": "Social Media Monitoring And Response",
+    "best_score": 0.5,
+    "best_app": "Everything is content",
+    "best_app_id": "01JG0H372CTNGAHBQ4VXWNKWMV",
+    "best_app_installs": 92,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "Be a Better Friend; chat tool; Light the World"
+  },
+  {
+    "idea": "Staff Training And Operational Meetings",
+    "best_score": 0.5,
+    "best_app": "Weekly Team Meeting",
+    "best_app_id": "01K6QCJXF9H870P4PRH9QQB1JW",
+    "best_app_installs": 48,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "1 to 1 Meeting; Meeting Notes"
+  },
+  {
+    "idea": "Support Ticket Review Meetings",
+    "best_score": 0.5,
+    "best_app": "Ticket Notes",
+    "best_app_id": "01JHES8JSHV0R6V25KQQ329N9P",
+    "best_app_installs": 124,
+    "best_app_rating": 0.0,
+    "best_app_category": "utilities-and-tools",
+    "runner_up_names": "TranscribeAI; Current Investor Meeting Analyzer; VC Board Meeting Analyzer"
+  },
+  {
+    "idea": "Tenant Follow Up And Relationship Management",
+    "best_score": 0.5,
+    "best_app": "1 to 1 Meeting",
+    "best_app_id": "01K6QPZS7CS29689FGY7JB12AE",
+    "best_app_installs": 76,
+    "best_app_rating": 0.0,
+    "best_app_category": "conversation-analysis",
+    "runner_up_names": "n8n Task Runner; Dermatology Assistant; RPG Translator: Speak Gamer, Think Human"
+  },
+  {
+    "idea": "Tutoring Sessions",
+    "best_score": 0.5,
+    "best_app": "Job Training Notes",
+    "best_app_id": "01JJV3NT7BHVRFVDTAXQE9X13J",
+    "best_app_installs": 52,
+    "best_app_rating": 0.0,
+    "best_app_category": "education-and-learning",
+    "runner_up_names": "TranscribeAI; Sanatan Wisdom; Seis ES AI: MindWell Multiverse"
+  },
+  {
+    "idea": "Vulnerability Management And Patch Planning",
+    "best_score": 0.5,
+    "best_app": "Finance AI",
+    "best_app_id": "01JKG5BJ8B3M14DST97BW360QW",
+    "best_app_installs": 289,
+    "best_app_rating": 0.0,
+    "best_app_category": "financial",
+    "runner_up_names": "1 to 1 Meeting; Elon Musk"
+  }
+]

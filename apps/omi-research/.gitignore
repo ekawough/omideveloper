@@ -1,0 +1,40 @@
+# --- Omi crawl raw archives (huge, regenerable) ---
+# The raw HTML archive is ~1-2 GB — too big for git.
+# Re-fetch with: cd omi-crawl && python save_html.py
+omi-crawl/html/
+
+# The full cleaned-markdown corpus of 3,897 blog posts is ~120 MB.
+# Re-fetch with: cd omi-crawl && python crawl_batch.py blog-posts-urls.txt blog-posts
+omi-crawl/blog-posts/
+
+# Keep the TSV indexes for blog-posts (tiny, useful for navigation)
+!omi-crawl/blog-posts/_index.tsv
+
+# --- Build / cache / env ---
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.local
+node_modules/
+.next/
+dist/
+build/
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Zips (don't commit a zip of ourselves) ---
+*.zip
+
+# --- salesSignal service-local cruft ---
+salesSignal/**/.env
+salesSignal/**/node_modules/
+salesSignal/**/venv/
+salesSignal/**/__pycache__/
+salesSignal/**/.pytest_cache/
+salesSignal/**/dist/
+salesSignal/agents/hf_cache/

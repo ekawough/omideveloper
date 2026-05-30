@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SalesSignal — Consent</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <style>
+    :root { --accent: #4fd1c5; --bg: #f7f9fc; --fg: #111827; --muted: #64748b; --border: #e2e8f0; }
+    * { box-sizing: border-box; }
+    html, body, #root { height: 100%; margin: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+           background: var(--bg); color: var(--fg); }
+    .wrap { max-width: 560px; margin: 0 auto; padding: 28px 22px 42px; }
+    h1 { font-size: 26px; margin: 0 0 8px; }
+    .muted { color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .card { background: white; border: 1px solid var(--border); border-radius: 14px;
+            padding: 20px; margin-top: 18px; }
+    label { display: block; font-size: 12px; color: var(--muted); margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    input, select { width: 100%; padding: 14px; font-size: 16px; border: 1px solid var(--border); border-radius: 10px; background: white; color: var(--fg); }
+    button.primary {
+      width: 100%; padding: 16px; font-size: 17px; font-weight: 600;
+      background: var(--accent); color: #0b0f17; border: 0; border-radius: 12px;
+      margin-top: 20px; cursor: pointer;
+    }
+    button.primary:disabled { opacity: 0.5; cursor: not-allowed; }
+    button.secondary { background: transparent; color: var(--muted); border: 0; padding: 10px; cursor: pointer; }
+    .state-pill { display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: #ecfeff; color: #0e7490; font-size: 12px; font-weight: 600; margin-left: 8px; }
+    .script-box {
+      background: #f1f5f9; border-radius: 10px; padding: 14px; font-size: 15px; line-height: 1.55;
+      margin-top: 10px;
+    }
+    .ok { color: #15803d; font-weight: 600; }
+    .warn { color: #b45309; font-weight: 600; }
+    .detail { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" data-type="module">
+    const { useState, useEffect } = React;
+
+    // Recording-law classifications (verified April 2026).
+    const TWO_PARTY = new Set(["CA","CT","DE","FL","IL","MD","MA","MI","MT","NV","NH","OR","PA","VT","WA"]);
+    // Illinois BIPA is the strictest in the country — voiceprints are biometric data.
+    const BIPA = new Set(["IL"]);
+
+    function useGeoState() {
+      const [state, setState] = useState({ code: null, loading: true, lat: null, lon: null, err: null });
+      useEffect(() => {
+        if (!navigator.geolocation) {
+          setState(s => ({ ...s, loading: false, err: "geolocation unavailable" }));
+          return;
+        }
+        navigator.geolocation.getCurrentPosition(async (pos) => {
+          const { latitude, longitude } = pos.coords;
+          try {
+            // Free, no-key reverse geocoder. Swap for Nominatim-on-Railway in prod.
+            const r = await fetch(`https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}`);
+            const j = await r.json().catch(() => ({}));
+            const code = (j?.address?.["ISO3166-2-lvl4"] || "").split("-")[1] || null;
+            setState({ code, loading: false, lat: latitude, lon: longitude, err: null });
+          } catch (e) {
+            setState({ code: null, loading: false, lat: latitude, lon: longitude, err: e.message });
+          }
+        }, (e) => setState(s => ({ ...s, loading: false, err: e.message })), { timeout: 10_000 });
+      }, []);
+      return state;
+    }
+
+    function getCfg() {
+      try { return JSON.parse(localStorage.getItem("salessignal.cfg") || "{}"); } catch { return {}; }
+    }
+
+    function App() {
+      const cfg = getCfg();
+      const geo = useGeoState();
+      const [override, setOverride] = useState("");
+      const stateCode = override || geo.code || "";
+      const twoParty = TWO_PARTY.has(stateCode);
+      const bipa = BIPA.has(stateCode);
+
+      const [homeowner, setHomeowner] = useState("");
+      const [bipaAck, setBipaAck] = useState(false);
+      const [submitted, setSubmitted] = useState(null);
+      const [error, setError] = useState(null);
+
+      const script = (cfg.consentScript && cfg.consentScript.trim()) || (
+        twoParty
+          ? "Hi, I'm with [Company]. Before we talk I want to let you know this conversation will be recorded so our AI can write up our notes. Both you and I need to consent in this state — is that alright with you?"
+          : "Hi, I'm with [Company]. Quick heads-up: this conversation is being recorded so our AI assistant can capture the details accurately. Let me know if that's not okay."
+      );
+
+      async function submit() {
+        setError(null);
+        if (bipa && !bipaAck) { setError("Illinois requires explicit electronic acknowledgment."); return; }
+        if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) { setError("Admin has not configured Supabase yet."); return; }
+        const client = supabase.createClient(cfg.supabaseUrl, cfg.supabaseAnonKey);
+        const { error: e } = await client.from("consent_log").insert({
+          consent_given: true,
+          consent_method: bipa ? "digital" : (twoParty ? "written" : "verbal"),
+          state_code: stateCode || null,
+          gps_lat: geo.lat, gps_lon: geo.lon,
+          consent_script: script,
+          homeowner_name: homeowner || null,
+        });
+        if (e) { setError(e.message); return; }
+        setSubmitted(new Date());
+      }
+
+      if (submitted) {
+        return (
+          <div className="wrap">
+            <h1>Thanks — you're set.</h1>
+            <div className="card">
+              <div className="ok">Consent recorded at {submitted.toLocaleTimeString()}.</div>
+              <div className="detail">The rep can start the conversation now. You can ask us to stop recording at any time.</div>
+            </div>
+          </div>
+        );
+      }
+
+      return (
+        <div className="wrap">
+          <h1>Recording consent {stateCode && <span className="state-pill">{stateCode}{twoParty && " • two-party"}{bipa && " • BIPA"}</span>}</h1>
+          <div className="muted">
+            {geo.loading ? "Detecting location…"
+              : geo.err ? "Couldn't detect location — please pick your state below."
+              : stateCode ? "Location detected. Please review and confirm."
+              : "Please pick your state below."}
+          </div>
+
+          {(!stateCode || geo.err) && (
+            <div className="card">
+              <label>State</label>
+              <select value={override} onChange={e => setOverride(e.target.value)}>
+                <option value="">Select…</option>
+                {Array.from(TWO_PARTY).concat(["TX","NY","OH","GA","AZ","NC","VA"]).sort().map(s => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          <div className="card">
+            <div style={{ fontWeight: 600 }}>What the rep will say:</div>
+            <div className="script-box">{script}</div>
+          </div>
+
+          {bipa && (
+            <div className="card">
+              <div className="warn">Illinois BIPA notice</div>
+              <div className="detail">
+                This conversation may produce a voiceprint, which Illinois treats as biometric information.
+                We retain audio for 30 days and voiceprint features for coaching only — never sold or shared.
+              </div>
+              <label>
+                <input type="checkbox" style={{ width: "auto", marginRight: 8 }}
+                       checked={bipaAck} onChange={e => setBipaAck(e.target.checked)} />
+                I understand and agree (required).
+              </label>
+            </div>
+          )}
+
+          <div className="card">
+            <label>Homeowner name (optional)</label>
+            <input value={homeowner} onChange={e => setHomeowner(e.target.value)} placeholder="Jane Smith" />
+          </div>
+
+          <button className="primary" onClick={submit}>
+            {twoParty || bipa ? "I consent to being recorded" : "Acknowledge"}
+          </button>
+          {error && <div className="warn" style={{ marginTop: 10 }}>{error}</div>}
+          <button className="secondary" onClick={() => history.back()}>← Back</button>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
