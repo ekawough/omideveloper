@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/showing-notes/:path*", "destination": "https://93.188.165.65/showing-notes/:path*" }
+    { "source": "/showing-notes/:path*", "destination": "https://connect.omideveloper.com/showing-notes/:path*" }
   ],
   "headers": [
     {
